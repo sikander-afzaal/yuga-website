@@ -11,6 +11,13 @@ function App() {
   const line4 = useRef(null);
   const line5 = useRef(null);
   const textSec = useRef(null);
+  const card1 = useRef(null);
+  const card2 = useRef(null);
+  const card3 = useRef(null);
+  const card4 = useRef(null);
+  const card5 = useRef(null);
+  const cardSection = useRef(null);
+  const mainApp = document.querySelector(".App");
   const secondSec = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -52,16 +59,41 @@ function App() {
       opacity: 1,
       stagger: 0.3,
     });
-
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "top 50%",
-        end: "bottom bottom",
-        scrub: 6,
+        start: "top 10%",
+        end: "bottom 10%",
+        toggleActions: "play reverse play reverse",
       },
       backgroundColor: "white",
     });
+    const cardTime = gsap.timeline({
+      scrollTrigger: {
+        trigger: cardSection.current,
+        start: "top 20%",
+        end: "bottom bottom",
+        scrub: 3,
+        markers: true,
+        pin: cardSection.current,
+      },
+    });
+    cardTime
+      .to(
+        [
+          card1.current,
+          card2.current,
+          card3.current,
+          card4.current,
+          card5.current,
+        ],
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.1,
+        }
+      )
+      .to(cardSection.current, { x: -1380 });
   }, []);
   return (
     <div className="App">
@@ -84,6 +116,13 @@ function App() {
           game of web3, <span>everyone</span> can create and play{" "}
           <span>together</span> on one team.
         </p>
+      </div>
+      <div ref={cardSection} className="third-section">
+        <div ref={card1} className="card"></div>
+        <div ref={card2} className="card"></div>
+        <div ref={card3} className="card translate"></div>
+        <div ref={card4} className="card translate"></div>
+        <div ref={card5} className="card translate"></div>
       </div>
     </div>
   );

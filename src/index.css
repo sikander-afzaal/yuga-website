@@ -7,5 +7,6 @@
 }
 .App {
   background-color: black;
-  height: 500vh;
+  min-height: 500vh;
+  overflow-x: hidden;
 }

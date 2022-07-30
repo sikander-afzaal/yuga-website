@@ -2,30 +2,27 @@
   height: 100vh;
 }
 .text-section {
-  height: 120vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  height: 100%;
+  min-height: 170vh;
   width: 100%;
   padding: 20px 30px;
-  position: relative;
 }
 .text-section h1 {
   line-height: 1.2;
   font-size: 6.4rem;
   color: white;
-  transform: translateY(30vh);
+  transform: translateY(100px);
   opacity: 0;
 }
 .second-section {
   max-width: 1400px;
-  margin-top: -100px;
-  height: 80vh;
+  height: 100%;
+  min-height: 80vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   padding-left: 20px;
+  margin-top: -30vh;
 }
 .second-section p {
   font-size: 40px;
@@ -35,6 +32,25 @@
   opacity: 0;
   color: black;
 }
+.third-section {
+  min-height: 400vh;
+  height: 100%;
+  width: 3280px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 70px;
+  position: relative;
+  overflow: hidden;
+}
+.card {
+  width: 50%;
+  height: 600px;
+  opacity: 0;
+  transform: translateY(10vh);
+  background-color: yellow;
+}
+
 @media screen and (max-width: 1110px) {
   .text-section h1 {
     font-size: 4rem;
@@ -42,7 +58,7 @@
   }
 
   .second-section {
-    height: auto;
+    height: 100%;
     min-height: 600px;
     padding-inline: 40px;
   }
@@ -56,12 +72,11 @@
     transform: translateY(30vh);
   }
   .text-section {
-    height: 200vh;
+    min-height: 140vh;
   }
   .second-section {
     margin-top: -50vh;
     min-height: 800px;
-    /* background-color: blue; */
     align-items: center;
   }
 }
