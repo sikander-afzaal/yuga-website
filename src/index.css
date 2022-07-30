@@ -5,3 +5,7 @@
   box-sizing: border-box;
   font-family: "Familjen Grotesk", sans-serif;
 }
+.App {
+  background-color: black;
+  height: 500vh;
+}

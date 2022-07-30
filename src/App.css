@@ -1,31 +1,53 @@
 .first {
   height: 100vh;
-  background-color: black;
 }
 .text-section {
-  height: 300vh;
+  height: 120vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
   padding: 20px 30px;
-  background-color: black;
+  position: relative;
 }
 .text-section h1 {
   line-height: 1.2;
   font-size: 6.4rem;
   color: white;
-  transform: translateY(50vh);
+  transform: translateY(30vh);
   opacity: 0;
+}
+.second-section {
+  max-width: 1400px;
+  margin-top: -100px;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 20px;
+}
+.second-section p {
+  font-size: 40px;
+  color: black;
+}
+.second-section p span {
+  opacity: 0;
+  color: black;
 }
 @media screen and (max-width: 1110px) {
   .text-section h1 {
     font-size: 4rem;
     transform: translateY(30vh);
   }
-  .text-section {
-    height: 300vh;
+
+  .second-section {
+    height: auto;
+    min-height: 600px;
+    padding-inline: 40px;
+  }
+  .second-section p {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -33,13 +55,19 @@
     font-size: 3rem;
     transform: translateY(30vh);
   }
+  .text-section {
+    height: 200vh;
+  }
+  .second-section {
+    margin-top: -50vh;
+    min-height: 800px;
+    /* background-color: blue; */
+    align-items: center;
+  }
 }
 @media screen and (max-width: 412px) {
   .text-section h1 {
     font-size: 2rem;
     transform: translateY(30vh);
-  }
-  .text-section {
-    height: 200vh;
   }
 }
