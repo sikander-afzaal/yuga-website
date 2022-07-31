@@ -3,6 +3,7 @@ import "./App.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine } from "gsap";
+import img from "./img.png";
 function App() {
   //first section--------------------
   const line1 = useRef(null);
@@ -62,19 +63,20 @@ function App() {
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "top 10%",
+        start: "top 60%",
+        markers: true,
         end: "bottom 10%",
         toggleActions: "play reverse play reverse",
       },
       backgroundColor: "white",
     });
+    //third section -------------------------
     const cardTime = gsap.timeline({
       scrollTrigger: {
         trigger: cardSection.current,
         start: "top 20%",
         end: "bottom bottom",
         scrub: 3,
-        markers: true,
         pin: cardSection.current,
       },
     });
@@ -93,7 +95,40 @@ function App() {
           stagger: 0.1,
         }
       )
-      .to(cardSection.current, { x: -1380 });
+      .to(cardSection.current, { x: -2810 });
+    //animation changes after 800px ------------------------------------ (third section)
+    ScrollTrigger.matchMedia({
+      "(max-width: 800px)": () => {
+        const cardTime = gsap.timeline({
+          scrollTrigger: {
+            trigger: cardSection.current,
+            start: "top 20%",
+            end: "bottom bottom",
+            scrub: 3,
+            pin: cardSection.current,
+          },
+        });
+        cardTime
+          .to(
+            [
+              card1.current,
+              card2.current,
+              card3.current,
+              card4.current,
+              card5.current,
+            ],
+            {
+              y: 0,
+              opacity: 1,
+              stagger: 0.1,
+            }
+          )
+          .to(cardSection.current, { x: -1810 });
+      },
+    });
+    return () => {
+      cardTime.kill();
+    };
   }, []);
   return (
     <div className="App">
@@ -118,12 +153,23 @@ function App() {
         </p>
       </div>
       <div ref={cardSection} className="third-section">
-        <div ref={card1} className="card"></div>
-        <div ref={card2} className="card"></div>
-        <div ref={card3} className="card translate"></div>
-        <div ref={card4} className="card translate"></div>
-        <div ref={card5} className="card translate"></div>
+        <div ref={card1} className="card card1">
+          <img src={img} alt="" />
+        </div>
+        <div ref={card2} className="card card2">
+          <img src={img} alt="" />
+        </div>
+        <div ref={card3} className="card card3">
+          <img src={img} alt="" />
+        </div>
+        <div ref={card4} className="card card4">
+          <img src={img} alt="" />
+        </div>
+        <div ref={card5} className="card card5">
+          <img src={img} alt="" />
+        </div>
       </div>
+      <div className="fourth-section"></div>
     </div>
   );
 }
