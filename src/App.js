@@ -164,7 +164,6 @@ function App() {
         trigger: joinSec.current,
         start: "top top",
         toggleActions: "play reverse play reverse",
-        markers: true,
       },
       backgroundColor: "white",
     });
