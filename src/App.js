@@ -18,7 +18,8 @@ function App() {
   const card4 = useRef(null);
   const card5 = useRef(null);
   const cardSection = useRef(null);
-  const mainApp = document.querySelector(".App");
+  const scrollText = useRef(null);
+  const parallexCont = useRef(null);
   const secondSec = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -64,7 +65,6 @@ function App() {
       scrollTrigger: {
         trigger: secondSec.current,
         start: "top 60%",
-        markers: true,
         end: "bottom 10%",
         toggleActions: "play reverse play reverse",
       },
@@ -74,10 +74,11 @@ function App() {
     const cardTime = gsap.timeline({
       scrollTrigger: {
         trigger: cardSection.current,
-        start: "top 20%",
+        start: "top 10%",
         end: "bottom bottom",
         scrub: 3,
         pin: cardSection.current,
+        pinSpacing: false,
       },
     });
     cardTime
@@ -93,9 +94,11 @@ function App() {
           y: 0,
           opacity: 1,
           stagger: 0.1,
+          duration: 1,
         }
       )
-      .to(cardSection.current, { x: -2810 });
+      .to(scrollText.current, { y: 0, opacity: 1, duration: 1 })
+      .to(cardSection.current, { x: -2810, duration: 3 });
     //animation changes after 800px ------------------------------------ (third section)
     ScrollTrigger.matchMedia({
       "(max-width: 800px)": () => {
@@ -106,6 +109,7 @@ function App() {
             end: "bottom bottom",
             scrub: 3,
             pin: cardSection.current,
+            pinSpacing: false,
           },
         });
         cardTime
@@ -123,9 +127,20 @@ function App() {
               stagger: 0.1,
             }
           )
+          .to(scrollText.current, { y: 0, opacity: 1, duration: 1 })
           .to(cardSection.current, { x: -1810 });
       },
     });
+    gsap.to(parallexCont.current, {
+      scrollTrigger: {
+        trigger: cardSection.current,
+        start: "bottom bottom",
+        markers: true,
+        scrub: true,
+      },
+      yPercent: -100,
+    });
+
     return () => {
       cardTime.kill();
     };
@@ -153,23 +168,39 @@ function App() {
         </p>
       </div>
       <div ref={cardSection} className="third-section">
-        <div ref={card1} className="card card1">
-          <img src={img} alt="" />
+        <div className="card-div">
+          <div ref={card1} className="card card1">
+            <img src={img} alt="" />
+          </div>
+          <div ref={card2} className="card card2">
+            <img src={img} alt="" />
+          </div>
+          <div ref={card3} className="card card3">
+            <img src={img} alt="" />
+          </div>
+          <div ref={card4} className="card card4">
+            <img src={img} alt="" />
+          </div>
+          <div ref={card5} className="card card5">
+            <img src={img} alt="" />
+          </div>
         </div>
-        <div ref={card2} className="card card2">
-          <img src={img} alt="" />
-        </div>
-        <div ref={card3} className="card card3">
-          <img src={img} alt="" />
-        </div>
-        <div ref={card4} className="card card4">
-          <img src={img} alt="" />
-        </div>
-        <div ref={card5} className="card card5">
-          <img src={img} alt="" />
+        <h1 ref={scrollText}>
+          The Yugaverse The Yugaverse The Yugaverse The Yugaverse The Yugaverse
+        </h1>
+      </div>
+      <div ref={parallexCont} className="fourth-section">
+        <h1>The yuga verse runs on Ape coin</h1>
+        <div className="bottom-part">
+          <p>
+            Owned and operated by the ApeCoin DAO, APE is a token supporting
+            whať's next in web3. Yuga Labs is a contributor to ApeCoin, a
+            community member of the ApeCoin DAO, and will be using ApeCoin as
+            the primary token in Yuga Labs projects.
+          </p>
+          <button>Learn more</button>
         </div>
       </div>
-      <div className="fourth-section"></div>
     </div>
   );
 }

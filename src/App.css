@@ -33,15 +33,28 @@
   color: black;
 }
 .third-section {
-  min-height: 470vh;
-  height: 100%;
+  min-height: 4000px;
   width: 4340px;
+  overflow: hidden;
+  height: 100%;
+}
+.card-div {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 70px;
-  position: relative;
-  overflow: hidden;
+  width: 100%;
+}
+.third-section h1 {
+  font-size: 6rem;
+  letter-spacing: -0.2rem;
+  line-height: 1;
+  width: 100%;
+  color: white;
+  transform: translateY(50px);
+  opacity: 0;
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 .card {
   width: 800px;
@@ -67,7 +80,57 @@
   background-color: #131313;
 }
 .fourth-section {
-  min-height: 100vh;
+  min-height: 800px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 4rem;
+}
+.fourth-section h1 {
+  font-size: 6.375rem;
+  color: black;
+  text-transform: uppercase;
+  max-width: 80%;
+  line-height: 1;
+}
+.bottom-part {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+.bottom-part p {
+  font-size: 3.25rem;
+  color: black;
+  text-transform: uppercase;
+  max-width: 70%;
+  line-height: 1;
+  font-weight: 600;
+}
+.bottom-part button {
+  padding: 13px 25px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 100vh;
+  cursor: pointer;
+}
+@media screen and (max-width: 1380px) {
+  .fourth-section h1 {
+    font-size: 80px;
+    max-width: 100%;
+  }
+
+  .bottom-part p {
+    font-size: 2.25rem;
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 1110px) {
   .text-section h1 {
@@ -88,6 +151,12 @@
   .card {
     width: 400px;
     height: 500px;
+    transform: translateY(30px);
+  }
+
+  .third-section h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
   }
 }
 @media screen and (max-width: 600px) {
