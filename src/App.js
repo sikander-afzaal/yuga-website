@@ -20,6 +20,7 @@ function App() {
   const cardSection = useRef(null);
   const scrollText = useRef(null);
   const parallexCont = useRef(null);
+  const joinSec = useRef(null);
   const secondSec = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -94,18 +95,17 @@ function App() {
           y: 0,
           opacity: 1,
           stagger: 0.1,
-          duration: 1,
         }
       )
-      .to(scrollText.current, { y: 0, opacity: 1, duration: 1 })
-      .to(cardSection.current, { x: -2810, duration: 3 });
+      .to(scrollText.current, { y: 0, opacity: 1 })
+      .to(cardSection.current, { x: -2810 });
     //animation changes after 800px ------------------------------------ (third section)
     ScrollTrigger.matchMedia({
       "(max-width: 800px)": () => {
         const cardTime = gsap.timeline({
           scrollTrigger: {
             trigger: cardSection.current,
-            start: "top 20%",
+            start: "top 10%",
             end: "bottom bottom",
             scrub: 3,
             pin: cardSection.current,
@@ -127,20 +127,45 @@ function App() {
               stagger: 0.1,
             }
           )
-          .to(scrollText.current, { y: 0, opacity: 1, duration: 1 })
+          .to(scrollText.current, { y: 0, opacity: 1 })
           .to(cardSection.current, { x: -1810 });
       },
     });
+    //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
-        trigger: cardSection.current,
-        start: "bottom bottom",
-        markers: true,
+        trigger: parallexCont.current,
+        start: "top 100%",
+        end: "bottom 0%",
         scrub: true,
       },
-      yPercent: -100,
+      yPercent: -70,
     });
-
+    //animation changes after 800px ------------------------------------ (third section)
+    ScrollTrigger.matchMedia({
+      "(max-width: 800px)": () => {
+        gsap.to(parallexCont.current, {
+          scrollTrigger: {
+            trigger: parallexCont.current,
+            start: "top 100%",
+            end: "bottom 0%",
+            scrub: true,
+          },
+          yPercent: -100,
+        });
+      },
+    });
+    //join section ------------------------------------------
+    gsap.to(document.querySelector(".App"), {
+      scrollTrigger: {
+        trigger: joinSec.current,
+        start: "top top",
+        end: "bottom bottom",
+        toggleActions: "play reverse play reverse",
+        markers: true,
+      },
+      backgroundColor: "white",
+    });
     return () => {
       cardTime.kill();
     };
@@ -189,6 +214,7 @@ function App() {
           The Yugaverse The Yugaverse The Yugaverse The Yugaverse The Yugaverse
         </h1>
       </div>
+
       <div ref={parallexCont} className="fourth-section">
         <h1>The yuga verse runs on Ape coin</h1>
         <div className="bottom-part">
@@ -198,7 +224,14 @@ function App() {
             community member of the ApeCoin DAO, and will be using ApeCoin as
             the primary token in Yuga Labs projects.
           </p>
-          <button>Learn more</button>
+          <button className="cta-btn">Learn more</button>
+        </div>
+      </div>
+      <div ref={joinSec} className="join-us">
+        <h1>Join Us</h1>
+        <div className="btn-div">
+          <button className="cta-btn">Work at yuga</button>
+          <button className="cta-btn">Partner with yuga</button>
         </div>
       </div>
     </div>
