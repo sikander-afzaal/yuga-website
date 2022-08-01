@@ -65,7 +65,7 @@ function App() {
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "top 60%",
+        start: "top 80%",
         end: "bottom 10%",
         toggleActions: "play reverse play reverse",
       },
