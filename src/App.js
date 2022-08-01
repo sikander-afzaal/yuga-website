@@ -156,16 +156,26 @@ function App() {
       },
     });
     //join section ------------------------------------------
-    gsap.to(document.querySelector(".App"), {
+    const h1 = document.querySelector(".join-h1");
+    const btn = document.querySelector(".btn-div");
+    const mainApp = document.querySelector(".App");
+    gsap.to(mainApp, {
       scrollTrigger: {
         trigger: joinSec.current,
         start: "top top",
-        end: "bottom bottom",
         toggleActions: "play reverse play reverse",
         markers: true,
       },
       backgroundColor: "white",
     });
+    const lastTime = gsap.timeline({
+      scrollTrigger: {
+        trigger: joinSec.current,
+        start: "top top",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+    lastTime.to([h1, btn], { opacity: 1, stagger: 0.5 });
     return () => {
       cardTime.kill();
     };
@@ -228,12 +238,20 @@ function App() {
         </div>
       </div>
       <div ref={joinSec} className="join-us">
-        <h1>Join Us</h1>
+        <h1 className="join-h1">Join Us</h1>
         <div className="btn-div">
           <button className="cta-btn">Work at yuga</button>
           <button className="cta-btn">Partner with yuga</button>
         </div>
       </div>
+      <footer>
+        <h2>Yuga Labs</h2>
+        <div className="right-links">
+          <a href="#">Press</a>
+          <a href="#">Times</a>
+          <a href="#">Privacy</a>
+        </div>
+      </footer>
     </div>
   );
 }

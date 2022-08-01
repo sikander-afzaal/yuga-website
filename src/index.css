@@ -9,6 +9,7 @@
   background-color: black;
   min-height: 500vh;
   overflow: hidden;
+  position: relative;
 }
 body {
   overflow-x: hidden;
