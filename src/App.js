@@ -690,14 +690,21 @@ function App() {
       </div>
       <div ref={secondSec} className="second-section">
         <p>
-          We <span>believe</span> that the <span>potential</span> of web3 can be{" "}
-          <span>realized</span> when we start with <span>imagination</span>, not{" "}
-          <span>limitations</span>. No borders, no rulers, just{" "}
-          <span>people</span> making cool shit,
-          <span>together</span>. In the <span>Yugaverse</span>, fans and{" "}
-          <span>players</span> are owners and <span>creators</span>, and in the
-          game of web3, <span>everyone</span> can create and play{" "}
-          <span>together</span> on one team.
+          Wagmi labz’ <span>Aims</span> to be the most <span>diverse</span>{" "}
+          community In the web3 <span>movement</span> , Priding ourselves upon
+          <span>creating</span> passive income streams from our{" "}
+          <span>core</span> projects Using decentralisation{" "}
+          <span>wherever</span> possible To keep your <span>private</span>{" "}
+          income <span>private</span>, We believe in <span>morals</span> over
+          everything, But <span>also</span> in your <span>right</span> to
+          privacy We set <span>ourselves</span> apart also by the{" "}
+          <span>fundamentals</span>
+          of the <span>Abbreviation</span> WAGMI, “we’re all gonna make it”
+          <span>delivering</span> this to the best of our <span>ability</span>{" "}
+          ,no matter your <span>age</span>, status or belief <span>system</span>
+          , we use <span>Blockchain</span> technology and web 3 To give
+          organising <span>structure</span> while we deliver{" "}
+          <span>positivity</span> to a happy community
         </p>
       </div>
       <div ref={cardSection} className="third-section">
