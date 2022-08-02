@@ -107,9 +107,10 @@ function App() {
           y: 0,
           opacity: 1,
           stagger: 0.1,
-        }
+        },
+        0
       )
-      .to(scrollText.current, { y: 0, opacity: 1 })
+      .to(scrollText.current, { y: 0, opacity: 1, delay: 0.4 }, 0)
       .to(cardSection.current, { x: -2810 });
     //animation changes after 800px ------------------------------------ (third section)
     ScrollTrigger.matchMedia({

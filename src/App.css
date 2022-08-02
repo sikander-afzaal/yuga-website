@@ -37,7 +37,7 @@
 .third-section {
   width: 4340px;
   overflow: hidden;
-  height: 3000px;
+  height: 5000px;
   pointer-events: none;
   display: flex;
   justify-content: flex-start;
