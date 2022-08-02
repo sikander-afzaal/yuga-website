@@ -66,7 +66,7 @@ function App() {
     gsap.to(hiddenWords, {
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "top 50%",
+        start: "center 80%",
         end: "bottom bottom",
         scrub: 6,
       },
@@ -123,7 +123,6 @@ function App() {
       duration: 3,
     });
 
-   
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
