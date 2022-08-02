@@ -40,7 +40,7 @@ function App() {
         trigger: textSec.current,
         start: "top top",
         scrub: 3,
-        end: "bottom bottom",
+        end: "+=2000",
         pin: textSec.current,
       },
     });
@@ -66,7 +66,7 @@ function App() {
     gsap.to(hiddenWords, {
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "center 50%",
+        start: "top 50%",
         end: "bottom bottom",
         scrub: 6,
       },
@@ -76,8 +76,9 @@ function App() {
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "top 80%",
+        start: "center 80%",
         end: "bottom 10%",
+        markers: true,
         toggleActions: "play reverse play reverse",
       },
       backgroundColor: "white",
