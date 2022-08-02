@@ -15,6 +15,7 @@
   color: white;
   transform: translateY(100px);
   opacity: 0;
+  text-transform: uppercase;
 }
 .second-section {
   max-width: 1400px;
@@ -37,7 +38,7 @@
 .third-section {
   width: 4340px;
   overflow: hidden;
-  height: 5000px;
+  min-height: 400vh;
   pointer-events: none;
   display: flex;
   justify-content: flex-start;
@@ -64,7 +65,7 @@
 }
 .card {
   width: 800px;
-  height: 600px;
+  height: min(600px, 75vh);
   opacity: 0;
   transform: translateY(10vh);
   background-color: #131313;

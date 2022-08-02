@@ -8,7 +8,6 @@ import gsap from "gsap";
 import "./App.css";
 import img from "./img.png";
 function App() {
-  const [blackColor, setBlackColor] = useState(true);
   //first section--------------------
   const line1 = useRef(null);
   const line2 = useRef(null);
@@ -87,10 +86,10 @@ function App() {
     const cardTime = gsap.timeline({
       scrollTrigger: {
         trigger: cardSection.current,
-        start: "top 10%",
+        start: "top 5%",
         end: "bottom bottom",
         scrub: 3,
-        pin: cardSection.current,
+        pin: true,
         pinSpacing: false,
       },
     });
@@ -111,14 +110,14 @@ function App() {
         0
       )
       .to(scrollText.current, { y: 0, opacity: 1, delay: 0.4 }, 0)
-      .to(cardSection.current, { x: -2810 });
+      .to(cardSection.current, { x: -2810, duration: 3 });
     //animation changes after 800px ------------------------------------ (third section)
     ScrollTrigger.matchMedia({
       "(max-width: 800px)": () => {
         const cardTime = gsap.timeline({
           scrollTrigger: {
             trigger: cardSection.current,
-            start: "top 10%",
+            start: "top 5%",
             end: "bottom bottom",
             scrub: 3,
             pin: cardSection.current,
@@ -138,10 +137,11 @@ function App() {
               y: 0,
               opacity: 1,
               stagger: 0.1,
-            }
+            },
+            0
           )
-          .to(scrollText.current, { y: 0, opacity: 1 })
-          .to(cardSection.current, { x: -1810 });
+          .to(scrollText.current, { y: 0, opacity: 1, delay: 0.4 }, 0)
+          .to(cardSection.current, { x: -1810, duration: 3 });
       },
     });
     //fourth section ---------------------------------------------------
@@ -150,6 +150,7 @@ function App() {
         trigger: parallexCont.current,
         start: "top 100%",
         end: "bottom 0%",
+        markers: true,
         scrub: true,
       },
       yPercent: -70,
@@ -672,20 +673,20 @@ function App() {
       </div>
       <div ref={textSec} className="text-section">
         <h1 ref={line1}>
-          <span style={{ color: "#8ffe33" }}>Web3</span> supporters utilising
+          <span style={{ color: "#8ffe33" }}>W</span>eb3 supporters utilising
         </h1>
         <h1 ref={line2}>
-          <span style={{ color: "#6833ff" }}>Artistic</span> representations to
+          <span style={{ color: "#6833ff" }}>A</span>rtistic representations to
         </h1>
         <h1 ref={line3}>
-          <span style={{ color: "#fe33a9" }}>Generate</span> blockchain
+          <span style={{ color: "#fe33a9" }}>G</span>enerate blockchain
           solutions
         </h1>
         <h1 ref={line4}>
-          <span style={{ color: "#33c3ff" }}>Made</span> relatable by use of
+          <span style={{ color: "#33c3ff" }}>M</span>ade relatable by use of
         </h1>
         <h1 ref={line5}>
-          <span style={{ color: "#32ebff" }}>Interlectual</span> property
+          <span style={{ color: "#32ebff" }}>I</span>nterlectual property
         </h1>
       </div>
       <div ref={secondSec} className="second-section">
