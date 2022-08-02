@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine } from "gsap";
 import Particles from "react-tsparticles";
@@ -25,7 +25,7 @@ function App() {
   const parallexCont = useRef(null);
   const joinSec = useRef(null);
   const secondSec = useRef();
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
@@ -82,18 +82,17 @@ function App() {
       },
       backgroundColor: "white",
     });
-    //third section -------------------------
     const cardTime = gsap.timeline({
       scrollTrigger: {
-        trigger: cardSection.current,
-        start: "top 5%",
-        end: "bottom bottom",
-        scrub: 3,
-        pin: true,
-        pinSpacing: false,
+        trigger: secondSec.current,
+        start: "center 90%",
+        end: "+=100%",
+        scrub: 4,
+        markers: true,
       },
     });
     cardTime
+      .to(document.querySelector(".third-wrapper"), { y: 0 })
       .to(
         [
           card1.current,
@@ -105,45 +104,45 @@ function App() {
         {
           y: 0,
           opacity: 1,
-          stagger: 0.1,
+          stagger: 0.5,
         },
-        0
+        "lol"
       )
-      .to(scrollText.current, { y: 0, opacity: 1, delay: 0.4 }, 0)
-      .to(cardSection.current, { x: -2810, duration: 3 });
-    //animation changes after 800px ------------------------------------ (third section)
-    ScrollTrigger.matchMedia({
-      "(max-width: 800px)": () => {
-        const cardTime = gsap.timeline({
-          scrollTrigger: {
-            trigger: cardSection.current,
-            start: "top 5%",
-            end: "bottom bottom",
-            scrub: 3,
-            pin: cardSection.current,
-            pinSpacing: false,
-          },
-        });
-        cardTime
-          .to(
-            [
-              card1.current,
-              card2.current,
-              card3.current,
-              card4.current,
-              card5.current,
-            ],
-            {
-              y: 0,
-              opacity: 1,
-              stagger: 0.1,
-            },
-            0
-          )
-          .to(scrollText.current, { y: 0, opacity: 1, delay: 0.4 }, 0)
-          .to(cardSection.current, { x: -1810, duration: 3 });
+      .to(scrollText.current, { y: 0, opacity: 1, delay: 0.7 }, "lol");
+    //third section -------------------------
+    const MOVE = card1.current.clientHeight * 3 + 70 * 4;
+    gsap.to(cardSection.current, {
+      scrollTrigger: {
+        trigger: secondSec.current,
+        start: "bottom 3%",
+        end: "+=3000",
+        scrub: 3,
+        pin: document.querySelector(".third-wrapper"),
+        pinSpacing: true,
+        markers: true,
       },
+      x: -MOVE,
+      duration: 3,
     });
+
+    // //animation changes after 800px ------------------------------------ (third section)
+    // ScrollTrigger.matchMedia({
+    //   "(max-width: 800px)": () => {
+    //     gsap.to(cardSection.current, {
+    //       scrollTrigger: {
+    //         trigger: secondSec.current,
+    //         start: "bottom 5%",
+    //         end: "+=3000",
+    //         scrub: 3,
+    //         pin: document.querySelector(".third-wrapper"),
+    //         pinSpacing: true,
+    //         markers: true,
+    //       },
+    //       x: -1800,
+    //       duration: 3,
+    //     });
+    //   },
+    // });
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
@@ -152,7 +151,7 @@ function App() {
         end: "bottom 0%",
         scrub: true,
       },
-      yPercent: -70,
+      yPercent: -90,
     });
     //animation changes after 800px ------------------------------------ (third section)
     ScrollTrigger.matchMedia({
@@ -189,7 +188,7 @@ function App() {
     });
     lastTime.to([h1, btn], { opacity: 1, stagger: 0.5 });
     return () => {
-      cardTime.kill();
+      // cardTime.kill();
     };
   }, []);
 
@@ -690,44 +689,57 @@ function App() {
       </div>
       <div ref={secondSec} className="second-section">
         <p>
-          Wagmi labz’ <span>Aims</span> to be the most <span>diverse</span>{" "}
-          community In the web3 <span>movement</span> , Priding ourselves upon
-          <span>creating</span> passive income streams from our{" "}
-          <span>core</span> projects Using decentralisation{" "}
-          <span>wherever</span> possible To keep your <span>private</span>{" "}
-          income <span>private</span>, We believe in <span>morals</span> over
-          everything, But <span>also</span> in your <span>right</span> to
-          privacy We set <span>ourselves</span> apart also by the{" "}
-          <span>fundamentals</span>
-          of the <span>Abbreviation</span> WAGMI, “we’re all gonna make it”
-          <span>delivering</span> this to the best of our <span>ability</span>{" "}
-          ,no matter your <span>age</span>, status or belief <span>system</span>
-          , we use <span>Blockchain</span> technology and web 3 To give
-          organising <span>structure</span> while we deliver{" "}
-          <span>positivity</span> to a happy community
+          Wagmi labz’ <span style={{ color: "#8ffe33" }}>Aims</span> to be the
+          most <span style={{ color: "#6833ff" }}>diverse</span> community In
+          the web3 <span style={{ color: "#fe33a9" }}>movement</span> , Priding
+          ourselves upon
+          <span style={{ color: "#33c3ff" }}>creating</span> passive income
+          streams from our <span style={{ color: "#32ebff" }}>core</span>{" "}
+          projects Using decentralisation{" "}
+          <span style={{ color: "#6833ff" }}>wherever</span> possible To keep
+          your <span style={{ color: "#32ebff" }}>private</span> income{" "}
+          <span style={{ color: "#8ffe33" }}>private</span>, We believe in{" "}
+          <span style={{ color: "#6833ff" }}>morals</span> over everything, But{" "}
+          <span style={{ color: "#33c3ff" }}>also</span> in your{" "}
+          <span style={{ color: "#fe33a9" }}>right</span> to privacy We set{" "}
+          <span style={{ color: "#32ebff" }}>ourselves</span> apart also by the{" "}
+          <span style={{ color: "#8ffe33" }}>fundamentals</span>
+          of the <span style={{ color: "#8ffe33" }}>Abbreviation</span> WAGMI,
+          “we’re all gonna make it”
+          <span>delivering</span> this to the best of our{" "}
+          <span style={{ color: "#fe33a9" }}>ability</span> ,no matter your{" "}
+          <span style={{ color: "#32ebff" }}>age</span>, status or belief{" "}
+          <span style={{ color: "#32ebff" }}>system</span>, we use{" "}
+          <span style={{ color: "#8ffe33" }}>Blockchain</span> technology and
+          web 3 To give organising{" "}
+          <span style={{ color: "#32ebff" }}>structure</span> while we deliver{" "}
+          <span style={{ color: "#fe33a9" }}>positivity</span> to a happy
+          community
         </p>
       </div>
-      <div ref={cardSection} className="third-section">
-        <div className="card-div">
-          <div ref={card1} className="card card1">
-            <img src={img} alt="" />
+      <div className="third-wrapper">
+        <div ref={cardSection} className="third-section">
+          <div className="card-div">
+            <div ref={card1} className="card card1">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card2} className="card card2">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card3} className="card card3">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card4} className="card card4">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card5} className="card card5">
+              <img src={img} alt="" />
+            </div>
           </div>
-          <div ref={card2} className="card card2">
-            <img src={img} alt="" />
-          </div>
-          <div ref={card3} className="card card3">
-            <img src={img} alt="" />
-          </div>
-          <div ref={card4} className="card card4">
-            <img src={img} alt="" />
-          </div>
-          <div ref={card5} className="card card5">
-            <img src={img} alt="" />
-          </div>
+          <h1 ref={scrollText}>
+            The Yugaverse The Yugaverse The Yugaverse The
+          </h1>
         </div>
-        <h1 ref={scrollText}>
-          The Yugaverse The Yugaverse The Yugaverse The Yugaverse The Yugaverse
-        </h1>
       </div>
 
       <div ref={parallexCont} className="fourth-section">

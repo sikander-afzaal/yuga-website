@@ -18,11 +18,10 @@
 }
 .second-section {
   max-width: 1400px;
-  height: auto;
-  min-height: 50vh;
+  height: 90vh;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   padding-left: 20px;
 }
 .second-section p {
@@ -33,15 +32,17 @@
   opacity: 0;
   color: black;
 }
-.third-section {
-  width: 4340px;
+.third-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
   overflow: hidden;
-  min-height: 400vh;
+  margin-top: 40px;
+}
+.third-section {
+  height: 100%;
   pointer-events: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  width: 4000px;
 }
 .card-div {
   display: flex;
@@ -62,15 +63,26 @@
   margin-top: 15px;
 }
 .card {
-  width: 800px;
-  height: min(600px, 75vh);
-  opacity: 0;
+  width: 600px;
+  height: min(650px, 60vh);
   transform: translateY(10vh);
   background-color: #131313;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
+}
+.card2 {
+  transform: translateY(15vh);
+}
+.card3 {
+  transform: translateY(18vh);
+}
+.card4 {
+  transform: translateY(18vh);
+}
+.card5 {
+  transform: translateY(18vh);
 }
 .card img {
   max-width: 50%;
@@ -243,7 +255,7 @@ footer h2 {
   }
 
   .third-section h1 {
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 2px;
   }
 }
