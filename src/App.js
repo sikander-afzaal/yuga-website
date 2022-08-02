@@ -24,6 +24,14 @@ function App() {
   const secondSec = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.to(document.querySelector(".App"), {
+      scrollTrigger: {
+        trigger: document.querySelector(".first"),
+        start: "top top",
+        end: "bottom bottom",
+      },
+      backgroundColor: "black",
+    });
     const textTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: textSec.current,
