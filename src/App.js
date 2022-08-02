@@ -20,6 +20,7 @@ function App() {
   const card3 = useRef(null);
   const card4 = useRef(null);
   const card5 = useRef(null);
+  const card6 = useRef(null);
   const cardSection = useRef(null);
   const scrollText = useRef(null);
   const parallexCont = useRef(null);
@@ -100,6 +101,7 @@ function App() {
           card3.current,
           card4.current,
           card5.current,
+          card6.current,
         ],
         {
           y: 0,
@@ -110,7 +112,7 @@ function App() {
       )
       .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
-    const MOVE = card1.current.getBoundingClientRect().width * 4.9;
+    const MOVE = card1.current.getBoundingClientRect().width * 4.55;
     const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
@@ -130,7 +132,6 @@ function App() {
         start: "top 100%",
         end: "bottom 0%",
         scrub: true,
-        markers: true,
       },
       yPercent: -100,
     });
@@ -701,6 +702,9 @@ function App() {
               <img src={img} alt="" />
             </div>
             <div ref={card5} className="card card5">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card6} className="card card6">
               <img src={img} alt="" />
             </div>
           </div>
