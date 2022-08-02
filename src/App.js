@@ -61,37 +61,38 @@ function App() {
       }
     );
     //second section -------------------------------
-    const hiddenWords = document.querySelectorAll(".second-section p span");
-
-    gsap.to(hiddenWords, {
-      scrollTrigger: {
-        trigger: secondSec.current,
-        start: "center 80%",
-        end: "bottom bottom",
-        scrub: 6,
-      },
-      opacity: 1,
-      stagger: 0.3,
-    });
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "center 80%",
+        start: "top 40%",
         end: "bottom 10%",
         toggleActions: "play reverse play reverse",
       },
       backgroundColor: "white",
     });
+    const hiddenWords = document.querySelectorAll(".second-section p span");
+
+    gsap.to(hiddenWords, {
+      scrollTrigger: {
+        trigger: secondSec.current,
+        start: "center 60%",
+        end: "bottom bottom",
+        scrub: 2,
+      },
+      opacity: 1,
+      stagger: 0.3,
+    });
+
     const cardTime = gsap.timeline({
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "center 90%",
-        end: "+=100%",
+        start: "center 15%",
+        end: "+=1000",
         scrub: 4,
       },
     });
     cardTime
-      .to(document.querySelector(".third-wrapper"), { y: 0 })
+      .to(cardSection.current, { yPercent: -24 })
       .to(
         [
           card1.current,
@@ -105,24 +106,21 @@ function App() {
           opacity: 1,
           stagger: 0.5,
         },
-        "lol"
+        "0"
       )
-      .to(scrollText.current, { y: 0, opacity: 1, delay: 0.7 }, "lol");
+      .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
-    const MOVE = card1.current.clientHeight * 3 + 70 * 4;
-    gsap.to(cardSection.current, {
+    const MOVE = card1.current.clientHeight * 3.8 + 70 * 4;
+    const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "bottom 3%",
+        start: "bottom 10%",
         end: "+=3000",
         scrub: 3,
-        pin: document.querySelector(".third-wrapper"),
-        pinSpacing: true,
+        pin: cardSection.current,
       },
-      x: -MOVE,
-      duration: 3,
     });
-
+    pinned.to(cardSection.current, { x: -MOVE });
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
@@ -130,23 +128,11 @@ function App() {
         start: "top 100%",
         end: "bottom 0%",
         scrub: true,
+        markers: true,
       },
-      yPercent: -90,
+      yPercent: -100,
     });
-    //animation changes after 800px ------------------------------------ (third section)
-    ScrollTrigger.matchMedia({
-      "(max-width: 800px)": () => {
-        gsap.to(parallexCont.current, {
-          scrollTrigger: {
-            trigger: parallexCont.current,
-            start: "top 100%",
-            end: "bottom 0%",
-            scrub: true,
-          },
-          yPercent: -100,
-        });
-      },
-    });
+
     //join section ------------------------------------------
     const h1 = document.querySelector(".join-h1");
     const btn = document.querySelector(".btn-div");
@@ -697,29 +683,25 @@ function App() {
           community
         </p>
       </div>
-      <div className="third-wrapper">
-        <div ref={cardSection} className="third-section">
-          <div className="card-div">
-            <div ref={card1} className="card card1">
-              <img src={img} alt="" />
-            </div>
-            <div ref={card2} className="card card2">
-              <img src={img} alt="" />
-            </div>
-            <div ref={card3} className="card card3">
-              <img src={img} alt="" />
-            </div>
-            <div ref={card4} className="card card4">
-              <img src={img} alt="" />
-            </div>
-            <div ref={card5} className="card card5">
-              <img src={img} alt="" />
-            </div>
+      <div ref={cardSection} className="third-section">
+        <div className="card-div">
+          <div ref={card1} className="card card1">
+            <img src={img} alt="" />
           </div>
-          <h1 ref={scrollText}>
-            The Yugaverse The Yugaverse The Yugaverse The
-          </h1>
+          <div ref={card2} className="card card2">
+            <img src={img} alt="" />
+          </div>
+          <div ref={card3} className="card card3">
+            <img src={img} alt="" />
+          </div>
+          <div ref={card4} className="card card4">
+            <img src={img} alt="" />
+          </div>
+          <div ref={card5} className="card card5">
+            <img src={img} alt="" />
+          </div>
         </div>
+        <h1 ref={scrollText}>The Yugaverse The Yugaverse The Yugaverse The</h1>
       </div>
 
       <div ref={parallexCont} className="fourth-section">
