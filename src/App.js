@@ -110,7 +110,7 @@ function App() {
       )
       .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
-    const MOVE = card1.current.clientHeight * 3.8 + 70 * 4;
+    const MOVE = card1.current.clientHeight * 3.8 + 70 * 6;
     const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: secondSec.current,
@@ -120,7 +120,9 @@ function App() {
         pin: cardSection.current,
       },
     });
-    pinned.to(cardSection.current, { x: -MOVE });
+    pinned
+      .to(document.querySelector(".card-div"), { x: -MOVE, duration: 4 }, "lol")
+      .to(scrollText.current, { x: -MOVE, duration: 2.5, delay: 0.3 }, "lol");
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
@@ -154,7 +156,7 @@ function App() {
     });
     lastTime.to([h1, btn], { opacity: 1, stagger: 0.5 });
     return () => {
-      // cardTime.kill();
+      cardTime.kill();
     };
   }, []);
 
