@@ -110,7 +110,7 @@ function App() {
       )
       .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
-    const MOVE = card1.current.getBoundingClientRect().width * 4.8;
+    const MOVE = card1.current.getBoundingClientRect().width * 4.9;
     const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
@@ -118,7 +118,6 @@ function App() {
         end: "+=5000",
         scrub: 3,
         pin: document.querySelector(".third-wrapper"),
-        markers: true,
       },
     });
     pinned
