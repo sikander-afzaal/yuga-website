@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./App.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -22,7 +22,7 @@ function App() {
   const parallexCont = useRef(null);
   const joinSec = useRef(null);
   const secondSec = useRef();
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
