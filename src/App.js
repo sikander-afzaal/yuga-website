@@ -670,11 +670,11 @@ function App() {
         />
       </div>
       <div ref={textSec} className="text-section">
-        <h1 ref={line1}>Shaping Web3</h1>
-        <h1 ref={line2}>Through</h1>
-        <h1 ref={line3}>StoryTelling,</h1>
-        <h1 ref={line4}>Experiences,</h1>
-        <h1 ref={line5}>and community.</h1>
+        <h1 ref={line1}>Web3 supporters utilising</h1>
+        <h1 ref={line2}>Artistic representations to</h1>
+        <h1 ref={line3}>Generate blockchain solutions</h1>
+        <h1 ref={line4}>Made relatable by use of</h1>
+        <h1 ref={line5}>Interlectual property</h1>
       </div>
       <div ref={secondSec} className="second-section">
         <p>
