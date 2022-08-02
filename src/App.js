@@ -150,7 +150,6 @@ function App() {
         trigger: parallexCont.current,
         start: "top 100%",
         end: "bottom 0%",
-        markers: true,
         scrub: true,
       },
       yPercent: -70,
