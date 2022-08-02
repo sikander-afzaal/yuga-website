@@ -78,7 +78,6 @@ function App() {
         trigger: secondSec.current,
         start: "center 80%",
         end: "bottom 10%",
-        markers: true,
         toggleActions: "play reverse play reverse",
       },
       backgroundColor: "white",
