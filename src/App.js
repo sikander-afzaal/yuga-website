@@ -92,7 +92,7 @@ function App() {
       },
     });
     cardTime
-      .to(cardSection.current, { yPercent: -24 })
+      .to(document.querySelector(".third-wrapper"), { yPercent: -10 })
       .to(
         [
           card1.current,
@@ -110,19 +110,20 @@ function App() {
       )
       .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
-    const MOVE = card1.current.clientHeight * 3.8 + 70 * 6;
+    const MOVE = card1.current.getBoundingClientRect().width * 4;
     const pinned = gsap.timeline({
       scrollTrigger: {
-        trigger: secondSec.current,
-        start: "bottom 10%",
-        end: "+=3000",
+        trigger: document.querySelector(".third-wrapper"),
+        start: "top 0%",
+        end: "+=5000",
         scrub: 3,
-        pin: cardSection.current,
+        pin: document.querySelector(".third-wrapper"),
+        markers: true,
       },
     });
     pinned
       .to(document.querySelector(".card-div"), { x: -MOVE, duration: 4 }, "lol")
-      .to(scrollText.current, { x: -MOVE, duration: 2.5, delay: 0.3 }, "lol");
+      .to(scrollText.current, { x: -MOVE, duration: 2.3, delay: 0.1 }, "lol");
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
@@ -685,25 +686,29 @@ function App() {
           community
         </p>
       </div>
-      <div ref={cardSection} className="third-section">
-        <div className="card-div">
-          <div ref={card1} className="card card1">
-            <img src={img} alt="" />
+      <div className="third-wrapper">
+        <div ref={cardSection} className="third-section">
+          <div className="card-div">
+            <div ref={card1} className="card card1">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card2} className="card card2">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card3} className="card card3">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card4} className="card card4">
+              <img src={img} alt="" />
+            </div>
+            <div ref={card5} className="card card5">
+              <img src={img} alt="" />
+            </div>
           </div>
-          <div ref={card2} className="card card2">
-            <img src={img} alt="" />
-          </div>
-          <div ref={card3} className="card card3">
-            <img src={img} alt="" />
-          </div>
-          <div ref={card4} className="card card4">
-            <img src={img} alt="" />
-          </div>
-          <div ref={card5} className="card card5">
-            <img src={img} alt="" />
-          </div>
+          <h1 ref={scrollText}>
+            CREATIVE,INNOVATIVE,IMAGINATIVE,POSITIVE,COLLECTIVE,PASSIVE
+          </h1>
         </div>
-        <h1 ref={scrollText}>The Yugaverse The Yugaverse The Yugaverse The</h1>
       </div>
 
       <div ref={parallexCont} className="fourth-section">

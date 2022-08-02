@@ -36,49 +36,43 @@
 .third-wrapper {
   width: 100%;
   position: relative;
+  padding-top: 20px;
+  min-height: 100vh;
+  margin-top: 10vh;
 }
 .third-section {
-  height: 100%;
   pointer-events: none;
   width: 4000px;
   padding-left: 70px;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100%;
+  margin-top: 10vh;
 }
-@media screen and (max-height: 740px) {
-  .third-section {
-    padding-bottom: 100px;
-  }
-}
-@media screen and (max-height: 620px) {
-  .third-section {
-    padding-bottom: 130px;
-  }
-}
+
 .card-div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 70px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: 1fr;
+  column-gap: 40px;
   width: 100%;
-  flex: 0.8;
+  height: 100%;
+  padding-top: 20px;
 }
 .third-section h1 {
   font-size: 7rem;
-  flex: 0.2;
   letter-spacing: -0.2rem;
   line-height: 1;
   width: 100%;
   color: white;
   opacity: 0;
   text-transform: uppercase;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 .card {
-  width: 600px;
+  width: 100%;
   height: 100%;
   transform: translateY(10vh);
   background-color: #131313;
@@ -264,7 +258,7 @@ footer h2 {
 }
 @media screen and (max-width: 800px) {
   .card {
-    width: 400px;
+    /* width: 400px; */
     transform: translateY(30px);
   }
 
@@ -323,9 +317,6 @@ footer h2 {
   }
 }
 @media screen and (max-width: 412px) {
-  .card {
-    width: 360px;
-  }
 }
 @media screen and (max-width: 400px) {
   .text-section h1 {
