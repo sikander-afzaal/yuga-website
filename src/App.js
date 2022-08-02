@@ -88,7 +88,6 @@ function App() {
         start: "center 90%",
         end: "+=100%",
         scrub: 4,
-        markers: true,
       },
     });
     cardTime
@@ -119,30 +118,12 @@ function App() {
         scrub: 3,
         pin: document.querySelector(".third-wrapper"),
         pinSpacing: true,
-        markers: true,
       },
       x: -MOVE,
       duration: 3,
     });
 
-    // //animation changes after 800px ------------------------------------ (third section)
-    // ScrollTrigger.matchMedia({
-    //   "(max-width: 800px)": () => {
-    //     gsap.to(cardSection.current, {
-    //       scrollTrigger: {
-    //         trigger: secondSec.current,
-    //         start: "bottom 5%",
-    //         end: "+=3000",
-    //         scrub: 3,
-    //         pin: document.querySelector(".third-wrapper"),
-    //         pinSpacing: true,
-    //         markers: true,
-    //       },
-    //       x: -1800,
-    //       duration: 3,
-    //     });
-    //   },
-    // });
+   
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
