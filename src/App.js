@@ -671,11 +671,22 @@ function App() {
         />
       </div>
       <div ref={textSec} className="text-section">
-        <h1 ref={line1}>Web3 supporters utilising</h1>
-        <h1 ref={line2}>Artistic representations to</h1>
-        <h1 ref={line3}>Generate blockchain solutions</h1>
-        <h1 ref={line4}>Made relatable by use of</h1>
-        <h1 ref={line5}>Interlectual property</h1>
+        <h1 ref={line1}>
+          <span style={{ color: "#8ffe33" }}>Web3</span> supporters utilising
+        </h1>
+        <h1 ref={line2}>
+          <span style={{ color: "#6833ff" }}>Artistic</span> representations to
+        </h1>
+        <h1 ref={line3}>
+          <span style={{ color: "#fe33a9" }}>Generate</span> blockchain
+          solutions
+        </h1>
+        <h1 ref={line4}>
+          <span style={{ color: "#33c3ff" }}>Made</span> relatable by use of
+        </h1>
+        <h1 ref={line5}>
+          <span style={{ color: "#32ebff" }}>Interlectual</span> property
+        </h1>
       </div>
       <div ref={secondSec} className="second-section">
         <p>

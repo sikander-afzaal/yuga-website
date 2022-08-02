@@ -10,7 +10,7 @@
   padding: 20px 30px;
 }
 .text-section h1 {
-  line-height: 1.2;
+  line-height: 0.9;
   font-size: 6.4rem;
   color: white;
   transform: translateY(100px);
@@ -268,7 +268,7 @@ footer h2 {
   .text-section h1 {
     font-size: 2rem;
     transform: translateY(30vh);
-    line-height: 2;
+    line-height: 1.1;
   }
 }
 @media screen and (max-width: 500px) {
