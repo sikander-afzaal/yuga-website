@@ -254,7 +254,7 @@ function App() {
                   distance: 250,
                   duration: 2,
                   mix: false,
-                  opacity: 0,
+                  opacity: 1,
                   size: 0,
                   divs: {
                     distance: 200,
@@ -306,7 +306,7 @@ function App() {
                   quantity: 2,
                 },
                 repulse: {
-                  distance: 400,
+                  distance: 300,
                   duration: 0.4,
                   factor: 100,
                   speed: 1,
@@ -387,7 +387,7 @@ function App() {
                 },
               },
               color: {
-                value: "#3ff507",
+                value: ["#8ffe33", "#6833ff", "#fe33a9", "#33c3ff", "#32ebff"],
                 animation: {
                   h: {
                     count: 0,
@@ -534,7 +534,7 @@ function App() {
               number: {
                 density: {
                   enable: true,
-                  area: 800,
+                  area: 400,
                   factor: 1000,
                 },
                 limit: 0,
