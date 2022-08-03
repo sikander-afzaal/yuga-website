@@ -34,10 +34,13 @@
   color: black;
 }
 .third-wrapper {
-  width: 100%;
+  width: max-content;
   position: relative;
   padding-top: 20px;
-  min-height: 100vh;
+  height: 100vh;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-left: 70px;
 }
 .third-section {
