@@ -85,33 +85,33 @@ function App() {
       stagger: 0.3,
     });
 
-    const cardTime = gsap.timeline({
-      scrollTrigger: {
-        trigger: secondSec.current,
-        start: "center 15%",
-        end: "+=1000",
-        scrub: 4,
-      },
-    });
-    cardTime
-      // .to(document.querySelector(".third-wrapper"), { yPercent: -10 })
-      .to(
-        [
-          card1.current,
-          card2.current,
-          card3.current,
-          card4.current,
-          card5.current,
-          card6.current,
-        ],
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.5,
-        },
-        "0"
-      )
-      .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
+    // const cardTime = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: secondSec.current,
+    //     start: "center 15%",
+    //     end: "+=1000",
+    //     scrub: 4,
+    //   },
+    // });
+    // cardTime
+    //   .to(document.querySelector(".third-wrapper"), { yPercent: -10 })
+    //   .to(
+    //     [
+    //       card1.current,
+    //       card2.current,
+    //       card3.current,
+    //       card4.current,
+    //       card5.current,
+    //       card6.current,
+    //     ],
+    //     {
+    //       y: 0,
+    //       opacity: 1,
+    //       stagger: 0.5,
+    //     },
+    //     "0"
+    //   )
+    //   .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
 
     const pinned = gsap.timeline({
@@ -134,32 +134,65 @@ function App() {
         { xPercent: -100, duration: 2.3, delay: 0.1 },
         "lol"
       );
-    // ScrollTrigger.matchMedia({
-    //   "(max-width: 800px)": function () {
-    //     const pinned = gsap.timeline({
-    //       scrollTrigger: {
-    //         trigger: document.querySelector(".third-wrapper"),
-    //         start: "top top",
-    //         end: "+=3000",
-    //         scrub: 1,
-    //         markers: true,
-    //         pinSpacing: true,
-    //         pin: document.querySelector(".third-wrapper"),
-    //       },
-    //     });
-    //     pinned
-    //       .to(
-    //         document.querySelector(".card-div"),
-    //         { xPercent: -65, duration: 4, delay: 0.1 },
-    //         "lol"
-    //       )
-    //       .to(
-    //         scrollText.current,
-    //         { xPercent: -100, duration: 2.3, delay: 0.1 },
-    //         "lol"
-    //       );
-    //   },
-    // });
+    ScrollTrigger.matchMedia({
+      "(max-width: 800px)": function () {
+        const cardTime = gsap.timeline({
+          scrollTrigger: {
+            trigger: secondSec.current,
+            start: "center 15%",
+            end: "+=1000",
+            scrub: 4,
+          },
+        });
+        cardTime
+          .to(
+            [
+              card1.current,
+              card2.current,
+              card3.current,
+              card4.current,
+              card5.current,
+              card6.current,
+            ],
+            {
+              y: 0,
+              opacity: 1,
+              stagger: 0.5,
+            },
+            "0"
+          )
+          .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
+      },
+      "(min-width: 801px)": function () {
+        const cardTime = gsap.timeline({
+          scrollTrigger: {
+            trigger: secondSec.current,
+            start: "center 15%",
+            end: "+=1000",
+            scrub: 4,
+          },
+        });
+        cardTime
+          .to(document.querySelector(".third-wrapper"), { yPercent: -10 })
+          .to(
+            [
+              card1.current,
+              card2.current,
+              card3.current,
+              card4.current,
+              card5.current,
+              card6.current,
+            ],
+            {
+              y: 0,
+              opacity: 1,
+              stagger: 0.5,
+            },
+            "0"
+          )
+          .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
+      },
+    });
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
@@ -191,9 +224,6 @@ function App() {
       },
     });
     lastTime.to([h1, btn], { opacity: 1, stagger: 0.5 });
-    return () => {
-      cardTime.kill();
-    };
   }, []);
 
   const particlesInit = async (main) => {

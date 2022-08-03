@@ -47,6 +47,7 @@
   grid-template-rows: 1fr auto;
   flex-direction: column;
   height: 100%;
+  margin-top: 10vh;
   width: max-content;
 }
 
@@ -271,7 +272,11 @@ footer h2 {
     /* width: 400px; */
     transform: translateY(30px);
   }
-
+  .third-section {
+    height: 100vh;
+    margin-top: 0px;
+    grid-template-rows: 0.9fr auto;
+  }
   .third-section h1 {
     font-size: 50px;
     letter-spacing: 2px;
@@ -313,12 +318,7 @@ footer h2 {
     padding-top: 10px;
     align-items: flex-end;
   }
-  /* .third-section {
-    grid-template-rows: auto auto;
-  }
-  .card {
-    height: 400px;
-  } */
+
   .card h1 {
     font-size: 7rem;
   }
