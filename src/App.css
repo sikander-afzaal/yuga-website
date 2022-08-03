@@ -309,7 +309,7 @@ footer h2 {
   }
   .card-div {
     grid-template-columns: repeat(6, 375px);
-    padding-top: 50px;
+    padding-top: 10px;
   }
   .card h1 {
     font-size: 7rem;

@@ -6,6 +6,7 @@ import { loadFull } from "tsparticles";
 import gsap from "gsap";
 import "./App.css";
 import img from "./img.png";
+import logo from "./logo.png";
 function App() {
   //first section--------------------
   const line1 = useRef(null);
@@ -115,9 +116,10 @@ function App() {
     const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
-        start: "top 0%",
+        start: "top top",
         end: "+=4000",
         scrub: 1,
+        markers: true,
         pin: document.querySelector(".third-wrapper"),
       },
     });
@@ -192,7 +194,7 @@ function App() {
               color: {
                 value: "black",
               },
-              image: `url(${img})`,
+              image: `url(${logo})`,
               position: "50% 50%",
               repeat: "no-repeat",
               size: `${window.innerWidth > 850 ? "30%" : "70%"}`,
