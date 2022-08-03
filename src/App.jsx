@@ -43,6 +43,7 @@ function App() {
         scrub: 3,
         end: "+=2000",
         pin: textSec.current,
+        pinSpacing: 100,
       },
     });
     textTimeline.to(
@@ -134,6 +135,7 @@ function App() {
         { xPercent: -100, duration: 2.3, delay: 0.1 },
         "lol"
       );
+
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
