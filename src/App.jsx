@@ -125,7 +125,7 @@ function App() {
     pinned
       .to(
         document.querySelector(".card-div"),
-        { xPercent: -70, duration: 4, delay: 0.1 },
+        { xPercent: -65, duration: 4, delay: 0.1 },
         "lol"
       )
       .to(
