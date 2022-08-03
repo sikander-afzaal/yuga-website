@@ -112,18 +112,25 @@ function App() {
       )
       .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
-    const MOVE = card1.current.getBoundingClientRect().width * 4.55;
+    const MOVE = window.innerWidth > 600 ? 2800 : 2400;
+
+    console.log(MOVE);
     const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
         start: "top 0%",
         end: "+=5000",
-        scrub: 3,
+        scrub: 1,
         pin: document.querySelector(".third-wrapper"),
       },
     });
+    console.log(MOVE);
     pinned
-      .to(document.querySelector(".card-div"), { x: -MOVE, duration: 4 }, "lol")
+      .to(
+        document.querySelector(".card-div"),
+        { x: -MOVE, duration: 4, delay: 0.1 },
+        "lol"
+      )
       .to(scrollText.current, { x: -MOVE, duration: 2.3, delay: 0.1 }, "lol");
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
@@ -162,8 +169,6 @@ function App() {
   }, []);
 
   const particlesInit = async (main) => {
-    console.log(main);
-
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -171,7 +176,7 @@ function App() {
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    return;
   };
 
   return (
@@ -709,19 +714,20 @@ function App() {
             </div>
           </div>
           <h1 ref={scrollText}>
-            CREATIVE,INNOVATIVE,IMAGINATIVE,POSITIVE,COLLECTIVE,PASSIVE
+            CREATIVE, INNOVATIVE, IMAGINATIVE, POSITIVE, COLLECTIVE,
+            PASSIONATELY SEEKING MORE COMMUNITY BUILDING OPPORTUNITIES
           </h1>
         </div>
       </div>
 
       <div ref={parallexCont} className="fourth-section">
-        <h1>The yuga verse runs on Ape coin</h1>
+        <h1>WAGMI LABZ “WERE ALL GONNA MAKE IT”</h1>
         <div className="bottom-part">
           <p>
-            Owned and operated by the ApeCoin DAO, APE is a token supporting
-            whať's next in web3. Yuga Labs is a contributor to ApeCoin, a
-            community member of the ApeCoin DAO, and will be using ApeCoin as
-            the primary token in Yuga Labs projects.
+            TRUE TO WAGMI BELIEFS,, We will start to release snippets of our
+            upcoming ecosystem projects Here More information will be released
+            at a suitable time when development timelines sync with public
+            demand , thanks for reading
           </p>
           <button className="cta-btn">Learn more</button>
         </div>

@@ -43,18 +43,18 @@
 }
 .third-section {
   pointer-events: none;
-  width: 4500px;
   display: inline-grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   flex-direction: column;
   height: 100%;
   margin-top: 10vh;
+  width: max-content;
 }
 
 .card-div {
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(6, 600px);
   grid-template-rows: 1fr;
   column-gap: 40px;
   width: 100%;
@@ -62,7 +62,7 @@
   padding-top: 20px;
 }
 .third-section h1 {
-  font-size: 7rem;
+  font-size: 4.5rem;
   letter-spacing: -0.2rem;
   line-height: 1;
   width: 100%;
@@ -299,6 +299,9 @@ footer h2 {
     font-size: 1.8rem;
     transform: translateY(30vh);
     line-height: 1.1;
+  }
+  .card-div {
+    grid-template-columns: repeat(6, 375px);
   }
 }
 @media screen and (max-width: 510px) {
