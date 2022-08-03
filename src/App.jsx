@@ -1,9 +1,8 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine } from "gsap";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-
 import gsap from "gsap";
 import "./App.css";
 import img from "./img.png";
@@ -190,9 +189,6 @@ function App() {
           options={{
             autoPlay: true,
             background: {
-              color: {
-                value: "black",
-              },
               image: "",
               position: "50% 50%",
               repeat: "no-repeat",
@@ -211,7 +207,7 @@ function App() {
             },
             fullScreen: {
               enable: false,
-              zIndex: 0,
+              zIndex: 1,
             },
             detectRetina: true,
             duration: 0,
@@ -220,7 +216,7 @@ function App() {
               detectsOn: "window",
               events: {
                 onClick: {
-                  enable: true,
+                  enable: false,
                   mode: "push",
                 },
                 onDiv: {
@@ -231,10 +227,10 @@ function App() {
                 },
                 onHover: {
                   enable: true,
-                  mode: "grab",
+                  mode: "bubble",
                   parallax: {
-                    enable: true,
-                    force: 60,
+                    enable: false,
+                    force: 2,
                     smooth: 10,
                   },
                 },
@@ -257,6 +253,9 @@ function App() {
                   duration: 2,
                   mix: false,
                   opacity: 0.8,
+                  color: {
+                    value: "#3ff507",
+                  },
                   size: 40,
                   divs: {
                     distance: 200,
@@ -385,7 +384,7 @@ function App() {
                 },
               },
               color: {
-                value: "#ffffff",
+                value: "#1b1e34",
                 animation: {
                   h: {
                     count: 0,
@@ -445,10 +444,10 @@ function App() {
                   value: "#ffffff",
                 },
                 consent: false,
-                distance: 150,
-                enable: true,
+                distance: 200,
+                enable: false,
                 frequency: 1,
-                opacity: 0.4,
+                opacity: 1,
                 shadow: {
                   blur: 5,
                   color: {
@@ -460,7 +459,7 @@ function App() {
                   enable: false,
                   frequency: 1,
                 },
-                width: 1,
+                width: 2,
                 warp: false,
               },
               move: {
@@ -513,7 +512,7 @@ function App() {
                 },
                 random: false,
                 size: false,
-                speed: 2,
+                speed: 8,
                 spin: {
                   acceleration: 0,
                   enable: false,
@@ -536,21 +535,21 @@ function App() {
                   factor: 1000,
                 },
                 limit: 0,
-                value: 100,
+                value: 6,
               },
               opacity: {
                 random: {
                   enable: true,
-                  minimumValue: 0.1,
+                  minimumValue: 0.3,
                 },
                 value: {
-                  min: 0.1,
+                  min: 0.3,
                   max: 0.5,
                 },
                 animation: {
                   count: 0,
-                  enable: true,
-                  speed: 3,
+                  enable: false,
+                  speed: 1,
                   decay: 0,
                   sync: false,
                   destroy: "none",
@@ -598,27 +597,34 @@ function App() {
                 },
               },
               shape: {
-                options: {},
-                type: "circle",
+                options: {
+                  polygon: {
+                    sides: 6,
+                  },
+                  star: {
+                    sides: 6,
+                  },
+                },
+                type: "polygon",
               },
               size: {
                 random: {
                   enable: true,
-                  minimumValue: 1,
+                  minimumValue: 100,
                 },
                 value: {
-                  min: 0.1,
-                  max: 10,
+                  min: 100,
+                  max: 160,
                 },
                 animation: {
                   count: 0,
-                  enable: true,
-                  speed: 20,
+                  enable: false,
+                  speed: 5,
                   decay: 0,
                   sync: false,
                   destroy: "none",
                   startValue: "random",
-                  minimumValue: 0.1,
+                  minimumValue: 40,
                 },
               },
               stroke: {
