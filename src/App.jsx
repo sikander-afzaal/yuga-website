@@ -128,10 +128,14 @@ function App() {
     pinned
       .to(
         document.querySelector(".card-div"),
-        { x: -MOVE, duration: 4, delay: 0.1 },
+        { xPercent: -70, duration: 4, delay: 0.1 },
         "lol"
       )
-      .to(scrollText.current, { x: -MOVE, duration: 2.3, delay: 0.1 }, "lol");
+      .to(
+        scrollText.current,
+        { xPercent: -100, duration: 2.3, delay: 0.1 },
+        "lol"
+      );
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
@@ -696,21 +700,22 @@ function App() {
           <div className="card-div">
             <div ref={card1} className="card card1">
               <img src={img} alt="" />
+              <h2>Coming Soon</h2>
             </div>
             <div ref={card2} className="card card2">
-              <img src={img} alt="" />
+              <h1>W</h1>
             </div>
             <div ref={card3} className="card card3">
-              <img src={img} alt="" />
+              <h1>A</h1>
             </div>
             <div ref={card4} className="card card4">
-              <img src={img} alt="" />
+              <h1>G</h1>
             </div>
             <div ref={card5} className="card card5">
-              <img src={img} alt="" />
+              <h1>M</h1>
             </div>
             <div ref={card6} className="card card6">
-              <img src={img} alt="" />
+              <h1>I</h1>
             </div>
           </div>
           <h1 ref={scrollText}>

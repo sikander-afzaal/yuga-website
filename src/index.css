@@ -5,6 +5,13 @@
   box-sizing: border-box;
   font-family: "Familjen Grotesk", sans-serif;
 }
+:root {
+  --neon-green: #8ffe33;
+  --neon-purple: #6833ff;
+  --neon-pink: #fe33a9;
+  --neon-light-blue: #33c3ff;
+  --neon-blue: #32ebff;
+}
 .App {
   background-color: black;
   min-height: 500vh;

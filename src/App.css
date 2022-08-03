@@ -63,7 +63,7 @@
 }
 .third-section h1 {
   font-size: 4.5rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
   line-height: 1;
   width: 100%;
   color: white;
@@ -76,40 +76,47 @@
   width: 100%;
   height: 100%;
   transform: translateY(10vh);
-  background-color: #131313;
+  background-color: var(--neon-green);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
+  color: white;
+  flex-direction: column;
+}
+.card h1 {
+  font-size: 8rem;
+  width: auto;
+  opacity: 1;
+}
+.card h2 {
+  font-size: 50px;
 }
 .card2 {
+  background-color: var(--neon-purple);
   transform: translateY(15vh);
 }
 .card3 {
+  background-color: var(--neon-pink);
   transform: translateY(18vh);
 }
 .card4 {
+  background-color: var(--neon-light-blue);
   transform: translateY(18vh);
 }
 .card5 {
+  background-color: var(--neon-blue);
   transform: translateY(18vh);
 }
 .card6 {
+  background-color: var(--neon-green);
   transform: translateY(18vh);
 }
 .card img {
   max-width: 50%;
   object-fit: contain;
 }
-.card2,
-.card4,
-.card6 {
-  background-color: #d3de5d;
-}
-.card3,
-.card5 {
-  background-color: #131313;
-}
+
 .fourth-section {
   min-height: 800px;
   background-color: white;
@@ -302,6 +309,12 @@ footer h2 {
   }
   .card-div {
     grid-template-columns: repeat(6, 375px);
+  }
+  .card h1 {
+    font-size: 7rem;
+  }
+  .card img {
+    max-width: 70%;
   }
 }
 @media screen and (max-width: 510px) {
