@@ -38,9 +38,6 @@
   position: relative;
   padding-top: 20px;
   height: 100vh;
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding-left: 70px;
 }
 .third-section {
@@ -316,13 +313,7 @@ footer h2 {
     grid-template-columns: repeat(6, 375px);
     padding-top: 10px;
   }
-  .card {
-  }
-  .third-section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+
   .card h1 {
     font-size: 7rem;
   }

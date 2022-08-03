@@ -120,7 +120,6 @@ function App() {
         start: "top top",
         end: "+=4000",
         scrub: 1,
-        markers: true,
         pin: document.querySelector(".third-wrapper"),
       },
     });
@@ -135,7 +134,33 @@ function App() {
         { xPercent: -100, duration: 2.3, delay: 0.1 },
         "lol"
       );
-
+    ScrollTrigger.matchMedia({
+      // desktop
+      "(max-width: 800px)": function () {
+        const pinned = gsap.timeline({
+          scrollTrigger: {
+            trigger: document.querySelector(".third-wrapper"),
+            start: "top top",
+            end: "+=2000",
+            scrub: 1,
+            markers: true,
+            pinSpacing: true,
+            pin: document.querySelector(".third-wrapper"),
+          },
+        });
+        pinned
+          .to(
+            document.querySelector(".card-div"),
+            { xPercent: -65, duration: 4, delay: 0.1 },
+            "lol"
+          )
+          .to(
+            scrollText.current,
+            { xPercent: -100, duration: 2.3, delay: 0.1 },
+            "lol"
+          );
+      },
+    });
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
       scrollTrigger: {
