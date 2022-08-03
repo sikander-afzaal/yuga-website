@@ -114,34 +114,33 @@ function App() {
       .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
 
-    const pinned = gsap.timeline({
-      scrollTrigger: {
-        trigger: document.querySelector(".third-wrapper"),
-        start: "top top",
-        end: "+=4000",
-        scrub: 1,
-        pin: document.querySelector(".third-wrapper"),
-      },
-    });
-    pinned
-      .to(
-        document.querySelector(".card-div"),
-        { xPercent: -65, duration: 4, delay: 0.1 },
-        "lol"
-      )
-      .to(
-        scrollText.current,
-        { xPercent: -100, duration: 2.3, delay: 0.1 },
-        "lol"
-      );
+    // const pinned = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: document.querySelector(".third-wrapper"),
+    //     start: "top top",
+    //     end: "+=4000",
+    //     scrub: 1,
+    //     pin: document.querySelector(".third-wrapper"),
+    //   },
+    // });
+    // pinned
+    //   .to(
+    //     document.querySelector(".card-div"),
+    //     { xPercent: -65, duration: 4, delay: 0.1 },
+    //     "lol"
+    //   )
+    //   .to(
+    //     scrollText.current,
+    //     { xPercent: -100, duration: 2.3, delay: 0.1 },
+    //     "lol"
+    //   );
     ScrollTrigger.matchMedia({
-      // desktop
       "(max-width: 800px)": function () {
         const pinned = gsap.timeline({
           scrollTrigger: {
             trigger: document.querySelector(".third-wrapper"),
             start: "top top",
-            end: "+=2000",
+            end: "+=3000",
             scrub: 1,
             markers: true,
             pinSpacing: true,
