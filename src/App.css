@@ -316,8 +316,8 @@ footer h2 {
   .card img {
     max-width: 70%;
   }
-  .third-wrapper {
-    margin-top: 0px;
+  .third-section {
+    margin-top: 80px;
   }
 }
 @media screen and (max-width: 510px) {
