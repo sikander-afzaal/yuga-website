@@ -94,7 +94,7 @@ function App() {
       },
     });
     cardTime
-      .to(document.querySelector(".third-wrapper"), { yPercent: -10 })
+      // .to(document.querySelector(".third-wrapper"), { yPercent: -10 })
       .to(
         [
           card1.current,
