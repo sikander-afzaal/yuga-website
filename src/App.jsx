@@ -189,10 +189,13 @@ function App() {
           options={{
             autoPlay: true,
             background: {
-              image: "",
+              color: {
+                value: "black",
+              },
+              image: `url(${img})`,
               position: "50% 50%",
               repeat: "no-repeat",
-              size: "cover",
+              size: `${window.innerWidth > 850 ? "30%" : "70%"}`,
               opacity: 1,
             },
             backgroundMask: {
@@ -216,8 +219,8 @@ function App() {
               detectsOn: "window",
               events: {
                 onClick: {
-                  enable: false,
-                  mode: "push",
+                  enable: true,
+                  mode: "repulse",
                 },
                 onDiv: {
                   selectors: [],
@@ -227,10 +230,9 @@ function App() {
                 },
                 onHover: {
                   enable: true,
-                  mode: "bubble",
+                  mode: "attract",
                   parallax: {
                     enable: false,
-                    force: 2,
                     smooth: 10,
                   },
                 },
@@ -249,14 +251,11 @@ function App() {
                   distance: 200,
                 },
                 bubble: {
-                  distance: 400,
+                  distance: 250,
                   duration: 2,
                   mix: false,
-                  opacity: 0.8,
-                  color: {
-                    value: "#3ff507",
-                  },
-                  size: 40,
+                  opacity: 0,
+                  size: 0,
                   divs: {
                     distance: 200,
                     duration: 0.4,
@@ -307,7 +306,7 @@ function App() {
                   quantity: 2,
                 },
                 repulse: {
-                  distance: 200,
+                  distance: 400,
                   duration: 0.4,
                   factor: 100,
                   speed: 1,
@@ -322,6 +321,10 @@ function App() {
                     easing: "ease-out-quad",
                     selectors: [],
                   },
+                },
+                attract: {
+                  factor: 2,
+                  distance: 200,
                 },
                 slow: {
                   factor: 3,
@@ -384,7 +387,7 @@ function App() {
                 },
               },
               color: {
-                value: "#1b1e34",
+                value: "#3ff507",
                 animation: {
                   h: {
                     count: 0,
@@ -444,10 +447,10 @@ function App() {
                   value: "#ffffff",
                 },
                 consent: false,
-                distance: 200,
+                distance: 150,
                 enable: false,
                 frequency: 1,
-                opacity: 1,
+                opacity: 0.4,
                 shadow: {
                   blur: 5,
                   color: {
@@ -459,7 +462,7 @@ function App() {
                   enable: false,
                   frequency: 1,
                 },
-                width: 2,
+                width: 1,
                 warp: false,
               },
               move: {
@@ -472,7 +475,7 @@ function App() {
                   enable: false,
                   rotate: {
                     x: 600,
-                    y: 1200,
+                    y: 600,
                   },
                 },
                 center: {
@@ -510,9 +513,9 @@ function App() {
                   right: "out",
                   top: "out",
                 },
-                random: false,
+                random: true,
                 size: false,
-                speed: 8,
+                speed: 1,
                 spin: {
                   acceleration: 0,
                   enable: false,
@@ -535,26 +538,26 @@ function App() {
                   factor: 1000,
                 },
                 limit: 0,
-                value: 6,
+                value: 160,
               },
               opacity: {
                 random: {
                   enable: true,
-                  minimumValue: 0.3,
+                  minimumValue: 0.1,
                 },
                 value: {
-                  min: 0.3,
-                  max: 0.5,
+                  min: 0,
+                  max: 1,
                 },
                 animation: {
                   count: 0,
-                  enable: false,
+                  enable: true,
                   speed: 1,
                   decay: 0,
                   sync: false,
                   destroy: "none",
                   startValue: "random",
-                  minimumValue: 0.1,
+                  minimumValue: 0,
                 },
               },
               reduceDuplicates: false,
@@ -597,34 +600,27 @@ function App() {
                 },
               },
               shape: {
-                options: {
-                  polygon: {
-                    sides: 6,
-                  },
-                  star: {
-                    sides: 6,
-                  },
-                },
-                type: "polygon",
+                options: {},
+                type: "circle",
               },
               size: {
                 random: {
                   enable: true,
-                  minimumValue: 100,
+                  minimumValue: 1,
                 },
                 value: {
-                  min: 100,
-                  max: 160,
+                  min: 1,
+                  max: 3,
                 },
                 animation: {
                   count: 0,
                   enable: false,
-                  speed: 5,
+                  speed: 4,
                   decay: 0,
                   sync: false,
                   destroy: "none",
                   startValue: "random",
-                  minimumValue: 40,
+                  minimumValue: 0.3,
                 },
               },
               stroke: {
