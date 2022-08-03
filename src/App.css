@@ -313,7 +313,12 @@ footer h2 {
     grid-template-columns: repeat(6, 375px);
     padding-top: 10px;
   }
-
+  .third-section {
+    grid-template-rows: auto auto;
+  }
+  .card {
+    height: 400px;
+  }
   .card h1 {
     font-size: 7rem;
   }
