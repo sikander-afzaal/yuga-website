@@ -112,19 +112,16 @@ function App() {
       )
       .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     //third section -------------------------
-    const MOVE = window.innerWidth > 600 ? 2800 : 2400;
 
-    console.log(MOVE);
     const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
         start: "top 0%",
-        end: "+=5000",
+        end: "+=4000",
         scrub: 1,
         pin: document.querySelector(".third-wrapper"),
       },
     });
-    console.log(MOVE);
     pinned
       .to(
         document.querySelector(".card-div"),
@@ -720,7 +717,7 @@ function App() {
           </div>
           <h1 ref={scrollText}>
             CREATIVE, INNOVATIVE, IMAGINATIVE, POSITIVE, COLLECTIVE,
-            PASSIONATELY SEEKING MORE COMMUNITY BUILDING OPPORTUNITIES
+            PASSIONATELY SEEKING MORE COMMUNITY INCOME BUILDING OPPORTUNITIES
           </h1>
         </div>
       </div>
