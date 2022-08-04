@@ -273,11 +273,7 @@ footer h2 {
     transform: translateY(30px);
   }
   .text-section {
-    justify-content: center;
     height: auto;
-    display: inline-flex;
-    align-items: flex-start;
-    flex-direction: column;
   }
   .text-section h1 {
     line-height: 1.4;
@@ -285,7 +281,7 @@ footer h2 {
   .third-section {
     height: 100vh;
     margin-top: 0px;
-    grid-template-rows: 0.95fr auto;
+    grid-template-rows: 0.9fr 0.1fr;
   }
   .third-section h1 {
     font-size: 50px;
