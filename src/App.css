@@ -213,12 +213,16 @@
   isolation: isolate;
 }
 .join-h1 {
-  font-size: 6.375rem;
+  font-size: 5.375rem;
   line-height: 1;
   position: relative;
   z-index: 2;
+  text-transform: capitalize;
 }
-.btn-div {
+.join-us p {
+  font-size: 2rem;
+}
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,9 +230,14 @@
   position: relative;
   z-index: 2;
 }
-.btn-div,
+.row,
 .join-h1 {
   opacity: 0;
+}
+.row img {
+  max-width: 100%;
+  width: 151px;
+  object-fit: contain;
 }
 footer {
   display: flex;
@@ -295,6 +304,13 @@ footer h2 {
   .text-section h1 {
     font-size: 3rem;
   }
+  .join-h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 840px) {
   .text-section h1 {
@@ -349,6 +365,9 @@ footer h2 {
     font-size: 1.8rem;
     transform: translateY(30vh);
   }
+  .join-h1 {
+    font-size: 3rem;
+  }
 
   .card h1 {
     font-size: 7rem;
@@ -372,6 +391,12 @@ footer h2 {
 @media screen and (max-width: 450px) {
   .text-section h1 {
     font-size: 1.3rem;
+  }
+  .join-h1 {
+    font-size: 2.3rem;
+  }
+  .join-us p {
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 400px) {
