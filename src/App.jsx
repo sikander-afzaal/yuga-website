@@ -789,7 +789,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <h2>YugaLabs</h2>
+        <h2>Wagmilabz</h2>
         <div className="right-links">
           <a href="#">Press</a>
           <a href="#">Times</a>
