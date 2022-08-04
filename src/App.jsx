@@ -121,7 +121,6 @@ function App() {
         end: "+=4000",
         scrub: 1,
         pin: document.querySelector(".third-wrapper"),
-        pinSpacer: false,
       },
     });
     pinned
@@ -174,7 +173,7 @@ function App() {
           },
         });
         cardTime
-          // .to(document.querySelector(".third-wrapper"), { yPercent: -10 })
+          .to(document.querySelector(".third-wrapper"), { yPercent: -10 })
           .to(
             [
               card1.current,
