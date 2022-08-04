@@ -129,11 +129,7 @@ function App() {
         { xPercent: -65, duration: 4, delay: 0.1 },
         "lol"
       )
-      .to(
-        scrollText.current,
-        { xPercent: -100, duration: 2.3, delay: 0.1 },
-        "lol"
-      );
+      .to(scrollText.current, { x: "-100%", duration: 2.3, delay: 0.1 }, "lol");
     ScrollTrigger.matchMedia({
       "(max-width: 800px)": function () {
         const cardTime = gsap.timeline({
