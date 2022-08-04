@@ -311,7 +311,6 @@ footer h2 {
     line-height: 1.4;
   }
   .third-section {
-    height: 100vh;
     margin-top: 0px;
     grid-template-rows: 0.9fr auto;
   }
