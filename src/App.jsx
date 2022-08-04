@@ -123,6 +123,7 @@ function App() {
         pin: document.querySelector(".third-wrapper"),
       },
     });
+    const TEXT_SPEED = window.innerWidth > 800 ? 2.8 : 3.5;
     pinned
       .to(
         document.querySelector(".card-div"),
@@ -131,7 +132,7 @@ function App() {
       )
       .to(
         scrollText.current,
-        { xPercent: -104, duration: 2.8, delay: 0.1 },
+        { xPercent: -104, duration: TEXT_SPEED, delay: 0.1 },
         "lol"
       );
     ScrollTrigger.matchMedia({
