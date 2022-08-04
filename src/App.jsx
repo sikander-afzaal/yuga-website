@@ -123,7 +123,7 @@ function App() {
         pin: document.querySelector(".third-wrapper"),
       },
     });
-    const TEXT_SPEED = window.innerWidth > 800 ? 2.8 : 3.5;
+    const TEXT_SPEED = 3.5;
     pinned
       .to(
         document.querySelector(".card-div"),
