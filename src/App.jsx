@@ -123,11 +123,12 @@ function App() {
         pin: document.querySelector(".third-wrapper"),
       },
     });
-    const TEXT_SPEED = 3.5;
+    const TEXT_SPEED = 5.5;
     const CARD_MOVE =
       window.innerWidth > 840
         ? card1.current.getBoundingClientRect().width * 5
         : card1.current.getBoundingClientRect().width * 6;
+    const TEXT_MOVE = window.innerWidth > 800 ? "-84%" : "-95%";
     pinned
       .to(
         document.querySelector(".card-div"),
@@ -136,7 +137,7 @@ function App() {
       )
       .to(
         scrollText.current,
-        { xPercent: -104, duration: TEXT_SPEED, delay: 0.1 },
+        { x: TEXT_MOVE, duration: TEXT_SPEED, delay: 0.1 },
         "lol"
       );
     ScrollTrigger.matchMedia({
