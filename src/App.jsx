@@ -124,10 +124,14 @@ function App() {
       },
     });
     const TEXT_SPEED = 3.5;
+    const CARD_MOVE =
+      window.innerWidth > 840
+        ? card1.current.getBoundingClientRect().width * 5
+        : card1.current.getBoundingClientRect().width * 6;
     pinned
       .to(
         document.querySelector(".card-div"),
-        { xPercent: -65, duration: 4, delay: 0.1 },
+        { x: -CARD_MOVE, duration: 4, delay: 0.1 },
         "lol"
       )
       .to(
@@ -779,13 +783,15 @@ function App() {
           <h1 ref={scrollText}>
             CREATIVE, INNOVATIVE, IMAGINATIVE, POSITIVE, COLLECTIVE,
             PASSIONATELY SEEKING MORE PASSIVE COMMUNITY INCOME BUILDING
-            OPPORTUNITIES
+            OPPORTUNITIES for all
           </h1>
         </div>
       </div>
 
       <div ref={parallexCont} className="fourth-section">
-        <h1>WAGMI LABZ “WERE ALL GONNA MAKE IT”</h1>
+        <h1>
+          WAGMI LABZ <br /> “WERE ALL GONNA MAKE IT”
+        </h1>
         <div className="bottom-part">
           <p>
             TRUE TO WAGMI BELIEFS,, We will start to release snippets of our
