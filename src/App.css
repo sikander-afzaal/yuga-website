@@ -228,7 +228,7 @@ footer h2 {
 }
 @media screen and (max-width: 1500px) {
   .text-section h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 @media screen and (max-width: 1360px) {
@@ -272,10 +272,20 @@ footer h2 {
     /* width: 400px; */
     transform: translateY(30px);
   }
+  .text-section {
+    justify-content: center;
+    height: auto;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .text-section h1 {
+    line-height: 1.4;
+  }
   .third-section {
     height: 100vh;
     margin-top: 0px;
-    grid-template-rows: 0.9fr auto;
+    grid-template-rows: 0.95fr auto;
   }
   .third-section h1 {
     font-size: 50px;
@@ -287,9 +297,7 @@ footer h2 {
     font-size: 2.1rem;
     transform: translateY(30vh);
   }
-  .text-section {
-    height: 70vh;
-  }
+
   .second-section {
     align-items: center;
   }
@@ -303,15 +311,11 @@ footer h2 {
   .bottom-part p {
     font-size: 1.5rem;
   }
-  .text-section {
-    height: auto;
-  }
 }
 @media screen and (max-width: 600px) {
   .text-section h1 {
     font-size: 1.8rem;
     transform: translateY(30vh);
-    line-height: 1.1;
   }
   .card-div {
     grid-template-columns: repeat(6, 375px);
@@ -333,10 +337,7 @@ footer h2 {
   .second-section {
     margin-top: 90px;
   }
-  .text-section {
-    height: auto;
-    min-height: 420px;
-  }
+
   .second-section p {
     font-size: 26px;
   }
