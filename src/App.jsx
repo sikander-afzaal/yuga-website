@@ -123,7 +123,7 @@ function App() {
         pin: document.querySelector(".third-wrapper"),
       },
     });
-    const TEXT_SPEED = 5.5;
+    const TEXT_SPEED = 3.5;
     const CARD_MOVE =
       window.innerWidth > 840
         ? card1.current.getBoundingClientRect().width * 5
