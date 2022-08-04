@@ -47,7 +47,7 @@
   grid-template-rows: 1fr auto;
   flex-direction: column;
   height: 100%;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   width: max-content;
 }
 
@@ -80,16 +80,40 @@
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  color: white;
+  color: black;
   flex-direction: column;
 }
 .card h1 {
   font-size: 8rem;
   width: auto;
   opacity: 1;
+  color: inherit;
 }
 .card h2 {
   font-size: 50px;
+}
+.card1:hover {
+  animation: flicker 3.5s linear infinite;
+}
+@keyframes flicker {
+  0% {
+    background-color: var(--neon-green);
+  }
+  20% {
+    background-color: var(--neon-purple);
+  }
+  40% {
+    background-color: var(--neon-pink);
+  }
+  60% {
+    background-color: var(--neon-blue);
+  }
+  80% {
+    background-color: var(--neon-light-blue);
+  }
+  100% {
+    background-color: var(--neon-green);
+  }
 }
 .card2 {
   background-color: var(--neon-purple);
@@ -279,11 +303,11 @@ footer h2 {
   .text-section h1 {
     line-height: 1.4;
   }
-  .third-section {
+  /* .third-section {
     height: 100vh;
     margin-top: 0px;
-    grid-template-rows: 0.9fr auto;
-  }
+    grid-template-rows: 0.9fr auto; */
+  /* } */
   .third-section h1 {
     font-size: 50px;
     letter-spacing: 2px;
