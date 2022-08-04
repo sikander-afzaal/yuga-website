@@ -777,7 +777,8 @@ function App() {
           </div>
           <h1 ref={scrollText}>
             CREATIVE, INNOVATIVE, IMAGINATIVE, POSITIVE, COLLECTIVE,
-            PASSIONATELY SEEKING MORE COMMUNITY INCOME BUILDING OPPORTUNITIES
+            PASSIONATELY SEEKING MORE COMMUNITY passive INCOME BUILDING
+            OPPORTUNITIES
           </h1>
         </div>
       </div>
