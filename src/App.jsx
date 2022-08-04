@@ -737,6 +737,7 @@ function App() {
           <div className="card-div">
             <div ref={card1} className="card card1">
               <img src={img} alt="" />
+              <h3>GENESIS EDITION WAGMI NFT</h3>
               <h2>Coming Soon</h2>
             </div>
             <div ref={card2} className="card card2">

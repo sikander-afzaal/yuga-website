@@ -97,10 +97,14 @@
   color: inherit;
 }
 .card h2 {
-  font-size: 50px;
+  font-size: 20px;
+}
+.card h3 {
+  font-size: 40px;
+  text-align: center;
 }
 .card1:hover {
-  animation: flicker 3.5s linear infinite;
+  animation: flicker 2s linear infinite;
 }
 @keyframes flicker {
   0% {
