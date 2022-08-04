@@ -262,14 +262,43 @@ footer h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
-.right-links a {
-  font-size: 16px;
+.right-links a,
+.social-links-head a {
+  font-size: 25px;
   line-height: 1;
-  color: black;
   text-decoration: none;
 }
+.social-links-head a {
+  font-size: 30px;
+}
+.social-links-head {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.right-links a:first-child,
+.social-links-head a:first-child {
+  color: var(--neon-green);
+}
+.right-links a:nth-child(2),
+.social-links-head a:nth-child(2) {
+  color: var(--neon-purple);
+}
+.right-links a:nth-child(3),
+.social-links-head a:nth-child(3) {
+  color: var(--neon-pink);
+}
+.right-links a:nth-child(4),
+.social-links-head a:nth-child(4) {
+  color: var(--neon-blue);
+}
+
 @media screen and (max-width: 1500px) {
   .text-section h1 {
     font-size: 4.5rem;

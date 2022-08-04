@@ -10,6 +10,13 @@ import logo from "./Assets/logo.png";
 import brand1 from "./Assets/brands (1).png";
 import brand2 from "./Assets/brands (2).png";
 import brand3 from "./Assets/brands (3).png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDiscord,
+  faInstagram,
+  faTelegram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 function App() {
   //first section--------------------
   const line1 = useRef(null);
@@ -220,6 +227,20 @@ function App() {
   return (
     <div className="App">
       <div className="first">
+        <div className="social-links-head">
+          <a href="https://www.instagram.com/Wagmilabz/" target={"blank"}>
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://twitter.com/wagmilabz" target={"blank"}>
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="https://discord.gg/gaSwDctDYV" target={"blank"}>
+            <FontAwesomeIcon icon={faDiscord} />
+          </a>
+          <a href="https://t.me/wagmilabz" target={"blank"}>
+            <FontAwesomeIcon icon={faTelegram} />
+          </a>
+        </div>
         <Particles
           id="tsparticles1"
           init={particlesInit}
@@ -785,16 +806,23 @@ function App() {
           <img src={brand1} alt="" />
           <img src={brand2} alt="" />
           <img src={brand3} alt="" />
-          {/* <button className="cta-btn">Work at yuga</button>
-          <button className="cta-btn">Partner with yuga</button> */}
         </div>
       </div>
       <footer>
         <h2>Wagmilabz</h2>
         <div className="right-links">
-          <a href="#">Press</a>
-          <a href="#">Times</a>
-          <a href="#">Privacy</a>
+          <a href="https://www.instagram.com/Wagmilabz/" target={"blank"}>
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://twitter.com/wagmilabz" target={"blank"}>
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="https://discord.gg/gaSwDctDYV" target={"blank"}>
+            <FontAwesomeIcon icon={faDiscord} />
+          </a>
+          <a href="https://t.me/wagmilabz" target={"blank"}>
+            <FontAwesomeIcon icon={faTelegram} />
+          </a>
         </div>
       </footer>
     </div>
