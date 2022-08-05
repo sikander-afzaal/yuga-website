@@ -785,8 +785,6 @@ function App() {
           <img src={brand1} alt="" />
           <img src={brand2} alt="" />
           <img src={brand3} alt="" />
-          {/* <button className="cta-btn">Work at yuga</button>
-          <button className="cta-btn">Partner with yuga</button> */}
         </div>
       </div>
       <footer>
