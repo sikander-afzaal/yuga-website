@@ -87,7 +87,7 @@ function App() {
     gsap.to(hiddenWords, {
       scrollTrigger: {
         trigger: secondSec.current,
-        start: "center 60%",
+        start: "center 80%",
         end: "bottom bottom",
         scrub: 2,
       },
