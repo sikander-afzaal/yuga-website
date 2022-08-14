@@ -799,6 +799,11 @@ function App() {
           <button className="cta-btn">Learn more</button>
         </div>
       </div>
+      <div className="coming-soon">
+        <h1>
+          Coming soon to <br /> “WAGMI ECOSYSTEM”
+        </h1>
+      </div>
       <div ref={joinSec} className="join-us">
         <h1 className="join-h1">Be part of the future</h1>
         <p>As featured in</p>
