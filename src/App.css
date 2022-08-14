@@ -365,10 +365,13 @@ footer h2 {
   }
   .third-wrapper {
     padding-top: 0px;
+    display: flex;
+    align-items: flex-end;
   }
   .third-section {
     margin-top: 0px;
     grid-template-rows: 1fr auto;
+    height: 90%;
   }
   .third-section h1 {
     font-size: 50px;
@@ -376,7 +379,7 @@ footer h2 {
   }
   .card-div {
     grid-template-columns: repeat(6, 375px);
-    padding-top: 10px;
+    padding-top: 0px;
     align-items: flex-end;
   }
 }
