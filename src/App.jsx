@@ -201,7 +201,7 @@ function App() {
     gsap.to(mainApp, {
       scrollTrigger: {
         trigger: joinSec.current,
-        start: "top top",
+        start: "top 20%",
         toggleActions: "play reverse play reverse",
       },
       backgroundColor: "white",

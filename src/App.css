@@ -300,8 +300,8 @@ footer h2 {
   color: var(--neon-blue);
 }
 .coming-soon {
-  height: 400px;
-  margin-top: -400px;
+  height: 200px;
+  margin-top: -200px;
   margin-bottom: 300px;
   display: flex;
   justify-content: center;
