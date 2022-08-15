@@ -37,8 +37,8 @@ function App() {
   const joinSec = useRef(null);
   const secondSec = useRef();
   useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.refresh();
+    gsap.registerPlugin(ScrollTrigger);
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: document.querySelector(".first"),
@@ -182,6 +182,7 @@ function App() {
             "0"
           )
           .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
+        ///////////////////////////////////////////////////////////
         const pinned = gsap.timeline({
           scrollTrigger: {
             trigger: document.querySelector(".third-wrapper"),
