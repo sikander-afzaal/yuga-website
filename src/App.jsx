@@ -36,9 +36,9 @@ function App() {
   const parallexCont = useRef(null);
   const joinSec = useRef(null);
   const secondSec = useRef();
-  useLayoutEffect(() => {
-    ScrollTrigger.refresh();
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.refresh();
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: document.querySelector(".first"),
