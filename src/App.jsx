@@ -38,7 +38,7 @@ function App() {
   const secondSec = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.refresh();
+    // ScrollTrigger.refresh();
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: document.querySelector(".first"),
