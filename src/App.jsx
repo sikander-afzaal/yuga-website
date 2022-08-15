@@ -177,8 +177,8 @@ function App() {
     gsap.to(parallexCont.current, {
       scrollTrigger: {
         trigger: parallexCont.current,
-        start: "top 80%",
-        end: "bottom 0%",
+        start: "top bottom",
+        end: "bottom top",
         scrub: true,
       },
       yPercent: -100,
