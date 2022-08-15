@@ -718,26 +718,26 @@ function App() {
           Wagmi labz’ <span style={{ color: "#8ffe33" }}>Aims</span> to be the
           most <span style={{ color: "#6833ff" }}>diverse</span> community In
           the web3 <span style={{ color: "#fe33a9" }}>movement</span> , Priding
-          ourselves upon
-          <span style={{ color: "#33c3ff" }}>creating</span> passive income
-          streams from our <span style={{ color: "#32ebff" }}>core</span>{" "}
-          projects Using decentralisation{" "}
-          <span style={{ color: "#6833ff" }}>wherever</span> possible To keep
-          your <span style={{ color: "#32ebff" }}>private</span> income{" "}
+          ourselves upon <span style={{ color: "#33c3ff" }}>creating</span>{" "}
+          passive income streams from our{" "}
+          <span style={{ color: "#32ebff" }}>core</span> projects Using
+          decentralisation <span style={{ color: "#6833ff" }}>wherever</span>{" "}
+          possible To keep your{" "}
+          <span style={{ color: "#32ebff" }}>private</span> income{" "}
           <span style={{ color: "#8ffe33" }}>private</span>, We believe in{" "}
           <span style={{ color: "#6833ff" }}>morals</span> over everything, But{" "}
           <span style={{ color: "#33c3ff" }}>also</span> in your{" "}
-          <span style={{ color: "#fe33a9" }}>right</span> to privacy We set{" "}
+          <span style={{ color: "#fe33a9" }}>right</span> to privacy. We set{" "}
           <span style={{ color: "#32ebff" }}>ourselves</span> apart also by the{" "}
-          <span style={{ color: "#8ffe33" }}>fundamentals</span>
-          of the <span style={{ color: "#8ffe33" }}>Abbreviation</span> WAGMI,
-          “we’re all gonna make it”
+          <span style={{ color: "#8ffe33" }}>fundamentals</span> of the{" "}
+          <span style={{ color: "#8ffe33" }}>Abbreviation</span> WAGMI, “we’re
+          all gonna make it”
           <span>delivering</span> this to the best of our{" "}
           <span style={{ color: "#fe33a9" }}>ability</span> ,no matter your{" "}
           <span style={{ color: "#32ebff" }}>age</span>, status or belief{" "}
           <span style={{ color: "#32ebff" }}>system</span>, we use{" "}
           <span style={{ color: "#8ffe33" }}>Blockchain</span> technology and
-          web 3 To give organising{" "}
+          web 3 To give organisation and{" "}
           <span style={{ color: "#32ebff" }}>structure</span> while we deliver{" "}
           <span style={{ color: "#fe33a9" }}>positivity</span> to a happy
           community
