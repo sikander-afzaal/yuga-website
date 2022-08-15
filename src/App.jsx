@@ -740,7 +740,7 @@ function App() {
           web 3 To give organisation and{" "}
           <span style={{ color: "#32ebff" }}>structure</span> while we deliver{" "}
           <span style={{ color: "#fe33a9" }}>positivity</span> to a happy
-          community
+          community.
         </p>
       </div>
       <div className="third-wrapper">
