@@ -174,6 +174,15 @@ function App() {
       );
 
     //fourth section ---------------------------------------------------
+    gsap.to(parallexCont.current, {
+      scrollTrigger: {
+        trigger: parallexCont.current,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+      yPercent: -100,
+    });
 
     //join section ------------------------------------------
     const h1 = document.querySelector(".join-h1");
