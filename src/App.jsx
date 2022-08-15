@@ -200,7 +200,7 @@ function App() {
       scrollTrigger: {
         trigger: joinSec.current,
         start: "top top",
-        toggleActions: "play reverse play reverse",
+        end: "bottom bottom",
       },
     });
     lastTime.to([h1, row], { opacity: 1, stagger: 0.5 });
