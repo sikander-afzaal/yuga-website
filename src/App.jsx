@@ -98,33 +98,6 @@ function App() {
 
     //third section -------------------------
 
-    const pinned = gsap.timeline({
-      scrollTrigger: {
-        trigger: document.querySelector(".third-wrapper"),
-        start: "top top",
-        end: "+=4000",
-        scrub: 1,
-        pin: document.querySelector(".third-wrapper"),
-        anticipatePin: 1,
-      },
-    });
-    const TEXT_SPEED = 3.5;
-    const CARD_MOVE =
-      window.innerWidth > 840
-        ? card1.current.getBoundingClientRect().width * 5
-        : card1.current.getBoundingClientRect().width * 6;
-    const TEXT_MOVE = window.innerWidth > 800 ? "-84%" : "-95%";
-    pinned
-      .to(
-        document.querySelector(".card-div"),
-        { x: -CARD_MOVE, duration: 4, delay: 0.1 },
-        "lol"
-      )
-      .to(
-        scrollText.current,
-        { x: TEXT_MOVE, duration: TEXT_SPEED, delay: 0.1 },
-        "lol"
-      );
     //animation where cards slowly come up as you approach the third section
     ScrollTrigger.matchMedia({
       "(max-width: 800px)": function () {
@@ -154,6 +127,32 @@ function App() {
             "0"
           )
           .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
+        const pinned = gsap.timeline({
+          scrollTrigger: {
+            trigger: document.querySelector(".third-wrapper"),
+            start: "top top",
+            end: "+=4000",
+            scrub: 1,
+            pin: document.querySelector(".third-wrapper"),
+          },
+        });
+        const TEXT_SPEED = 3.5;
+        const CARD_MOVE =
+          window.innerWidth > 840
+            ? card1.current.getBoundingClientRect().width * 5
+            : card1.current.getBoundingClientRect().width * 6;
+        const TEXT_MOVE = window.innerWidth > 800 ? "-84%" : "-95%";
+        pinned
+          .to(
+            document.querySelector(".card-div"),
+            { x: -CARD_MOVE, duration: 4, delay: 0.1 },
+            "lol"
+          )
+          .to(
+            scrollText.current,
+            { x: TEXT_MOVE, duration: TEXT_SPEED, delay: 0.1 },
+            "lol"
+          );
       },
       "(min-width: 801px)": function () {
         const cardTime = gsap.timeline({
@@ -183,6 +182,32 @@ function App() {
             "0"
           )
           .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
+        const pinned = gsap.timeline({
+          scrollTrigger: {
+            trigger: document.querySelector(".third-wrapper"),
+            start: "top top",
+            end: "+=4000",
+            scrub: 1,
+            pin: document.querySelector(".third-wrapper"),
+          },
+        });
+        const TEXT_SPEED = 3.5;
+        const CARD_MOVE =
+          window.innerWidth > 840
+            ? card1.current.getBoundingClientRect().width * 5
+            : card1.current.getBoundingClientRect().width * 6;
+        const TEXT_MOVE = window.innerWidth > 800 ? "-84%" : "-95%";
+        pinned
+          .to(
+            document.querySelector(".card-div"),
+            { x: -CARD_MOVE, duration: 4, delay: 0.1 },
+            "lol"
+          )
+          .to(
+            scrollText.current,
+            { x: TEXT_MOVE, duration: TEXT_SPEED, delay: 0.1 },
+            "lol"
+          );
       },
     });
     //fourth section ---------------------------------------------------
