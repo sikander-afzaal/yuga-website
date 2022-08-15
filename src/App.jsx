@@ -105,6 +105,7 @@ function App() {
         end: "+=4000",
         scrub: 1,
         pin: document.querySelector(".third-wrapper"),
+        anticipatePin: 1,
       },
     });
     const TEXT_SPEED = 3.5;
