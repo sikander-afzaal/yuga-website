@@ -782,7 +782,7 @@ function App() {
         <div className="bottom-part">
           <p>
             TRUE TO WAGMI BELIEFS,, We will start to release snippets of our
-            upcoming ecosystem projects Here More information will be released
+            upcoming ecosystem projects Here. More information will be released
             at a suitable time when development timelines sync with public
             demand , thanks for reading
           </p>
