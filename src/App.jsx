@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine } from "gsap";
 import Particles from "react-tsparticles";
@@ -18,6 +18,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 function App() {
+  const [loader, setLoader] = useState(true);
   //first section--------------------
   const line1 = useRef(null);
   const line2 = useRef(null);
@@ -37,6 +38,9 @@ function App() {
   const joinSec = useRef(null);
   const secondSec = useRef();
   useLayoutEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 3000);
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
@@ -216,6 +220,17 @@ function App() {
 
   return (
     <div className="App">
+      {loader && (
+        <div class="loadingio-spinner-balls-ryaiebshxu">
+          <div class="ldio-h7fovgyny86">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      )}
       <div className="first">
         <div className="social-links-head">
           <a href="https://www.instagram.com/Wagmilabz/" target={"blank"}>
