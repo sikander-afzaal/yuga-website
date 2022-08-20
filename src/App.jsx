@@ -154,7 +154,7 @@ function App() {
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
         start: "top top",
-        end: "+=4000",
+        end: "bottom bottom",
         scrub: 1,
         pin: document.querySelector(".third-wrapper"),
       },
@@ -167,7 +167,7 @@ function App() {
     const CARD_MOVE =
       window.innerWidth > 800
         ? (6 - CARDS_ON_SCREEN) * 620 // amount to be moved desktop
-        : (6 - CARDS_ON_SCREEN) * 395; // amount to be moved mobile
+        : (6 - CARDS_ON_SCREEN) * 400; // amount to be moved mobile
     // window.innerWidth > 1560
     //   ? 2290
     //   : window.innerWidth > 1370
