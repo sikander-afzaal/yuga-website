@@ -172,7 +172,7 @@
   position: relative;
   padding-top: 20px;
   height: 100vh;
-  padding-left: 70px;
+  padding-left: 10px;
   pointer-events: none;
 }
 .pin-spacer {

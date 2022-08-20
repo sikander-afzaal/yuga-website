@@ -166,7 +166,7 @@ function App() {
         : (window.innerWidth - 70) / 415; // number of cards on the screen
     const CARD_MOVE =
       window.innerWidth > 800
-        ? (6 - CARDS_ON_SCREEN) * 640
+        ? (6 - CARDS_ON_SCREEN) * 620
         : (6 - CARDS_ON_SCREEN) * 415; // amount to be moved
     // window.innerWidth > 1560
     //   ? 2290
