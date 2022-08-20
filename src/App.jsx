@@ -161,10 +161,29 @@ function App() {
     });
     const TEXT_SPEED = 3.5;
     const CARD_MOVE =
-      window.innerWidth > 840
-        ? card1.current.getBoundingClientRect().width * 5
-        : card1.current.getBoundingClientRect().width * 6;
-    const TEXT_MOVE = window.innerWidth > 800 ? "-84%" : "-95%";
+      window.innerWidth > 1560
+        ? 2290
+        : window.innerWidth > 1370
+        ? 2500
+        : window.innerWidth > 1060
+        ? 2800
+        : window.innerWidth > 800
+        ? 3000
+        : window.innerWidth > 650
+        ? 1800
+        : 2170;
+    const TEXT_MOVE =
+      window.innerWidth > 1560
+        ? "-69%"
+        : window.innerWidth > 1370
+        ? "-73%"
+        : window.innerWidth > 1060
+        ? "-79.5%"
+        : window.innerWidth > 800
+        ? "-83.8%"
+        : window.innerWidth > 650
+        ? "-83.3%"
+        : "-92.7%";
     pinned
       .to(
         document.querySelector(".card-div"),
