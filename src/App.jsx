@@ -162,12 +162,12 @@ function App() {
     const TEXT_SPEED = 3.5;
     const CARDS_ON_SCREEN =
       window.innerWidth > 800
-        ? (window.innerWidth - 70) / 640
-        : (window.innerWidth - 70) / 415; // number of cards on the screen
+        ? (window.innerWidth - 70) / 640 // number of cards on the screen desktop
+        : (window.innerWidth - 70) / 415; // number of cards on the screen mobile
     const CARD_MOVE =
       window.innerWidth > 800
-        ? (6 - CARDS_ON_SCREEN) * 620
-        : (6 - CARDS_ON_SCREEN) * 415; // amount to be moved
+        ? (6 - CARDS_ON_SCREEN) * 620 // amount to be moved desktop
+        : (6 - CARDS_ON_SCREEN) * 395; // amount to be moved mobile
     // window.innerWidth > 1560
     //   ? 2290
     //   : window.innerWidth > 1370
