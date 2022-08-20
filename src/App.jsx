@@ -160,18 +160,25 @@ function App() {
       },
     });
     const TEXT_SPEED = 3.5;
+    const CARDS_ON_SCREEN =
+      window.innerWidth > 800
+        ? (window.innerWidth - 70) / 640
+        : (window.innerWidth - 70) / 415; // number of cards on the screen
     const CARD_MOVE =
-      window.innerWidth > 1560
-        ? 2290
-        : window.innerWidth > 1370
-        ? 2500
-        : window.innerWidth > 1060
-        ? 2800
-        : window.innerWidth > 800
-        ? 3000
-        : window.innerWidth > 650
-        ? 1800
-        : 2170;
+      window.innerWidth > 800
+        ? (6 - CARDS_ON_SCREEN) * 640
+        : (6 - CARDS_ON_SCREEN) * 415; // amount to be moved
+    // window.innerWidth > 1560
+    //   ? 2290
+    //   : window.innerWidth > 1370
+    //   ? 2500
+    //   : window.innerWidth > 1060
+    //   ? 2800
+    //   : window.innerWidth > 800
+    //   ? 3000
+    //   : window.innerWidth > 650
+    //   ? 1800
+    //   : 2170;
     const TEXT_MOVE =
       window.innerWidth > 1560
         ? "-69%"
