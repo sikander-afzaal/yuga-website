@@ -62,7 +62,7 @@ function App() {
         end: "+=2000",
         pin: textSec.current,
         pinSpacing: true,
-        anticipatePin: true,
+        refreshPriority: true,
       },
     });
     textTimeline.to(
@@ -154,7 +154,7 @@ function App() {
         )
         .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     }
-    ///////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////
     const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
@@ -163,7 +163,6 @@ function App() {
         pin: document.querySelector(".third-wrapper"),
         scrub: 1,
         pinSpacing: true,
-        anticipatePin: true,
       },
     });
     const TEXT_SPEED = 3.5;
@@ -211,6 +210,7 @@ function App() {
       scrollTrigger: {
         trigger: joinSec.current,
         start: "top 20%",
+        end: "bottom bottom",
       },
     });
     lastTime.to([h1, row], { opacity: 1, stagger: 0.5 });
