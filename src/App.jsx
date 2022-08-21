@@ -17,6 +17,7 @@ import {
   faTelegram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { useEffect } from "react";
 function App() {
   const [loader, setLoader] = useState(true);
   const [TEXT_MOVE, setTEXT_MOVE] = useState(0);
@@ -39,12 +40,11 @@ function App() {
   const parallexCont = useRef(null);
   const joinSec = useRef(null);
   const secondSec = useRef();
-  useLayoutEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setLoader(false);
       const windowWidth = window.innerWidth - 35;
       setTEXT_MOVE(scrollText.current.offsetWidth - windowWidth);
-      ScrollTrigger.refresh();
     }, 3000);
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(document.querySelector(".App"), {
@@ -161,6 +161,7 @@ function App() {
         start: "top top",
         end: "+=4000",
         scrub: 1,
+        pinSpacing: true,
         pin: document.querySelector(".third-wrapper"),
       },
     });
