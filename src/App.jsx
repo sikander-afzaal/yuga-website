@@ -18,7 +18,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 function App() {
-  const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
   //first section--------------------
   const line1 = useRef(null);
   const line2 = useRef(null);
@@ -168,29 +168,22 @@ function App() {
       window.innerWidth > 800
         ? (6 - CARDS_ON_SCREEN) * 620 // amount to be moved desktop
         : (6 - CARDS_ON_SCREEN) * 400; // amount to be moved mobile
-    // window.innerWidth > 1560
-    //   ? 2290
-    //   : window.innerWidth > 1370
-    //   ? 2500
-    //   : window.innerWidth > 1060
-    //   ? 2800
-    //   : window.innerWidth > 800
-    //   ? 3000
-    //   : window.innerWidth > 650
-    //   ? 1800
-    //   : 2170;
+
+    // const TEXT_MOVE =
+    //   window.innerWidth > 1560
+    //     ? "-69%"
+    //     : window.innerWidth > 1370
+    //     ? "-73%"
+    //     : window.innerWidth > 1060
+    //     ? "-79.5%"
+    //     : window.innerWidth > 800
+    //     ? "-83.8%"
+    //     : window.innerWidth > 650
+    //     ? "-83.3%"
+    //     : "-92.7%";
     const TEXT_MOVE =
-      window.innerWidth > 1560
-        ? "-69%"
-        : window.innerWidth > 1370
-        ? "-73%"
-        : window.innerWidth > 1060
-        ? "-79.5%"
-        : window.innerWidth > 800
-        ? "-83.8%"
-        : window.innerWidth > 650
-        ? "-83.3%"
-        : "-92.7%";
+      scrollText.current.getBoundingClientRect().width -
+      (window.innerWidth - 25);
     pinned
       .to(
         document.querySelector(".card-div"),
@@ -199,7 +192,7 @@ function App() {
       )
       .to(
         scrollText.current,
-        { x: TEXT_MOVE, duration: TEXT_SPEED, delay: 0.1 },
+        { x: -TEXT_MOVE, duration: TEXT_SPEED, delay: 0.1 },
         "lol"
       );
 
