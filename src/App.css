@@ -580,6 +580,9 @@ footer h2 {
   .second-section p {
     font-size: 26px;
   }
+  .third-section {
+    padding-left: 10px;
+  }
 }
 @media screen and (max-width: 450px) {
   .text-section h1 {
