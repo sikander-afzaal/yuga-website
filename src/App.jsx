@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine } from "gsap";
 import Particles from "react-tsparticles";
@@ -19,6 +19,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 function App() {
   const [loader, setLoader] = useState(true);
+  const [textMoveState, setTextMoveState] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      const windowWidth = window.innerWidth - 25;
+      const TEXT_MOVE = scrollText.current.offsetWidth - windowWidth;
+      setTextMoveState(TEXT_MOVE);
+    }, 3000);
+  }, []);
+
   //first section--------------------
   const line1 = useRef(null);
   const line2 = useRef(null);
@@ -38,6 +47,7 @@ function App() {
   const joinSec = useRef(null);
   const secondSec = useRef();
   useLayoutEffect(() => {
+    console.log(textMoveState);
     setTimeout(() => {
       setLoader(false);
     }, 3000);
@@ -169,21 +179,6 @@ function App() {
         ? (6 - CARDS_ON_SCREEN) * 620 // amount to be moved desktop
         : (6 - CARDS_ON_SCREEN) * 400; // amount to be moved mobile
 
-    // const TEXT_MOVE =
-    //   window.innerWidth > 1560
-    //     ? "-69%"
-    //     : window.innerWidth > 1370
-    //     ? "-73%"
-    //     : window.innerWidth > 1060
-    //     ? "-79.5%"
-    //     : window.innerWidth > 800
-    //     ? "-83.8%"
-    //     : window.innerWidth > 650
-    //     ? "-83.3%"
-    //     : "-92.7%";
-    const TEXT_MOVE =
-      scrollText.current.getBoundingClientRect().width -
-      (window.innerWidth - 25);
     pinned
       .to(
         document.querySelector(".card-div"),
@@ -192,7 +187,7 @@ function App() {
       )
       .to(
         scrollText.current,
-        { x: -TEXT_MOVE, duration: TEXT_SPEED, delay: 0.1 },
+        { x: -textMoveState, duration: TEXT_SPEED, delay: 0.1 },
         "lol"
       );
 
@@ -227,7 +222,7 @@ function App() {
       },
     });
     lastTime.to([h1, row], { opacity: 1, stagger: 0.5 });
-  }, []);
+  }, [textMoveState]);
 
   const particlesInit = async (main) => {
     await loadFull(main);
@@ -240,8 +235,8 @@ function App() {
   return (
     <div className="App">
       {loader && (
-        <div class="loadingio-spinner-balls-ryaiebshxu">
-          <div class="ldio-h7fovgyny86">
+        <div className="loadingio-spinner-balls-ryaiebshxu">
+          <div className="ldio-h7fovgyny86">
             <div></div>
             <div></div>
             <div></div>
