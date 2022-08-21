@@ -17,7 +17,6 @@ import {
   faTelegram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { useEffect } from "react";
 function App() {
   const [loader, setLoader] = useState(true);
   const [TEXT_MOVE, setTEXT_MOVE] = useState(0);
@@ -40,7 +39,7 @@ function App() {
   const parallexCont = useRef(null);
   const joinSec = useRef(null);
   const secondSec = useRef();
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTimeout(() => {
       setLoader(false);
       const windowWidth = window.innerWidth - 35;
@@ -161,7 +160,6 @@ function App() {
         start: "top top",
         end: "+=4000",
         scrub: 1,
-        pinSpacing: true,
         pin: document.querySelector(".third-wrapper"),
       },
     });
