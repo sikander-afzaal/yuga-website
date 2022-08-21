@@ -154,7 +154,7 @@ function App() {
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
         start: "top top",
-        end: "bottom bottom",
+        end: "+=4000",
         scrub: 1,
         pin: document.querySelector(".third-wrapper"),
       },
