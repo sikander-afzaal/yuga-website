@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine } from "gsap";
 import Particles from "react-tsparticles";
@@ -19,14 +19,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 function App() {
   const [loader, setLoader] = useState(true);
-  const [textMoveState, setTextMoveState] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      const windowWidth = window.innerWidth - 25;
-      const TEXT_MOVE = scrollText.current.offsetWidth - windowWidth;
-      setTextMoveState(TEXT_MOVE);
-    }, 3000);
-  }, []);
+  const [TEXT_MOVE, setTEXT_MOVE] = useState(0);
 
   //first section--------------------
   const line1 = useRef(null);
@@ -47,9 +40,11 @@ function App() {
   const joinSec = useRef(null);
   const secondSec = useRef();
   useLayoutEffect(() => {
-    console.log(textMoveState);
     setTimeout(() => {
       setLoader(false);
+      const windowWidth = window.innerWidth - 35;
+      setTEXT_MOVE(scrollText.current.offsetWidth - windowWidth);
+      ScrollTrigger.refresh();
     }, 3000);
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(document.querySelector(".App"), {
@@ -182,14 +177,10 @@ function App() {
     pinned
       .to(
         document.querySelector(".card-div"),
-        { x: -CARD_MOVE, duration: 4, delay: 0.1 },
+        { x: -CARD_MOVE, duration: 4 },
         "lol"
       )
-      .to(
-        scrollText.current,
-        { x: -textMoveState, duration: TEXT_SPEED, delay: 0.1 },
-        "lol"
-      );
+      .to(scrollText.current, { x: -TEXT_MOVE, duration: TEXT_SPEED }, "lol");
 
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
@@ -222,7 +213,7 @@ function App() {
       },
     });
     lastTime.to([h1, row], { opacity: 1, stagger: 0.5 });
-  }, [textMoveState]);
+  }, [TEXT_MOVE]);
 
   const particlesInit = async (main) => {
     await loadFull(main);
