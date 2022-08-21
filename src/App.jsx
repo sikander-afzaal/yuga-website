@@ -209,7 +209,6 @@ function App() {
       scrollTrigger: {
         trigger: joinSec.current,
         start: "top 20%",
-        markers: true,
       },
     });
     lastTime.to([h1, row], { opacity: 1, stagger: 0.5 });
