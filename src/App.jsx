@@ -18,7 +18,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 function App() {
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(true);
   const [TEXT_MOVE, setTEXT_MOVE] = useState(0);
 
   //first section--------------------
@@ -61,7 +61,8 @@ function App() {
         scrub: 3,
         end: "+=2000",
         pin: textSec.current,
-        pinSpacing: 100,
+        pinSpacing: true,
+        anticipatePin: true,
       },
     });
     textTimeline.to(
@@ -162,6 +163,7 @@ function App() {
         pin: document.querySelector(".third-wrapper"),
         scrub: 1,
         pinSpacing: true,
+        anticipatePin: true,
       },
     });
     const TEXT_SPEED = 3.5;
