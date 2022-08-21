@@ -18,7 +18,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 function App() {
-  const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
   const [TEXT_MOVE, setTEXT_MOVE] = useState(0);
 
   //first section--------------------
@@ -159,8 +159,9 @@ function App() {
         trigger: document.querySelector(".third-wrapper"),
         start: "top top",
         end: "+=4000",
-        scrub: 1,
         pin: document.querySelector(".third-wrapper"),
+        scrub: 1,
+        pinSpacing: true,
       },
     });
     const TEXT_SPEED = 3.5;
@@ -207,8 +208,8 @@ function App() {
     const lastTime = gsap.timeline({
       scrollTrigger: {
         trigger: joinSec.current,
-        start: "top top",
-        end: "bottom bottom",
+        start: "top 20%",
+        markers: true,
       },
     });
     lastTime.to([h1, row], { opacity: 1, stagger: 0.5 });
