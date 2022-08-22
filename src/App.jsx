@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine } from "gsap";
 import Particles from "react-tsparticles";
@@ -17,6 +17,7 @@ import {
   faTelegram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { useEffect } from "react";
 function App() {
   const [loader, setLoader] = useState(true);
   const [TEXT_MOVE, setTEXT_MOVE] = useState(0);
@@ -39,13 +40,16 @@ function App() {
   const parallexCont = useRef(null);
   const joinSec = useRef(null);
   const secondSec = useRef();
-  useLayoutEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setLoader(false);
       const windowWidth = window.innerWidth - 35;
       setTEXT_MOVE(scrollText.current.offsetWidth - windowWidth);
     }, 3000);
     gsap.registerPlugin(ScrollTrigger);
+    if (window.innerWidth <= 800) {
+      ScrollTrigger.normalizeScroll(true);
+    }
     gsap.to(document.querySelector(".App"), {
       scrollTrigger: {
         trigger: document.querySelector(".first"),
@@ -58,11 +62,12 @@ function App() {
       scrollTrigger: {
         trigger: textSec.current,
         start: "top top",
-        scrub: 3,
         end: "+=2000",
+        scrub: 3,
         pin: textSec.current,
-        pinSpacing: true,
         refreshPriority: true,
+        pinSpacer: 100,
+        anticipatePin: true,
       },
     });
     textTimeline.to(
@@ -154,7 +159,7 @@ function App() {
         )
         .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
     }
-    //////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
     const pinned = gsap.timeline({
       scrollTrigger: {
         trigger: document.querySelector(".third-wrapper"),
