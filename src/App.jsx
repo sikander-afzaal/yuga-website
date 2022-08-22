@@ -730,7 +730,7 @@ function App() {
         </h1>
         <h1 ref={line3}>
           <span style={{ color: "#fe33a9" }}>G</span>enerate blockchain
-          solutions
+          awareness
         </h1>
         <h1 ref={line4}>
           <span style={{ color: "#33c3ff" }}>M</span>ade relatable by use of
