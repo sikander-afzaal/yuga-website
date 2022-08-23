@@ -40,13 +40,19 @@ function App() {
   const parallexCont = useRef(null);
   const joinSec = useRef(null);
   const secondSec = useRef();
+
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
       const windowWidth = window.innerWidth - 35;
       setTEXT_MOVE(scrollText.current.offsetWidth - windowWidth);
     }, 3000);
+
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.config({
+      limitCallbacks: true,
+      ignoreMobileResize: true,
+    });
     if (window.innerWidth <= 800) {
       ScrollTrigger.normalizeScroll(true);
     }
@@ -138,7 +144,7 @@ function App() {
           },
           "0"
         )
-        .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
+        .to(scrollText.current, { opacity: 1, delay: 0.3 }, "0");
     } else {
       cardTime
         .to(
@@ -157,7 +163,7 @@ function App() {
           },
           "0"
         )
-        .to(scrollText.current, { y: 0, opacity: 1, delay: 0.3 }, "0");
+        .to(scrollText.current, { opacity: 1, delay: 0.3 }, "0");
     }
     ////////////////////////////////////////////////////////
     const pinned = gsap.timeline({
@@ -170,7 +176,6 @@ function App() {
         pinSpacing: true,
       },
     });
-    const TEXT_SPEED = 3.5;
     const CARDS_ON_SCREEN =
       window.innerWidth > 800
         ? (window.innerWidth - 70) / 640 // number of cards on the screen desktop
@@ -180,13 +185,19 @@ function App() {
         ? (6 - CARDS_ON_SCREEN) * 620 // amount to be moved desktop
         : (6 - CARDS_ON_SCREEN) * 400; // amount to be moved mobile
 
-    pinned
-      .to(
-        document.querySelector(".card-div"),
-        { x: -CARD_MOVE, duration: 4 },
-        "lol"
-      )
-      .to(scrollText.current, { x: -TEXT_MOVE, duration: TEXT_SPEED }, "lol");
+    if (TEXT_MOVE > 0) {
+      pinned
+        .to(
+          document.querySelector(".card-div"),
+          { x: -CARD_MOVE, duration: 4 },
+          "lol"
+        )
+        .to(
+          scrollText.current,
+          { x: -TEXT_MOVE, duration: 3.5, delay: 0.1 },
+          "lol"
+        );
+    }
 
     //fourth section ---------------------------------------------------
     gsap.to(parallexCont.current, {
