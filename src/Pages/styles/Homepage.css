@@ -221,6 +221,25 @@
   color: black;
   flex-direction: column;
   pointer-events: all;
+  gap: 30px;
+}
+.main-btn {
+  border: none;
+  background-color: black;
+  width: 90%;
+  color: white;
+  height: 55px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 100vh;
+  border: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+.main-btn:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
 }
 .card h1 {
   font-size: 8rem;
@@ -259,7 +278,9 @@
   }
 }
 .card2 {
-  background-color: var(--neon-purple);
+  background-image: url("../../Assets/card-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   transform: translateY(15vh);
 }
 .card3 {

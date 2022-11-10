@@ -783,12 +783,14 @@ function Homepage() {
         <div ref={cardSection} className="third-section">
           <div className="card-div">
             <div ref={card1} className="card card1">
-              <img src={img} alt="" />
+              {/* <img src={img} alt="" />
               <h3>GENESIS EDITION WAGMI NFT</h3>
-              <h2>Coming Soon</h2>
+              <h2>Coming Soon</h2> */}
+              <button className="main-btn">Whitepaper</button>
             </div>
             <div ref={card2} className="card card2">
-              <h1>W</h1>
+              <button className="main-btn">Connect Wallet</button>
+              <button className="main-btn">Mint</button>
             </div>
             <div ref={card3} className="card card3">
               <h1>A</h1>
