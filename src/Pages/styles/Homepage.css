@@ -222,6 +222,7 @@
   flex-direction: column;
   pointer-events: all;
   gap: 30px;
+  position: relative;
 }
 .main-btn {
   border: none;
@@ -278,10 +279,90 @@
   }
 }
 .card2 {
-  background-image: url("../../Assets/card-bg.jpg");
-  background-size: cover;
+  background-image: url("../../Assets/card-bg.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   transform: translateY(15vh);
+}
+.push-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.thread {
+  align-self: center;
+  max-width: 100%;
+  width: 30px;
+  margin-bottom: -8px;
+  transform: translateX(-50px);
+  object-fit: contain;
+}
+.push-gif {
+  width: 200px;
+  object-fit: contain;
+}
+.labz-gif {
+  position: absolute;
+  width: 100px;
+  bottom: 2.3%;
+  left: 7%;
+}
+.mint-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 10px;
+}
+.mint-btn {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.mint-btn img {
+  width: 200px;
+  object-fit: fill !important;
+  max-width: initial !important;
+}
+.btn-text {
+  left: 50%;
+  top: 60%;
+  max-width: min-content;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.amount-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  margin-top: 30px;
+}
+.amount-div h2 {
+  background-color: #f9fafd;
+  width: 100%;
+  height: 30px;
+  border-radius: 100vh;
+  text-align: center;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  line-height: 1;
 }
 .card3 {
   background-color: var(--neon-pink);
@@ -550,6 +631,25 @@ footer h2 {
     grid-template-columns: repeat(6, 375px);
     padding-top: 0px;
     align-items: flex-end;
+  }
+  .mint-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mint-btn {
+    width: 200px;
+  }
+  .amount-div {
+    margin-top: 0px;
+    margin: 10px 0px;
+  }
+  .amount-div h2 {
+    height: 40px;
+  }
+  .labz-gif {
+    left: 5%;
+    bottom: 3%;
+    width: 60px;
   }
 }
 @media screen and (max-width: 715px) {
