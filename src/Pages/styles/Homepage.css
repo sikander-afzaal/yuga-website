@@ -633,23 +633,37 @@ footer h2 {
     align-items: flex-end;
   }
   .mint-div {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
     align-items: center;
   }
   .mint-btn {
-    width: 200px;
+    width: 100%;
+  }
+  .mint-btn img {
+    width: 100%;
+  }
+  .btn-text {
+    font-size: 14px;
   }
   .amount-div {
-    margin-top: 0px;
-    margin: 10px 0px;
+    width: 100%;
+    margin-top: 15px;
   }
   .amount-div h2 {
-    height: 40px;
+    height: 24px;
+    font-size: 12px;
   }
   .labz-gif {
     left: 5%;
     bottom: 3%;
     width: 60px;
+  }
+  .thread {
+    transform: translateX(-10px);
+  }
+  .push-gif {
+    width: 100px;
   }
 }
 @media screen and (max-width: 715px) {
