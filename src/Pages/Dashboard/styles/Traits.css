@@ -46,6 +46,7 @@
   color: white;
   font-size: 0.9rem;
   align-self: flex-start;
+  text-transform: capitalize;
 }
 .trait-img {
   background-color: #c4d1dc30;

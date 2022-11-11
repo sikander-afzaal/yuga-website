@@ -232,6 +232,8 @@
   height: 55px;
   font-size: 20px;
   cursor: pointer;
+  display: grid;
+  place-items: center;
   border-radius: 100vh;
   border: 2px solid transparent;
   transition: all 0.5s ease-in-out;

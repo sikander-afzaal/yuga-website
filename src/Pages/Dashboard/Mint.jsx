@@ -25,8 +25,8 @@ const Mint = () => {
             <p className="btn-text cp">Mint Professor</p>
           </div>
           <div className="amount-div">
-            <h2>1/10,000</h2>
-            <input type="text" />
+            <h2 className="cp">1/10,000</h2>
+            <input className="cp" type="text" />
           </div>
           <div className="input-desc">
             <p className="cp">INPUT MINT CODE FROM TG GROUP HERE</p>

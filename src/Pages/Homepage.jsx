@@ -8,6 +8,8 @@ import "./styles/Homepage.css";
 import profText from "../Assets/prof-text-2.png";
 import free from "../Assets/free-text.png";
 import logo from "../Assets/logo.png";
+import roadmap from "../Assets/roadmap.pdf";
+import whitepaper from "../Assets/whitepaper.pdf";
 import brand1 from "../Assets/brands (1).png";
 import brand2 from "../Assets/brands (2).png";
 import brand3 from "../Assets/brands (3).png";
@@ -785,7 +787,9 @@ function Homepage() {
         <div ref={cardSection} className="third-section">
           <div className="card-div">
             <div ref={card1} className="card card1">
-              <button className="main-btn">Whitepaper</button>
+              <a href={whitepaper} target={"_blank"} className="main-btn">
+                Whitepaper
+              </a>
             </div>
             <div ref={card2} className="card card2">
               <div className="inner-card">
@@ -796,7 +800,9 @@ function Homepage() {
               </div>
             </div>
             <div ref={card3} className="card card3">
-              <h1>A</h1>
+              <a href={roadmap} target={"_blank"} className="main-btn">
+                Roadmap
+              </a>
             </div>
             <div ref={card4} className="card card4">
               <h1>G</h1>

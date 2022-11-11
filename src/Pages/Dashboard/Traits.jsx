@@ -16,102 +16,83 @@ function Traits() {
             })}
           </div>
         </div>
-        {/* Skins box ----------------- */}
+        {/* Body box ----------------- */}
         <div className="traits-box">
-          <h1>Skins</h1>
+          <h1>Body</h1>
           <div className="traits-grid">
             {data.body.map((elem, index) => {
               return <SmallBox key={index} img={elem.img} name={elem.name} />;
             })}
           </div>
         </div>
-        {/* Accessories box --------------------------- */}
+        {/* Clothes box --------------------------- */}
         <div className="traits-box">
-          <h1>Accessories</h1>
+          <h1>Clothes</h1>
           <div className="traits-grid">
-            {data.Accessories.map((elem, index) => {
+            {data.clothes.map((elem, index) => {
               return <SmallBox key={index} img={elem.img} name={elem.name} />;
             })}
           </div>
         </div>
-        {/* head gear box --------------------------- */}
+        {/* Eyes box --------------------------- */}
         <div className="traits-box">
-          <h1>Head Wear</h1>
+          <h1>Eyes</h1>
+          <div className="traits-grid">
+            {data.eyes.map((elem, index) => {
+              return <SmallBox key={index} img={elem.img} name={elem.name} />;
+            })}
+          </div>
+        </div>
+        {/* glasses box --------------------------- */}
+        <div className="traits-box">
+          <h1>Glasses</h1>
+          <div className="traits-grid">
+            {data.glasses.map((elem, index) => {
+              return <SmallBox key={index} img={elem.img} name={elem.name} />;
+            })}
+          </div>
+        </div>
+        {/* head box --------------------------- */}
+        <div className="traits-box">
+          <h1>Head</h1>
           <div className="traits-grid">
             {data.head.map((elem, index) => {
               return <SmallBox key={index} img={elem.img} name={elem.name} />;
             })}
           </div>
         </div>
-        {/* necklaces box --------------------------- */}
+        {/* moustache box --------------------------- */}
         <div className="traits-box">
-          <h1>Chains</h1>
+          <h1>Moustache</h1>
           <div className="traits-grid">
-            {data.neck.map((elem, index) => {
+            {data.moustache.map((elem, index) => {
               return <SmallBox key={index} img={elem.img} name={elem.name} />;
             })}
           </div>
         </div>
-        {/* Sling Bag box --------------------------- */}
+        {/* mouth box --------------------------- */}
         <div className="traits-box">
-          <h1>Sling Bag</h1>
+          <h1>Mouth</h1>
           <div className="traits-grid">
-            {data.sling.map((elem, index) => {
+            {data.mouth.map((elem, index) => {
               return <SmallBox key={index} img={elem.img} name={elem.name} />;
             })}
           </div>
         </div>
-        {/* Tattoos box --------------------------- */}
+        {/* nose box --------------------------- */}
         <div className="traits-box">
-          <h1>Tattoos</h1>
+          <h1>Nose</h1>
           <div className="traits-grid">
-            {data.tattoo.map((elem, index) => {
+            {data.nose.map((elem, index) => {
               return <SmallBox key={index} img={elem.img} name={elem.name} />;
             })}
           </div>
         </div>
-        {/* Tooth box --------------------------- */}
+        {/* special box --------------------------- */}
         <div className="traits-box">
-          <h1>Teeth</h1>
+          <h1>Special Edition</h1>
           <div className="traits-grid">
-            {data.tooth.map((elem, index) => {
-              return <SmallBox key={index} img={elem.img} name={elem.name} />;
-            })}
-          </div>
-        </div>
-        {/* Batman box --------------------------- */}
-        <div className="traits-box">
-          <h1>Batman</h1>
-          <div className="traits-grid">
-            {data.batman.map((elem, index) => {
-              return <SmallBox key={index} img={elem.img} name={elem.name} />;
-            })}
-          </div>
-        </div>
-        {/* HeavyTops box --------------------------- */}
-        <div className="traits-box">
-          <h1>Heavy Tops</h1>
-          <div className="traits-grid">
-            {data.HeavyTops.map((elem, index) => {
-              return <SmallBox key={index} img={elem.img} name={elem.name} />;
-            })}
-          </div>
-        </div>
-        {/* Joker box --------------------------- */}
-        <div className="traits-box">
-          <h1>Joker</h1>
-          <div className="traits-grid">
-            {data.Joker.map((elem, index) => {
-              return <SmallBox key={index} img={elem.img} name={elem.name} />;
-            })}
-          </div>
-        </div>
-
-        {/* Light Tops box --------------------------- */}
-        <div className="traits-box">
-          <h1>Light Tops</h1>
-          <div className="traits-grid">
-            {data.LightTops.map((elem, index) => {
+            {data.special.map((elem, index) => {
               return <SmallBox key={index} img={elem.img} name={elem.name} />;
             })}
           </div>

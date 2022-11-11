@@ -11,207 +11,219 @@ import body9 from "../../Assets/traits/Body/Skin (9).png";
 import body10 from "../../Assets/traits/Body/Skin (10).png";
 import body11 from "../../Assets/traits/Body/Skin (11).png";
 import body12 from "../../Assets/traits/Body/Skin (12).png";
-//cyber images
-import cyber1 from "../../Assets/traits/Cyber/cyber (1).png";
-import cyber2 from "../../Assets/traits/Cyber/cyber (2).png";
-import cyber3 from "../../Assets/traits/Cyber/cyber (3).png";
-import cyber4 from "../../Assets/traits/Cyber/cyber (4).png";
-import cyber5 from "../../Assets/traits/Cyber/cyber (5).png";
-import cyber6 from "../../Assets/traits/Cyber/cyber (6).png";
-import cyber7 from "../../Assets/traits/Cyber/cyber (7).png";
-import cyber8 from "../../Assets/traits/Cyber/cyber (8).png";
-import cyber9 from "../../Assets/traits/Cyber/cyber (9).png";
-import cyber10 from "../../Assets/traits/Cyber/cyber (10).png";
+import body13 from "../../Assets/traits/Body/Skin (13).png";
+import body14 from "../../Assets/traits/Body/Skin (14).png";
+import body15 from "../../Assets/traits/Body/Skin (15).png";
+import body16 from "../../Assets/traits/Body/Skin (16).png";
+import body17 from "../../Assets/traits/Body/Skin (17).png";
+import body18 from "../../Assets/traits/Body/Skin (18).png";
+import body19 from "../../Assets/traits/Body/Skin (19).png";
+import body20 from "../../Assets/traits/Body/Skin (20).png";
+//eyes images
+import eyes1 from "../../Assets/traits/eyes/eyes (1).png";
+import eyes2 from "../../Assets/traits/eyes/eyes (2).png";
+import eyes3 from "../../Assets/traits/eyes/eyes (3).png";
+import eyes4 from "../../Assets/traits/eyes/eyes (4).png";
+import eyes5 from "../../Assets/traits/eyes/eyes (5).png";
+import eyes6 from "../../Assets/traits/eyes/eyes (6).png";
+import eyes7 from "../../Assets/traits/eyes/eyes (7).png";
+import eyes8 from "../../Assets/traits/eyes/eyes (8).png";
+import eyes9 from "../../Assets/traits/eyes/eyes (9).png";
+import eyes10 from "../../Assets/traits/eyes/eyes (10).png";
+import eyes11 from "../../Assets/traits/eyes/eyes (11).png";
 //head wear
-import head1 from "../../Assets/traits/Headwear/head (1).png";
-import head2 from "../../Assets/traits/Headwear/head (2).png";
-import head3 from "../../Assets/traits/Headwear/head (3).png";
-import head4 from "../../Assets/traits/Headwear/head (4).png";
-import head5 from "../../Assets/traits/Headwear/head (5).png";
-import head6 from "../../Assets/traits/Headwear/head (6).png";
-import head7 from "../../Assets/traits/Headwear/head (7).png";
-import head8 from "../../Assets/traits/Headwear/head (8).png";
-import head9 from "../../Assets/traits/Headwear/head (9).png";
-import head10 from "../../Assets/traits/Headwear/head (10).png";
-import head12 from "../../Assets/traits/Headwear/head (12).png";
-import head14 from "../../Assets/traits/Headwear/head (14).png";
-import head15 from "../../Assets/traits/Headwear/head (15).png";
-import head16 from "../../Assets/traits/Headwear/head (16).png";
-import head18 from "../../Assets/traits/Headwear/head (18).png";
-import head19 from "../../Assets/traits/Headwear/head (19).png";
-import head20 from "../../Assets/traits/Headwear/head (20).png";
-import head21 from "../../Assets/traits/Headwear/head (21).png";
-//necklaces
-import neck1 from "../../Assets/traits/Necklaces/Necklace (1).png";
-import neck2 from "../../Assets/traits/Necklaces/Necklace (2).png";
-import neck3 from "../../Assets/traits/Necklaces/Necklace (3).png";
-import neck4 from "../../Assets/traits/Necklaces/Necklace (4).png";
-import neck5 from "../../Assets/traits/Necklaces/Necklace (5).png";
-import neck6 from "../../Assets/traits/Necklaces/Necklace (6).png";
-import neck7 from "../../Assets/traits/Necklaces/Necklace (7).png";
-import neck8 from "../../Assets/traits/Necklaces/Necklace (8).png";
-import neck9 from "../../Assets/traits/Necklaces/Necklace (9).png";
-import neck10 from "../../Assets/traits/Necklaces/Necklace (10).png";
-import neck11 from "../../Assets/traits/Necklaces/Necklace (11).png";
-import neck12 from "../../Assets/traits/Necklaces/Necklace (12).png";
-import neck13 from "../../Assets/traits/Necklaces/Necklace (13).png";
-//Sling
-import sling1 from "../../Assets/traits/Sling bag/sling (1).png";
-import sling2 from "../../Assets/traits/Sling bag/sling (2).png";
-import sling3 from "../../Assets/traits/Sling bag/sling (3).png";
-import sling4 from "../../Assets/traits/Sling bag/sling (4).png";
-import sling5 from "../../Assets/traits/Sling bag/sling (5).png";
-import sling6 from "../../Assets/traits/Sling bag/sling (6).png";
-import sling7 from "../../Assets/traits/Sling bag/sling (7).png";
-import sling8 from "../../Assets/traits/Sling bag/sling (8).png";
-import sling9 from "../../Assets/traits/Sling bag/sling (9).png";
-import sling10 from "../../Assets/traits/Sling bag/sling (10).png";
-import sling11 from "../../Assets/traits/Sling bag/sling (11).png";
-import sling12 from "../../Assets/traits/Sling bag/sling (12).png";
-//clothes
-import tatoo1 from "../../Assets/traits/Tattoo/tat (1).png";
-import tatoo2 from "../../Assets/traits/Tattoo/tat (2).png";
-import tatoo3 from "../../Assets/traits/Tattoo/tat (3).png";
-import tatoo4 from "../../Assets/traits/Tattoo/tat (4).png";
-import tatoo5 from "../../Assets/traits/Tattoo/tat (5).png";
-//Tooth
-import tooth1 from "../../Assets/traits/Tooth/Tooth (1).png";
-import tooth2 from "../../Assets/traits/Tooth/Tooth (2).png";
-import tooth3 from "../../Assets/traits/Tooth/Tooth (3).png";
-import tooth4 from "../../Assets/traits/Tooth/Tooth (4).png";
-import tooth5 from "../../Assets/traits/Tooth/Tooth (5).png";
-import tooth6 from "../../Assets/traits/Tooth/Tooth (6).png";
-import tooth7 from "../../Assets/traits/Tooth/Tooth (7).png";
-import tooth8 from "../../Assets/traits/Tooth/Tooth (8).png";
-import tooth9 from "../../Assets/traits/Tooth/Tooth (9).png";
-//batman
-import batman1 from "../../Assets/traits/Batman/Batman Black.png";
-import batman2 from "../../Assets/traits/Batman/Batman Channel.png";
-import batman3 from "../../Assets/traits/Batman/Batman Designer.png";
-import batman4 from "../../Assets/traits/Batman/Batman Marine.png";
-//festival images
-import festival1 from "../../Assets/traits/festival/festival (1).png";
-import festival2 from "../../Assets/traits/festival/festival (2).png";
-import festival3 from "../../Assets/traits/festival/festival (3).png";
-import festival4 from "../../Assets/traits/festival/festival (4).png";
-import festival5 from "../../Assets/traits/festival/festival (5).png";
-import festival6 from "../../Assets/traits/festival/festival (6).png";
-//Hoodies
-import Hoodie1 from "../../Assets/traits/Hoodie/Hoodie (1).png";
-import Hoodie2 from "../../Assets/traits/Hoodie/Hoodie (2).png";
-import Hoodie3 from "../../Assets/traits/Hoodie/Hoodie (3).png";
-import Hoodie4 from "../../Assets/traits/Hoodie/Hoodie (4).png";
-import Hoodie5 from "../../Assets/traits/Hoodie/Hoodie (5).png";
-import Hoodie6 from "../../Assets/traits/Hoodie/Hoodie (6).png";
-import Hoodie7 from "../../Assets/traits/Hoodie/Hoodie (7).png";
-import Hoodie8 from "../../Assets/traits/Hoodie/Hoodie (8).png";
-import Hoodie9 from "../../Assets/traits/Hoodie/Hoodie (9).png";
-import Hoodie10 from "../../Assets/traits/Hoodie/Hoodie (10).png";
-import Hoodie11 from "../../Assets/traits/Hoodie/Hoodie (11).png";
-import Hoodie12 from "../../Assets/traits/Hoodie/Hoodie (12).png";
-import Hoodie13 from "../../Assets/traits/Hoodie/Hoodie (13).png";
-import Hoodie14 from "../../Assets/traits/Hoodie/Hoodie (14).png";
-import Hoodie15 from "../../Assets/traits/Hoodie/Hoodie (15).png";
-import Hoodie16 from "../../Assets/traits/Hoodie/Hoodie (16).png";
-import Hoodie17 from "../../Assets/traits/Hoodie/Hoodie (17).png";
-import Hoodie18 from "../../Assets/traits/Hoodie/Hoodie (18).png";
-import Hoodie19 from "../../Assets/traits/Hoodie/Hoodie (19).png";
-import Hoodie20 from "../../Assets/traits/Hoodie/Hoodie (20).png";
-import Hoodie21 from "../../Assets/traits/Hoodie/Hoodie (21).png";
-import Hoodie22 from "../../Assets/traits/Hoodie/Hoodie (22).png";
-import Hoodie23 from "../../Assets/traits/Hoodie/Hoodie (23).png";
-import Oh_Hoodie from "../../Assets/traits/Hoodie/Oh Hoodie.png";
-import Puma_Hoodie from "../../Assets/traits/Hoodie/Puma Hoodie.png";
-import akastHoodie from "../../Assets/traits/Hoodie/Akatsuki Hoodie.png";
-import Ballenciaga from "../../Assets/traits/Hoodie/Ballenciaga.png";
-import Dope from "../../Assets/traits/Hoodie/Dope.png";
-import Hustle_Hoodie from "../../Assets/traits/Hoodie/Hustle Hoodie.png";
-import Louis_Voitton_Hoodie from "../../Assets/traits/Hoodie/Louis Voitton Hoodie.png";
-//Joker images
-import Joker1 from "../../Assets/traits/Joker/Joker (1).png";
-import Joker2 from "../../Assets/traits/Joker/Joker (2).png";
-import Joker3 from "../../Assets/traits/Joker/Joker (3).png";
-import Joker4 from "../../Assets/traits/Joker/Joker (4).png";
-import Joker5 from "../../Assets/traits/Joker/Joker (5).png";
-//Military images
-import Military1 from "../../Assets/traits/Military/Military (1).png";
-import Military2 from "../../Assets/traits/Military/Military (2).png";
-import Military3 from "../../Assets/traits/Military/Military (3).png";
-import Military4 from "../../Assets/traits/Military/Military (4).png";
-import Military5 from "../../Assets/traits/Military/Military (5).png";
-//Shintas
-import Shinta1 from "../../Assets/traits/Shinta/Shinta (1).png";
-import Shinta2 from "../../Assets/traits/Shinta/Shinta (2).png";
-import Shinta3 from "../../Assets/traits/Shinta/Shinta (3).png";
-import Shinta4 from "../../Assets/traits/Shinta/Shinta (4).png";
-import Shinta5 from "../../Assets/traits/Shinta/Shinta (5).png";
-import Shinta6 from "../../Assets/traits/Shinta/Shinta (6).png";
-import Shinta7 from "../../Assets/traits/Shinta/Shinta (7).png";
-import Shinta8 from "../../Assets/traits/Shinta/Shinta (8).png";
-import Shinta9 from "../../Assets/traits/Shinta/Shinta (9).png";
-import Shinta10 from "../../Assets/traits/Shinta/Shinta (10).png";
-import Shinta11 from "../../Assets/traits/Shinta/Shinta (11).png";
-import Shinta12 from "../../Assets/traits/Shinta/Shinta (12).png";
-import Shinta13 from "../../Assets/traits/Shinta/Shinta (13).png";
-import Shinta14 from "../../Assets/traits/Shinta/Shinta (14).png";
-import Shinta15 from "../../Assets/traits/Shinta/Shinta (15).png";
-import Shinta16 from "../../Assets/traits/Shinta/Shinta (16).png";
-import Shinta17 from "../../Assets/traits/Shinta/Shinta (17).png";
-import Shinta18 from "../../Assets/traits/Shinta/Shinta (18).png";
-import Shinta19 from "../../Assets/traits/Shinta/Shinta (19).png";
-import Shinta20 from "../../Assets/traits/Shinta/Shinta (20).png";
-import Shinta21 from "../../Assets/traits/Shinta/Shinta (21).png";
-//Shirts
-import Shirts1 from "../../Assets/traits/Shirts/shirt (1).png";
-import Shirts2 from "../../Assets/traits/Shirts/shirt (2).png";
-import Shirts3 from "../../Assets/traits/Shirts/shirt (3).png";
-import Shirts4 from "../../Assets/traits/Shirts/shirt (4).png";
-import Shirts5 from "../../Assets/traits/Shirts/shirt (5).png";
-import Shirts6 from "../../Assets/traits/Shirts/shirt (6).png";
-import Shirts7 from "../../Assets/traits/Shirts/shirt (7).png";
-import Shirts8 from "../../Assets/traits/Shirts/shirt (8).png";
-import Shirts9 from "../../Assets/traits/Shirts/shirt (9).png";
-import Shirts10 from "../../Assets/traits/Shirts/shirt (10).png";
-import Shirts11 from "../../Assets/traits/Shirts/shirt (11).png";
+import head1 from "../../Assets/traits/head/head (1).png";
+import head2 from "../../Assets/traits/head/head (2).png";
+import head3 from "../../Assets/traits/head/head (3).png";
+import head4 from "../../Assets/traits/head/head (4).png";
+import head5 from "../../Assets/traits/head/head (5).png";
+import head6 from "../../Assets/traits/head/head (6).png";
+import head7 from "../../Assets/traits/head/head (7).png";
+import head8 from "../../Assets/traits/head/head (8).png";
+import head9 from "../../Assets/traits/head/head (9).png";
+import head10 from "../../Assets/traits/head/head (10).png";
+import head11 from "../../Assets/traits/head/head (11).png";
+import head12 from "../../Assets/traits/head/head (12).png";
+import head13 from "../../Assets/traits/head/head (13).png";
+import head14 from "../../Assets/traits/head/head (14).png";
+import head15 from "../../Assets/traits/head/head (15).png";
+import head16 from "../../Assets/traits/head/head (16).png";
+import head17 from "../../Assets/traits/head/head (17).png";
+import head18 from "../../Assets/traits/head/head (18).png";
+import head19 from "../../Assets/traits/head/head (19).png";
+import head20 from "../../Assets/traits/head/head (20).png";
+import head21 from "../../Assets/traits/head/head (21).png";
+import head22 from "../../Assets/traits/head/head (22).png";
+import head23 from "../../Assets/traits/head/head (23).png";
+import head24 from "../../Assets/traits/head/head (24).png";
+import head25 from "../../Assets/traits/head/head (25).png";
+import head26 from "../../Assets/traits/head/head (26).png";
+import head27 from "../../Assets/traits/head/head (27).png";
+import head28 from "../../Assets/traits/head/head (28).png";
+import head29 from "../../Assets/traits/head/head (29).png";
+import head30 from "../../Assets/traits/head/head (30).png";
+import head31 from "../../Assets/traits/head/head (31).png";
+import head32 from "../../Assets/traits/head/head (32).png";
+import head33 from "../../Assets/traits/head/head (33).png";
+import head34 from "../../Assets/traits/head/head (34).png";
+import head35 from "../../Assets/traits/head/head (35).png";
+import head36 from "../../Assets/traits/head/head (36).png";
+import head37 from "../../Assets/traits/head/head (37).png";
+import head38 from "../../Assets/traits/head/head (38).png";
+import head39 from "../../Assets/traits/head/head (39).png";
+import head40 from "../../Assets/traits/head/head (40).png";
+import head41 from "../../Assets/traits/head/head (41).png";
+import head42 from "../../Assets/traits/head/head (42).png";
+import head43 from "../../Assets/traits/head/head (43).png";
+import head44 from "../../Assets/traits/head/head (44).png";
+import head45 from "../../Assets/traits/head/head (45).png";
+
+//special
+import special1 from "../../Assets/traits/special editions/special (1).png";
+import special2 from "../../Assets/traits/special editions/special (2).png";
+import special3 from "../../Assets/traits/special editions/special (3).png";
+import special4 from "../../Assets/traits/special editions/special (4).png";
+import special5 from "../../Assets/traits/special editions/special (5).png";
+import special6 from "../../Assets/traits/special editions/special (6).png";
+import special7 from "../../Assets/traits/special editions/special (7).png";
+import special8 from "../../Assets/traits/special editions/special (8).png";
+import special9 from "../../Assets/traits/special editions/special (9).png";
+import special10 from "../../Assets/traits/special editions/special (10).png";
+import special11 from "../../Assets/traits/special editions/special (11).png";
+import special12 from "../../Assets/traits/special editions/special (12).png";
+
+//nose
+import nose1 from "../../Assets/traits/Nose/nose (1).png";
+
+//mouths
+import mouth1 from "../../Assets/traits/mouth/mouth (1).png";
+import mouth2 from "../../Assets/traits/mouth/mouth (2).png";
+import mouth3 from "../../Assets/traits/mouth/mouth (3).png";
+import mouth4 from "../../Assets/traits/mouth/mouth (4).png";
+import mouth5 from "../../Assets/traits/mouth/mouth (5).png";
+import mouth6 from "../../Assets/traits/mouth/mouth (6).png";
+import mouth7 from "../../Assets/traits/mouth/mouth (7).png";
+import mouth8 from "../../Assets/traits/mouth/mouth (8).png";
+import mouth9 from "../../Assets/traits/mouth/mouth (9).png";
+import mouth10 from "../../Assets/traits/mouth/mouth (10).png";
+import mouth11 from "../../Assets/traits/mouth/mouth (11).png";
+import mouth12 from "../../Assets/traits/mouth/mouth (12).png";
+import mouth13 from "../../Assets/traits/mouth/mouth (13).png";
+import mouth14 from "../../Assets/traits/mouth/mouth (14).png";
+import mouth15 from "../../Assets/traits/mouth/mouth (15).png";
+import mouth16 from "../../Assets/traits/mouth/mouth (16).png";
+import mouth17 from "../../Assets/traits/mouth/mouth (17).png";
+import mouth18 from "../../Assets/traits/mouth/mouth (18).png";
+import mouth19 from "../../Assets/traits/mouth/mouth (19).png";
+import mouth20 from "../../Assets/traits/mouth/mouth (20).png";
+import mouth21 from "../../Assets/traits/mouth/mouth (21).png";
+import mouth22 from "../../Assets/traits/mouth/mouth (22).png";
+import mouth23 from "../../Assets/traits/mouth/mouth (23).png";
+import mouth24 from "../../Assets/traits/mouth/mouth (24).png";
+import mouth25 from "../../Assets/traits/mouth/mouth (25).png";
+import mouth26 from "../../Assets/traits/mouth/mouth (26).png";
+import mouth27 from "../../Assets/traits/mouth/mouth (27).png";
+import mouth28 from "../../Assets/traits/mouth/mouth (28).png";
+import mouth29 from "../../Assets/traits/mouth/mouth (29).png";
+import mouth30 from "../../Assets/traits/mouth/mouth (30).png";
+import mouth31 from "../../Assets/traits/mouth/mouth (31).png";
+import mouth32 from "../../Assets/traits/mouth/mouth (32).png";
+
+//Clothes
+import Clothes1 from "../../Assets/traits/clothes/clothes (1).png";
+import Clothes2 from "../../Assets/traits/clothes/clothes (2).png";
+import Clothes3 from "../../Assets/traits/clothes/clothes (3).png";
+import Clothes4 from "../../Assets/traits/clothes/clothes (4).png";
+import Clothes5 from "../../Assets/traits/clothes/clothes (5).png";
+import Clothes6 from "../../Assets/traits/clothes/clothes (6).png";
+import Clothes7 from "../../Assets/traits/clothes/clothes (7).png";
+import Clothes8 from "../../Assets/traits/clothes/clothes (8).png";
+import Clothes9 from "../../Assets/traits/clothes/clothes (9).png";
+import Clothes10 from "../../Assets/traits/clothes/clothes (10).png";
+import Clothes11 from "../../Assets/traits/clothes/clothes (11).png";
+import Clothes12 from "../../Assets/traits/clothes/clothes (12).png";
+import Clothes13 from "../../Assets/traits/clothes/clothes (13).png";
+import Clothes14 from "../../Assets/traits/clothes/clothes (14).png";
+import Clothes15 from "../../Assets/traits/clothes/clothes (15).png";
+import Clothes16 from "../../Assets/traits/clothes/clothes (16).png";
+import Clothes17 from "../../Assets/traits/clothes/clothes (17).png";
+import Clothes18 from "../../Assets/traits/clothes/clothes (18).png";
+import Clothes19 from "../../Assets/traits/clothes/clothes (19).png";
+import Clothes20 from "../../Assets/traits/clothes/clothes (20).png";
+import Clothes21 from "../../Assets/traits/clothes/clothes (21).png";
+import Clothes22 from "../../Assets/traits/clothes/clothes (22).png";
+import Clothes23 from "../../Assets/traits/clothes/clothes (23).png";
+import Clothes24 from "../../Assets/traits/clothes/clothes (24).png";
+import Clothes25 from "../../Assets/traits/clothes/clothes (25).png";
+import Clothes26 from "../../Assets/traits/clothes/clothes (26).png";
+import Clothes27 from "../../Assets/traits/clothes/clothes (27).png";
+import Clothes28 from "../../Assets/traits/clothes/clothes (28).png";
+import Clothes29 from "../../Assets/traits/clothes/clothes (29).png";
+import Clothes30 from "../../Assets/traits/clothes/clothes (30).png";
+import Clothes31 from "../../Assets/traits/clothes/clothes (31).png";
+import Clothes32 from "../../Assets/traits/clothes/clothes (32).png";
+import Clothes33 from "../../Assets/traits/clothes/clothes (33).png";
+import Clothes34 from "../../Assets/traits/clothes/clothes (34).png";
+import Clothes35 from "../../Assets/traits/clothes/clothes (35).png";
+import Clothes36 from "../../Assets/traits/clothes/clothes (36).png";
+import Clothes37 from "../../Assets/traits/clothes/clothes (37).png";
+import Clothes38 from "../../Assets/traits/clothes/clothes (38).png";
+import Clothes39 from "../../Assets/traits/clothes/clothes (39).png";
+import Clothes40 from "../../Assets/traits/clothes/clothes (40).png";
+import Clothes41 from "../../Assets/traits/clothes/clothes (41).png";
+import Clothes42 from "../../Assets/traits/clothes/clothes (42).png";
+import Clothes43 from "../../Assets/traits/clothes/clothes (43).png";
+import Clothes44 from "../../Assets/traits/clothes/clothes (44).png";
+import Clothes45 from "../../Assets/traits/clothes/clothes (45).png";
+//moustache
+import moustache1 from "../../Assets/traits/moustache/moustache (1).png";
+import moustache2 from "../../Assets/traits/moustache/moustache (2).png";
+import moustache3 from "../../Assets/traits/moustache/moustache (3).png";
+import moustache4 from "../../Assets/traits/moustache/moustache (4).png";
+import moustache5 from "../../Assets/traits/moustache/moustache (5).png";
+import moustache6 from "../../Assets/traits/moustache/moustache (6).png";
+import moustache7 from "../../Assets/traits/moustache/moustache (7).png";
+import moustache8 from "../../Assets/traits/moustache/moustache (8).png";
+import moustache9 from "../../Assets/traits/moustache/moustache (9).png";
+import moustache10 from "../../Assets/traits/moustache/moustache (10).png";
+import moustache11 from "../../Assets/traits/moustache/moustache (11).png";
+import moustache12 from "../../Assets/traits/moustache/moustache (12).png";
+import moustache13 from "../../Assets/traits/moustache/moustache (13).png";
+import moustache14 from "../../Assets/traits/moustache/moustache (14).png";
 //Singlets
-import Singlet1 from "../../Assets/traits/Singlet/Singlet (1).png";
-import Singlet2 from "../../Assets/traits/Singlet/Singlet (2).png";
-import Singlet3 from "../../Assets/traits/Singlet/Singlet (3).png";
-import Singlet4 from "../../Assets/traits/Singlet/Singlet (4).png";
-import Singlet5 from "../../Assets/traits/Singlet/Singlet (5).png";
-import Singlet6 from "../../Assets/traits/Singlet/Singlet (6).png";
-import Singlet7 from "../../Assets/traits/Singlet/Singlet (7).png";
-import Singlet8 from "../../Assets/traits/Singlet/Singlet (8).png";
-import Singlet9 from "../../Assets/traits/Singlet/Singlet (9).png";
-import Singlet10 from "../../Assets/traits/Singlet/Singlet (10).png";
-import Singlet11 from "../../Assets/traits/Singlet/Singlet (11).png";
-import Singlet12 from "../../Assets/traits/Singlet/Singlet (12).png";
-import Singlet13 from "../../Assets/traits/Singlet/Singlet (13).png";
-import Singlet14 from "../../Assets/traits/Singlet/Singlet (14).png";
-import Singlet15 from "../../Assets/traits/Singlet/Singlet (15).png";
-import Singlet16 from "../../Assets/traits/Singlet/Singlet (16).png";
-import Singlet17 from "../../Assets/traits/Singlet/Singlet (17).png";
-import Singlet18 from "../../Assets/traits/Singlet/Singlet (18).png";
-import Singlet19 from "../../Assets/traits/Singlet/Singlet (19).png";
-import Singlet20 from "../../Assets/traits/Singlet/Singlet (20).png";
-//Tshirt
-import Tshirt1 from "../../Assets/traits/Tshirt/Tshirt (1).png";
-import Tshirt2 from "../../Assets/traits/Tshirt/Tshirt (2).png";
-import Tshirt3 from "../../Assets/traits/Tshirt/Tshirt (3).png";
-import Tshirt4 from "../../Assets/traits/Tshirt/Tshirt (4).png";
-import Tshirt5 from "../../Assets/traits/Tshirt/Tshirt (5).png";
-import Tshirt6 from "../../Assets/traits/Tshirt/Tshirt (6).png";
-import Tshirt7 from "../../Assets/traits/Tshirt/Tshirt (7).png";
-import Tshirt8 from "../../Assets/traits/Tshirt/Tshirt (8).png";
-import Tshirt9 from "../../Assets/traits/Tshirt/Tshirt (9).png";
-//Tuxedo
-import Tuxedo1 from "../../Assets/traits/Tuxedo/Tuxedo (1).png";
-import Tuxedo2 from "../../Assets/traits/Tuxedo/Tuxedo (2).png";
-import Tuxedo3 from "../../Assets/traits/Tuxedo/Tuxedo (3).png";
-import Tuxedo4 from "../../Assets/traits/Tuxedo/Tuxedo (4).png";
-import Tuxedo5 from "../../Assets/traits/Tuxedo/Tuxedo (5).png";
-import Tuxedo6 from "../../Assets/traits/Tuxedo/Tuxedo (6).png";
-import Tuxedo7 from "../../Assets/traits/Tuxedo/Tuxedo (7).png";
+import glasses1 from "../../Assets/traits/glasses/glasses (1).png";
+import glasses2 from "../../Assets/traits/glasses/glasses (2).png";
+import glasses3 from "../../Assets/traits/glasses/glasses (3).png";
+import glasses4 from "../../Assets/traits/glasses/glasses (4).png";
+import glasses5 from "../../Assets/traits/glasses/glasses (5).png";
+import glasses6 from "../../Assets/traits/glasses/glasses (6).png";
+import glasses7 from "../../Assets/traits/glasses/glasses (7).png";
+import glasses8 from "../../Assets/traits/glasses/glasses (8).png";
+import glasses9 from "../../Assets/traits/glasses/glasses (9).png";
+import glasses10 from "../../Assets/traits/glasses/glasses (10).png";
+import glasses11 from "../../Assets/traits/glasses/glasses (11).png";
+import glasses12 from "../../Assets/traits/glasses/glasses (12).png";
+import glasses13 from "../../Assets/traits/glasses/glasses (13).png";
+import glasses14 from "../../Assets/traits/glasses/glasses (14).png";
+import glasses15 from "../../Assets/traits/glasses/glasses (15).png";
+import glasses16 from "../../Assets/traits/glasses/glasses (16).png";
+import glasses17 from "../../Assets/traits/glasses/glasses (17).png";
+import glasses18 from "../../Assets/traits/glasses/glasses (18).png";
+import glasses19 from "../../Assets/traits/glasses/glasses (19).png";
+import glasses20 from "../../Assets/traits/glasses/glasses (20).png";
+import glasses21 from "../../Assets/traits/glasses/glasses (21).png";
+import glasses22 from "../../Assets/traits/glasses/glasses (22).png";
+import glasses23 from "../../Assets/traits/glasses/glasses (23).png";
+import glasses24 from "../../Assets/traits/glasses/glasses (24).png";
+import glasses25 from "../../Assets/traits/glasses/glasses (25).png";
+import glasses26 from "../../Assets/traits/glasses/glasses (26).png";
+import glasses27 from "../../Assets/traits/glasses/glasses (27).png";
+import glasses28 from "../../Assets/traits/glasses/glasses (28).png";
+import glasses29 from "../../Assets/traits/glasses/glasses (29).png";
+import glasses30 from "../../Assets/traits/glasses/glasses (30).png";
+import glasses31 from "../../Assets/traits/glasses/glasses (31).png";
+import glasses32 from "../../Assets/traits/glasses/glasses (32).png";
+
 //Backgrounds
 import bg1 from "../../Assets/traits/Background/Background (1).png";
 import bg2 from "../../Assets/traits/Background/Background (2).png";
@@ -224,1058 +236,991 @@ import bg8 from "../../Assets/traits/Background/Background (8).png";
 import bg9 from "../../Assets/traits/Background/Background (9).png";
 import bg10 from "../../Assets/traits/Background/Background (10).png";
 import bg11 from "../../Assets/traits/Background/Background (11).png";
-import bg12 from "../../Assets/traits/Background/bg (1).png";
-import bg13 from "../../Assets/traits/Background/bg (2).png";
-import bg14 from "../../Assets/traits/Background/bg (3).png";
-import bg15 from "../../Assets/traits/Background/bg (4).png";
-import bg16 from "../../Assets/traits/Background/bg (5).png";
-import bg17 from "../../Assets/traits/Background/bg (6).png";
-import bg18 from "../../Assets/traits/Background/bg (7).png";
-import bg19 from "../../Assets/traits/Background/bg (8).png";
-import bg20 from "../../Assets/traits/Background/bg (9).png";
-import bg21 from "../../Assets/traits/Background/bg (10).png";
-import bg22 from "../../Assets/traits/Background/bg (11).png";
-import bg23 from "../../Assets/traits/Background/bg (12).png";
-import bg24 from "../../Assets/traits/Background/bg (13).png";
-import bg25 from "../../Assets/traits/Background/bg (14).png";
-import bg26 from "../../Assets/traits/Background/bg (15).png";
-import bg27 from "../../Assets/traits/Background/bg (16).png";
-import bg28 from "../../Assets/traits/Background/bg (17).png";
-import bg29 from "../../Assets/traits/Background/bg (18).png";
-import bg30 from "../../Assets/traits/Background/bg (19).png";
-import bg31 from "../../Assets/traits/Background/bg (20).png";
-import bg32 from "../../Assets/traits/Background/bg (21).png";
-import bg33 from "../../Assets/traits/Background/bg (22).png";
-import bg34 from "../../Assets/traits/Background/bg (23).png";
-import bg35 from "../../Assets/traits/Background/bg (24).png";
-import bg36 from "../../Assets/traits/Background/bg (25).png";
-import bg37 from "../../Assets/traits/Background/bg (26).png";
-import bg38 from "../../Assets/traits/Background/bg (27).png";
-import bg39 from "../../Assets/traits/Background/bg (28).png";
-import bg40 from "../../Assets/traits/Background/bg (29).png";
-import bg41 from "../../Assets/traits/Background/bg (30).png";
-import bg42 from "../../Assets/traits/Background/bg (31).png";
-import bg43 from "../../Assets/traits/Background/bg (32).png";
-import bg44 from "../../Assets/traits/Background/bg (33).png";
-import bg45 from "../../Assets/traits/Background/bg (34).png";
-import bg46 from "../../Assets/traits/Background/bg (35).png";
-import bg47 from "../../Assets/traits/Background/bg (36).png";
-import bg48 from "../../Assets/traits/Background/bg (37).png";
-import bg49 from "../../Assets/traits/Background/bg (38).png";
-import bg50 from "../../Assets/traits/Background/bg (39).png";
+import bg12 from "../../Assets/traits/Background/Background (12).png";
+import bg13 from "../../Assets/traits/Background/Background (13).png";
+import bg14 from "../../Assets/traits/Background/Background (14).png";
+import bg15 from "../../Assets/traits/Background/Background (15).png";
+import bg16 from "../../Assets/traits/Background/Background (16).png";
+import bg17 from "../../Assets/traits/Background/Background (17).png";
+import bg18 from "../../Assets/traits/Background/Background (18).png";
+import bg19 from "../../Assets/traits/Background/Background (19).png";
+import bg20 from "../../Assets/traits/Background/Background (20).png";
+import bg21 from "../../Assets/traits/Background/Background (21).png";
+import bg22 from "../../Assets/traits/Background/Background (22).png";
+import bg23 from "../../Assets/traits/Background/Background (23).png";
+import bg24 from "../../Assets/traits/Background/Background (24).png";
+import bg25 from "../../Assets/traits/Background/Background (25).png";
+import bg26 from "../../Assets/traits/Background/Background (26).png";
 const data = {
   background: [
     {
-      name: "Broken Wall",
+      name: "Aqua Green",
       img: bg1,
     },
     {
-      name: "Glitch",
+      name: "Army Green",
       img: bg2,
     },
     {
-      name: "Horror",
+      name: "Bacteria",
       img: bg3,
     },
     {
-      name: "Labz",
+      name: "Brick",
       img: bg4,
     },
     {
-      name: "Matrix",
+      name: "Burnt Orange",
       img: bg5,
     },
     {
-      name: "Money",
+      name: "Charcoal",
       img: bg6,
     },
     {
-      name: "Moon",
+      name: "Chemical",
       img: bg7,
     },
     {
-      name: "Sunset",
+      name: "Cool Gray",
       img: bg8,
     },
     {
-      name: "Thunderbolt",
+      name: "cracked wall",
       img: bg9,
     },
     {
-      name: "Whale",
+      name: "cream",
       img: bg10,
     },
     {
-      name: "White",
+      name: "DNA",
       img: bg11,
     },
     {
-      name: "All Seeing Eye",
+      name: "experiment",
       img: bg12,
     },
     {
-      name: "Batman Gotham Nft Labz",
+      name: "fade",
       img: bg13,
     },
     {
-      name: "Binance Gold",
+      name: "lab",
       img: bg14,
     },
     {
-      name: "Blue Diamond",
+      name: "laboratory",
       img: bg15,
     },
     {
-      name: "Blue Sketch",
+      name: "microscope",
       img: bg16,
     },
     {
-      name: "Blue Tiger",
+      name: "milk chocolate",
       img: bg17,
     },
     {
-      name: "Blurred Blood",
+      name: "pink",
       img: bg18,
     },
     {
-      name: "Boiler Room Burnt",
+      name: "platinum",
       img: bg19,
     },
     {
-      name: "Boiler Room Green",
+      name: "punk blue",
       img: bg20,
     },
     {
-      name: "Boiler Room Multi",
+      name: "purple",
       img: bg21,
     },
     {
-      name: "Boiler Room Purple",
+      name: "royal blue",
       img: bg22,
     },
     {
-      name: "Boiler Room Turquoise",
+      name: "sage green",
       img: bg23,
     },
     {
-      name: "Bright Pink Sketch",
+      name: "salmon",
       img: bg24,
     },
     {
-      name: "BTC Stamp",
+      name: "wall",
       img: bg25,
     },
     {
-      name: "Chanel Black",
+      name: "weed green",
       img: bg26,
-    },
-    {
-      name: "Cloudy Blue",
-      img: bg27,
-    },
-    {
-      name: "Demon Skin",
-      img: bg28,
-    },
-    {
-      name: "Escape Room",
-      img: bg29,
-    },
-    {
-      name: "Ethereum Skater",
-      img: bg30,
-    },
-    {
-      name: "Evil",
-      img: bg31,
-    },
-    {
-      name: "Flaming Skulls",
-      img: bg32,
-    },
-    {
-      name: "Green Nightmare",
-
-      img: bg33,
-    },
-    {
-      name: "Green Sketch",
-
-      img: bg34,
-    },
-    {
-      name: "Grey Haze",
-
-      img: bg35,
-    },
-    {
-      name: "Grey Sketch",
-
-      img: bg36,
-    },
-    {
-      name: "Guiding Light",
-
-      img: bg37,
-    },
-    { name: "Joker Steps", img: bg38 },
-    {
-      name: "Kaleido Purple",
-      img: bg39,
-    },
-    {
-      name: "Light Blue Sketch",
-      img: bg40,
-    },
-    {
-      name: "Ocean View",
-      img: bg41,
-    },
-    {
-      name: "Pink Diamond",
-      img: bg42,
-    },
-    {
-      name: "Pink Sketch",
-      img: bg43,
-    },
-    {
-      name: "Purple Diamond",
-      img: bg44,
-    },
-    {
-      name: "Purple Haze",
-      img: bg45,
-    },
-    {
-      name: "Rainbow",
-      img: bg46,
-    },
-    {
-      name: "Raw Threadz",
-      img: bg47,
-    },
-    {
-      name: "Saturday Night Vision",
-      img: bg48,
-    },
-    {
-      name: "Supreme Skater",
-      img: bg49,
-    },
-    {
-      name: "Yellow Sketch",
-      img: bg50,
     },
   ],
   body: [
     {
-      name: "Rainbow",
+      name: "Albino",
       img: body1,
     },
     {
-      name: "Trippy",
+      name: "beige",
       img: body2,
     },
     {
-      name: "Camouflage",
+      name: "bronze",
       img: body3,
     },
     {
-      name: "Red",
+      name: "dark",
       img: body4,
     },
     {
-      name: "Gold",
+      name: "dmt",
       img: body5,
     },
     {
-      name: "Cosmos",
+      name: "espresso",
       img: body6,
     },
     {
-      name: "Albino",
+      name: "fell in paint",
       img: body7,
     },
     {
-      name: "Zombie",
+      name: "honey",
       img: body8,
     },
     {
-      name: "Dark",
+      name: "jaundis",
       img: body9,
     },
     {
-      name: "Green Neon",
+      name: "no sun",
       img: body10,
     },
     {
-      name: "Pink Neon",
+      name: "pale tan",
       img: body11,
     },
     {
-      name: "Purple Neon",
+      name: "rainbow",
       img: body12,
     },
+    {
+      name: "robot",
+      img: body13,
+    },
+    {
+      name: "sand",
+      img: body14,
+    },
+    {
+      name: "sickly",
+      img: body15,
+    },
+    {
+      name: "sun burn",
+      img: body16,
+    },
+    {
+      name: "sun dodger",
+      img: body17,
+    },
+    {
+      name: "tan",
+      img: body18,
+    },
+    {
+      name: "weekly sunbed",
+      img: body19,
+    },
+    {
+      name: "zombie",
+      img: body20,
+    },
   ],
-  Accessories: [
+  eyes: [
     {
-      name: "Cyborg Eye Red",
-      img: cyber1,
+      name: "angry eyes",
+      img: eyes1,
     },
     {
-      name: "Cyborg pink Shades ",
-      img: cyber2,
+      name: "bozz eyes",
+      img: eyes2,
     },
     {
-      name: "Cyborg Eye Blue",
-      img: cyber3,
+      name: "chillin eyes",
+      img: eyes3,
     },
     {
-      name: "Cyborg Boss",
-      img: cyber4,
+      name: "ethereum eyes",
+      img: eyes4,
     },
     {
-      name: "Katana",
-      img: cyber5,
+      name: "frustrated eyes",
+      img: eyes5,
     },
     {
-      name: "Belt",
-      img: cyber6,
+      name: "lazer eyes",
+      img: eyes6,
     },
     {
-      name: "Eye Patch",
-      img: cyber7,
+      name: "mean eyes",
+      img: eyes7,
     },
     {
-      name: "Gnasher Mask",
-      img: cyber8,
+      name: "mesmorised",
+      img: eyes8,
     },
     {
-      name: "Welding Mask",
-      img: cyber9,
+      name: "peekin eyes",
+      img: eyes9,
     },
     {
-      name: "Laser Beam",
-      img: cyber10,
+      name: "stoner eyes",
+      img: eyes10,
+    },
+    {
+      name: "surprise eyes",
+      img: eyes11,
     },
   ],
   head: [
     {
-      name: "Blue Headband",
+      name: "antenna headwear",
       img: head1,
     },
     {
-      name: "Panties",
+      name: "atomic headwear",
       img: head2,
     },
     {
-      name: "Red Headband",
+      name: "auben",
       img: head3,
     },
     {
-      name: "Dick Headband",
+      name: "aviation goggle",
       img: head4,
     },
     {
-      name: "Blue Rabbit",
+      name: "big ideas",
       img: head5,
     },
     {
-      name: "Headphones",
+      name: "black bowler",
       img: head6,
     },
     {
-      name: "Horns",
+      name: "blue bowler",
       img: head7,
     },
     {
-      name: "Crown",
+      name: "blue rinse",
       img: head8,
     },
     {
-      name: "Witch Hat",
+      name: "brain fried",
       img: head9,
     },
     {
-      name: "Regae Headband Hair",
+      name: "brain matter",
       img: head10,
     },
     {
-      name: "Flags Headband",
+      name: "brain waver",
+      img: head11,
+    },
+    {
+      name: "bright pink",
       img: head12,
     },
     {
-      name: "Black Cap",
+      name: "cat in hat",
+      img: head13,
+    },
+    {
+      name: "chestnut",
       img: head14,
     },
     {
-      name: "Red Cap",
+      name: "cloud head",
       img: head15,
     },
     {
-      name: "Hat",
+      name: "combover",
       img: head16,
     },
     {
-      name: "Purple Headband",
+      name: "dark brown",
+      img: head17,
+    },
+    {
+      name: "dark green",
       img: head18,
     },
     {
-      name: "Yellow Headband",
+      name: "dark pink",
       img: head19,
     },
     {
-      name: "Bra",
+      name: "emerald green",
       img: head20,
     },
     {
-      name: "Santa Hat",
+      name: "experimental hat",
       img: head21,
     },
-  ],
-  neck: [
     {
-      name: "Green Cube",
-      img: neck1,
+      name: "fancy",
+      img: head22,
     },
     {
-      name: "Great Seal of US",
-      img: neck2,
+      name: "fullhead hair",
+      img: head23,
     },
     {
-      name: "Chain",
-      img: neck3,
+      name: "gone grey",
+      img: head24,
     },
     {
-      name: "BitCoin",
-      img: neck4,
+      name: "handy helmet",
+      img: head25,
     },
     {
-      name: "Litecoin",
-      img: neck5,
+      name: "hangon hat",
+      img: head26,
     },
     {
-      name: "Doge Coin",
-      img: neck6,
+      name: "light blue",
+      img: head27,
     },
     {
-      name: "Shiba Inu",
-      img: neck7,
+      name: "lightbulb moment",
+      img: head28,
     },
     {
-      name: "Ethereum",
-      img: neck8,
+      name: "magnifier",
+      img: head29,
     },
     {
-      name: "Dollar",
-      img: neck9,
+      name: "pale green",
+      img: head30,
     },
     {
-      name: "Designer",
-      img: neck10,
+      name: "patchy",
+      img: head31,
     },
     {
-      name: "Illuminati",
-      img: neck11,
+      name: "pink rinse",
+      img: head32,
     },
     {
-      name: "Cross",
-      img: neck12,
+      name: "pisspot",
+      img: head33,
     },
     {
-      name: "Binance",
-      img: neck13,
-    },
-  ],
-  sling: [
-    {
-      name: "Bitcoin",
-      img: sling1,
+      name: "pribess laya",
+      img: head34,
     },
     {
-      name: "Camouflage",
-      img: sling2,
+      name: "punk prof",
+      img: head35,
     },
     {
-      name: "Game Over",
-      img: sling3,
+      name: "purple",
+      img: head36,
     },
     {
-      name: "Balenciaga",
-      img: sling4,
+      name: "radio waves",
+      img: head37,
     },
     {
-      name: "Louis Vuitton",
-      img: sling5,
+      name: "red head",
+      img: head38,
     },
     {
-      name: "Thrasher",
-      img: sling6,
+      name: "scruff",
+      img: head39,
     },
     {
-      name: "Chanel",
-      img: sling7,
+      name: "skin fade",
+      img: head40,
     },
     {
-      name: "Red Louis V",
-      img: sling8,
+      name: "spagetti brain",
+      img: head41,
     },
     {
-      name: "Supreme",
-      img: sling9,
+      name: "thinking big",
+      img: head42,
     },
     {
-      name: "The North Face",
-      img: sling10,
+      name: "too yellow",
+      img: head43,
     },
     {
-      name: "Binance",
-      img: sling11,
+      name: "werewolf",
+      img: head44,
     },
     {
-      name: "Bitcoin Black",
-      img: sling12,
+      name: "witch hat",
+      img: head45,
     },
   ],
-  tattoo: [
+  special: [
     {
-      name: "Tribal Large",
-      img: tatoo1,
+      name: "angatha retro marvel witch",
+      img: special1,
     },
     {
-      name: "Boog Smile Now",
-      img: tatoo2,
+      name: "answer retro marvel",
+      img: special2,
     },
     {
-      name: "Tribal Small",
-      img: tatoo3,
+      name: "arcade retro marvel villan",
+      img: special3,
     },
     {
-      name: "Tribal Tiger",
-      img: tatoo4,
+      name: "body",
+      img: special4,
     },
     {
-      name: "Boog No Evil",
-      img: tatoo5,
-    },
-  ],
-  tooth: [
-    {
-      name: "Bloody Mess",
-      img: tooth1,
+      name: "deadpool",
+      img: special5,
     },
     {
-      name: "Red Safety",
-      img: tooth2,
+      name: "doctor doom",
+      img: special6,
     },
     {
-      name: "Blue Sharp",
-      img: tooth3,
+      name: "dr. strange",
+      img: special7,
     },
     {
-      name: "Blue Capped",
-      img: tooth4,
+      name: "iron",
+      img: special8,
     },
     {
-      name: "Purple Haze",
-      img: tooth5,
+      name: "mr fantastic",
+      img: special9,
     },
     {
-      name: "Multi Color",
-      img: tooth6,
+      name: "spider",
+      img: special10,
     },
     {
-      name: "Diamond",
-      img: tooth7,
+      name: "super mouth",
+      img: special11,
     },
     {
-      name: "Rainbow",
-      img: tooth8,
-    },
-    {
-      name: "Gold",
-      img: tooth9,
+      name: "thor",
+      img: special12,
     },
   ],
-  batman: [
+  glasses: [
     {
-      name: "Batman Black",
-      img: batman1,
+      name: "2 cool shades",
+      img: glasses1,
     },
     {
-      name: "Batman Chanel",
-      img: batman2,
+      name: "70s scarface",
+      img: glasses2,
     },
     {
-      name: "Batman Louis V",
-      img: batman3,
+      name: "80s shades",
+      img: glasses3,
     },
     {
-      name: "Batman Grey Camo",
-      img: batman4,
-    },
-  ],
-  HeavyTops: [
-    {
-      name: "Skull Hoodie",
-      img: Hoodie1,
+      name: "blocky shades",
+      img: glasses4,
     },
     {
-      name: "Money Hoodie",
-      img: Hoodie2,
+      name: "bozzy modo",
+      img: glasses5,
     },
     {
-      name: "Pop Art Hoodie",
-      img: Hoodie3,
+      name: "cool shades prof",
+      img: glasses6,
     },
     {
-      name: "Abstract Hoodie",
-      img: Hoodie4,
+      name: "dude shades",
+      img: glasses7,
     },
     {
-      name: "Nike Hoodie",
-      img: Hoodie5,
+      name: "futuristic",
+      img: glasses8,
     },
     {
-      name: "Red Louis V Hoodie",
-      img: Hoodie6,
+      name: "green vision",
+      img: glasses9,
     },
     {
-      name: "Blue Chanel Hoodie",
-      img: Hoodie7,
+      name: "hypnotise",
+      img: glasses10,
     },
     {
-      name: "Grey D&G Hoodie",
-      img: Hoodie8,
+      name: "lover shades",
+      img: glasses11,
     },
     {
-      name: "The North Face Hoodie",
-      img: Hoodie9,
+      name: "lowriders",
+      img: glasses12,
     },
     {
-      name: "New Balance Hoodie",
-      img: Hoodie10,
+      name: "modern street",
+      img: glasses13,
     },
     {
-      name: "Green Illuminati Hoodie",
-      img: Hoodie11,
+      name: "mona cool",
+      img: glasses14,
     },
     {
-      name: "Puma Hoodie",
-      img: Hoodie12,
+      name: "night vision",
+      img: glasses15,
     },
     {
-      name: "Thrasher Hoodie",
-      img: Hoodie13,
+      name: "oakleys",
+      img: glasses16,
     },
     {
-      name: "Lips Hoodie",
-      img: Hoodie14,
+      name: "original glasses",
+      img: glasses17,
     },
     {
-      name: "Purple Hoodie Zip",
-      img: Hoodie15,
+      name: "plain glasses",
+      img: glasses18,
     },
     {
-      name: "Dark Green Hoodie Zip",
-      img: Hoodie16,
+      name: "plastic",
+      img: glasses19,
     },
     {
-      name: "Black Hoodie Zip",
-      img: Hoodie17,
+      name: "posh glasses",
+      img: glasses20,
     },
     {
-      name: "White Hoodie Zip",
-      img: Hoodie18,
+      name: "rayban",
+      img: glasses21,
     },
     {
-      name: "Plain Green Hoodie Zip",
-      img: Hoodie19,
+      name: "red black shades",
+      img: glasses22,
     },
     {
-      name: "Leaves Hoodie",
-      img: Hoodie20,
+      name: "rose tinted",
+      img: glasses23,
     },
     {
-      name: "Floral Hoodie",
-      img: Hoodie21,
+      name: "school prof",
+      img: glasses24,
     },
     {
-      name: "Flowers Hoodie",
-      img: Hoodie22,
+      name: "ski goggles",
+      img: glasses25,
     },
     {
-      name: "Versace Hoodie",
-      img: Hoodie23,
+      name: "smashing",
+      img: glasses26,
     },
     {
-      name: "Akatsuki Hoodie",
-      img: akastHoodie,
+      name: "spectacles",
+      img: glasses27,
     },
     {
-      name: "Oh Shit Hoodie Up",
-      img: Oh_Hoodie,
+      name: "thin frame",
+      img: glasses28,
     },
     {
-      name: "Leopard Hoodie",
-      img: Puma_Hoodie,
+      name: "top gun shades",
+      img: glasses29,
     },
     {
-      name: "Ballenciaga Hoodie Up",
-      img: Ballenciaga,
+      name: "to pretty shades",
+      img: glasses30,
     },
     {
-      name: "Dope Hoodie Up",
-      img: Dope,
+      name: "welder glasses",
+      img: glasses31,
     },
     {
-      name: "Hustle Hoodie Up",
-      img: Hustle_Hoodie,
-    },
-    {
-      name: "Louis Voitton Hoodie",
-      img: Louis_Voitton_Hoodie,
-    },
-    {
-      name: "Black Tuxedo",
-      img: Tuxedo1,
-    },
-    {
-      name: "Roller Disco",
-      img: Tuxedo2,
-    },
-    {
-      name: "Red Tuxedo",
-      img: Tuxedo3,
-    },
-    {
-      name: "Grey Tuxedo",
-      img: Tuxedo4,
-    },
-    {
-      name: "Green Tuxedo",
-      img: Tuxedo5,
-    },
-    {
-      name: "Blue Tuxedo",
-      img: Tuxedo6,
-    },
-    {
-      name: "Pink Tuxedo",
-      img: Tuxedo7,
+      name: "xray vision",
+      img: glasses32,
     },
   ],
-  Joker: [
+  moustache: [
     {
-      name: "Joker blue Chanel",
-      img: Joker1,
+      name: "black",
+      img: moustache1,
     },
     {
-      name: "Joker Grey Camo",
-      img: Joker2,
+      name: "blonde",
+      img: moustache2,
     },
     {
-      name: "Joker Louis V",
-      img: Joker3,
+      name: "blue",
+      img: moustache3,
     },
     {
-      name: "Joker Red",
-      img: Joker4,
+      name: "brown",
+      img: moustache4,
     },
     {
-      name: "Joker Thrasher",
-      img: Joker5,
+      name: "chocolate",
+      img: moustache5,
+    },
+    {
+      name: "green",
+      img: moustache6,
+    },
+    {
+      name: "honey",
+      img: moustache7,
+    },
+    {
+      name: "magenta",
+      img: moustache8,
+    },
+    {
+      name: "parrot",
+      img: moustache9,
+    },
+    {
+      name: "purple",
+      img: moustache10,
+    },
+    {
+      name: "red",
+      img: moustache11,
+    },
+    {
+      name: "rose",
+      img: moustache12,
+    },
+    {
+      name: "sky",
+      img: moustache13,
+    },
+    {
+      name: "white",
+      img: moustache14,
     },
   ],
-  LightTops: [
+
+  nose: [
     {
-      name: "Brown Gilet",
-      img: festival1,
+      name: "Nose",
+      img: nose1,
     },
+  ],
+  mouth: [
     {
-      name: "Red Louis V Gilet",
-      img: festival2,
+      name: "anger",
+      img: mouth1,
     },
     {
-      name: "Leopard Gilet",
-      img: festival3,
+      name: "blimey",
+      img: mouth2,
     },
     {
-      name: "Green Gilet",
-      img: festival4,
+      name: "bubble gum",
+      img: mouth3,
     },
     {
-      name: "Ethereum Gilet",
-      img: festival5,
+      name: "chatter box",
+      img: mouth4,
     },
     {
-      name: "Borat Mankini",
-      img: festival6,
+      name: "cheery",
+      img: mouth5,
     },
     {
-      name: "Green Millitary Vest",
-      img: Military1,
+      name: "cheesy grin",
+      img: mouth6,
     },
     {
-      name: "Blue Military Vest",
-      img: Military2,
+      name: "clacker",
+      img: mouth7,
     },
     {
-      name: "Grey Military Vest",
-      img: Military3,
+      name: "clacker hangin",
+      img: mouth8,
     },
     {
-      name: "Red Millitary Vest",
-      img: Military4,
+      name: "gaspin",
+      img: mouth9,
     },
     {
-      name: "Black Millitary Vest",
-      img: Military5,
+      name: "gnashers",
+      img: mouth10,
     },
     {
-      name: "Leopard Tshirt",
-      img: Shinta1,
+      name: "gosh",
+      img: mouth11,
     },
     {
-      name: "Colorful Tshirt",
-      img: Shinta2,
+      name: "growl",
+      img: mouth12,
     },
     {
-      name: "Trippy Tshirt",
-      img: Shinta3,
+      name: "happier",
+      img: mouth13,
     },
     {
-      name: "Ed Hardy Tshirt",
-      img: Shinta4,
+      name: "holla",
+      img: mouth14,
     },
     {
-      name: "Under Armour Tshirt",
-      img: Shinta5,
+      name: "just pleased",
+      img: mouth15,
     },
     {
-      name: "Balenciaga Tshirt",
-      img: Shinta6,
+      name: "little mouth",
+      img: mouth16,
     },
     {
-      name: "Game Over Tshirt",
-      img: Shinta7,
+      name: "little mouth oohh",
+      img: mouth17,
     },
     {
-      name: "Ethereum black Tshirt",
-      img: Shinta8,
+      name: "mean",
+      img: mouth18,
     },
     {
-      name: "Gucci Tshirt",
-      img: Shinta9,
+      name: "pizza",
+      img: mouth19,
     },
     {
-      name: "Splash Tshirt",
-      img: Shinta10,
+      name: "rasp",
+      img: mouth20,
     },
     {
-      name: "Skull Tshirt",
-      img: Shinta11,
+      name: "sad times",
+      img: mouth21,
     },
     {
-      name: "Cartoon Tshirt",
-      img: Shinta12,
+      name: "say aarrgghh",
+      img: mouth22,
     },
     {
-      name: "Money Tshirt",
-      img: Shinta13,
+      name: "shoutout",
+      img: mouth23,
     },
+
     {
-      name: "Black and Red Tshirt",
-      img: Shinta14,
+      name: "side tongue",
+      img: mouth24,
     },
     {
-      name: "Tiger Tshirt",
-      img: Shinta15,
+      name: "smoking",
+      img: mouth25,
     },
     {
-      name: "Gold Tshirt",
-      img: Shinta16,
+      name: "teethy",
+      img: mouth26,
     },
     {
-      name: "Red Tshirt",
-      img: Shinta17,
+      name: "tongue hangin",
+      img: mouth27,
     },
     {
-      name: "Shiny Tshirt",
-      img: Shinta18,
+      name: "tongue out",
+      img: mouth28,
     },
     {
-      name: "Scale Tshirt",
-      img: Shinta19,
+      name: "turkey teeth",
+      img: mouth29,
     },
     {
-      name: "Rainbow Tshirt",
-      img: Shinta20,
+      name: "uurrgghhh",
+      img: mouth30,
     },
     {
-      name: "Whirls Tshirt",
-      img: Shinta21,
+      name: "yell",
+      img: mouth31,
     },
     {
-      name: "Green Camouflage Shirt",
-      img: Shirts1,
+      name: "yelling",
+      img: mouth32,
     },
+  ],
+
+  clothes: [
     {
-      name: "Thrasher Shirt",
-      img: Shirts2,
+      name: "80s brown",
+      img: Clothes1,
     },
     {
-      name: "Louis Vuitton Shirt",
-      img: Shirts3,
+      name: "black on back",
+      img: Clothes2,
     },
     {
-      name: "Ethereum Shirt",
-      img: Shirts4,
+      name: "blue prof",
+      img: Clothes3,
     },
     {
-      name: "McD Tshirt",
-      img: Shirts5,
+      name: "bowtie n braces",
+      img: Clothes4,
     },
     {
-      name: "Bitcoin Gold Shirt",
-      img: Shirts6,
+      name: "bowtie n pen",
+      img: Clothes5,
     },
     {
-      name: "Brands Grey Shirt",
-      img: Shirts7,
+      name: "cardy blue",
+      img: Clothes6,
     },
     {
-      name: "Purple Shirt",
-      img: Shirts8,
+      name: "cardy prof",
+      img: Clothes7,
     },
     {
-      name: "Chanel Shirt",
-      img: Shirts9,
+      name: "circus jacket",
+      img: Clothes8,
     },
     {
-      name: "Louis V Shirt",
-      img: Shirts10,
+      name: "collar n snazz",
+      img: Clothes9,
     },
     {
-      name: "Grey Camouflage shirt",
-      img: Shirts11,
+      name: "collar up gold",
+      img: Clothes10,
     },
     {
-      name: "Blue Chanel Singlet",
-      img: Singlet1,
+      name: "collar up splat",
+      img: Clothes11,
     },
     {
-      name: "Santa Cruz Singlet",
-      img: Singlet2,
+      name: "coolblue splat",
+      img: Clothes12,
     },
     {
-      name: "Marvel Singlet",
-      img: Singlet3,
+      name: "crazy tie outfit",
+      img: Clothes13,
     },
     {
-      name: "Vans Singlet",
-      img: Singlet4,
+      name: "crisp tee",
+      img: Clothes14,
     },
     {
-      name: "Gucci Singlet",
-      img: Singlet5,
+      name: "dirty prof",
+      img: Clothes15,
     },
     {
-      name: "Thrasher Singlet",
-      img: Singlet6,
+      name: "emerald n jade",
+      img: Clothes16,
     },
     {
-      name: "Balenciaga Singlet",
-      img: Singlet7,
+      name: "emerald prof",
+      img: Clothes17,
     },
     {
-      name: "Jordan Singlet",
-      img: Singlet8,
+      name: "enough collars",
+      img: Clothes18,
     },
     {
-      name: "Adidas Singlet",
-      img: Singlet9,
+      name: "faded",
+      img: Clothes19,
     },
     {
-      name: "Supreme Singlet",
-      img: Singlet10,
+      name: "futuristic",
+      img: Clothes20,
     },
     {
-      name: "Scary Singlet",
-      img: Singlet11,
+      name: "futuristic n button",
+      img: Clothes21,
     },
     {
-      name: "Supreme Small Singlet",
-      img: Singlet12,
+      name: "green tee prof",
+      img: Clothes22,
     },
     {
-      name: "Gap Singlet",
-      img: Singlet13,
+      name: "green white labcoat",
+      img: Clothes23,
     },
     {
-      name: "Hugo Boss Singlet",
-      img: Singlet14,
+      name: "joker colors",
+      img: Clothes24,
     },
     {
-      name: "Thrasher Image Singlet",
-      img: Singlet15,
+      name: "labcoat n buttons",
+      img: Clothes25,
     },
     {
-      name: "Ethereum Singlet",
-      img: Singlet16,
+      name: "labcoat n hoody",
+      img: Clothes26,
     },
     {
-      name: "Binance Singlet",
-      img: Singlet17,
+      name: "long tongue",
+      img: Clothes27,
     },
     {
-      name: "White Gucci singlet",
-      img: Singlet18,
+      name: "maccys colours",
+      img: Clothes28,
     },
     {
-      name: "Louis Vuitton Singlet",
-      img: Singlet19,
+      name: "nurse robe",
+      img: Clothes29,
     },
     {
-      name: "Nike Singlet",
-      img: Singlet20,
+      name: "orange splat shirt",
+      img: Clothes30,
     },
     {
-      name: "Weed Tshirt",
-      img: Tshirt1,
+      name: "pattern heavy",
+      img: Clothes31,
     },
     {
-      name: "Spider Tshirt",
-      img: Tshirt2,
+      name: "polkadot",
+      img: Clothes32,
     },
     {
-      name: "Bitcoin Grey Tshirt",
-      img: Tshirt3,
+      name: "pure business",
+      img: Clothes33,
     },
     {
-      name: "CZ Tshirt",
-      img: Tshirt4,
+      name: "purple white",
+      img: Clothes34,
     },
     {
-      name: "Light Binance Tshirt",
-      img: Tshirt5,
+      name: "red n beige",
+      img: Clothes35,
     },
     {
-      name: "Dark Binance Tshirt",
-      img: Tshirt6,
+      name: "redtop labcoat",
+      img: Clothes36,
     },
     {
-      name: "BTC Green Tshirt",
-      img: Tshirt7,
+      name: "riddler",
+      img: Clothes37,
     },
     {
-      name: "TBS Tshirt",
-      img: Tshirt8,
+      name: "simple",
+      img: Clothes38,
     },
     {
-      name: "Lamb of God Tshirt",
-      img: Tshirt9,
+      name: "simply green",
+      img: Clothes39,
+    },
+    {
+      name: "striped shirt",
+      img: Clothes40,
+    },
+    {
+      name: "The collar",
+      img: Clothes41,
+    },
+    {
+      name: "well smart",
+      img: Clothes42,
+    },
+    {
+      name: "white",
+      img: Clothes43,
+    },
+    {
+      name: "yellow splat jacket",
+      img: Clothes44,
     },
   ],
 };
