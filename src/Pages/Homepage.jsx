@@ -21,6 +21,7 @@ import {
   faTelegram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 function Homepage() {
   const [loader, setLoader] = useState(true);
   const [TEXT_MOVE, setTEXT_MOVE] = useState(0);
@@ -799,10 +800,10 @@ function Homepage() {
               </div>
               <img src={labzGif} alt="" className="labz-gif" />
               <div className="mint-div">
-                <div className="mint-btn">
+                <Link to={"/dashboard"} className="mint-btn">
                   <img src={board} alt="" />
                   <p className="btn-text">Mint Professor</p>
-                </div>
+                </Link>
                 <div className="amount-div">
                   <h2>1/10,000</h2>
                   <h2></h2>

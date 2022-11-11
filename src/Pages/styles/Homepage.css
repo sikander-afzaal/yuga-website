@@ -326,6 +326,8 @@
   width: 100%;
   position: relative;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 .mint-btn img {
   width: 200px;
