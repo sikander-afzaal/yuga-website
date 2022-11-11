@@ -81,19 +81,25 @@
 }
 
 .link2 p {
-  color: #c4d0dc;
-  font-size: 1rem;
+  color: white;
+  background-color: #797f81;
+  font-size: 1.3rem;
+  text-transform: uppercase;
   display: flex;
-  border: 1px solid white;
   justify-content: center;
+  border-radius: 100vh;
+  padding: 12px 20px;
   align-items: center;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  border: none;
 }
-.link2 p,
+
 .top-link {
+  cursor: pointer;
   padding: 14px;
   border-radius: 7px;
   transition: all 0.25s ease-in-out;
-  cursor: pointer;
 }
 .link2 p:hover,
 .top-link:hover {
@@ -266,5 +272,9 @@
   }
   .left-header {
     gap: 1rem;
+  }
+  .link2 p {
+    padding: 12px 15px;
+    font-size: 1rem;
   }
 }
