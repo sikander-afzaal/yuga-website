@@ -22,7 +22,7 @@ const Mint = () => {
         <div className="mint-div">
           <div to={"/dashboard"} className="mint-btn">
             <img src={board} alt="" />
-            <p className="btn-text">Mint Professor</p>
+            <p className="btn-text cp">Mint Professor</p>
           </div>
           <div className="amount-div">
             <h2>1/10,000</h2>

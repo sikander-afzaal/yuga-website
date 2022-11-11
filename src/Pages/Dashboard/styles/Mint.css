@@ -10,7 +10,7 @@
 .gif-div {
   position: absolute;
   top: 0;
-  left: 20%;
+  right: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,11 +21,11 @@
 }
 .gif-div p {
   position: absolute;
-  left: 100%;
+  right: 100%;
   color: white;
-  width: 160px;
+  width: 100px;
   bottom: 0;
-  font-size: 20px;
+  font-size: 14px;
 }
 .gif-div .wire {
   width: 40px;
@@ -52,6 +52,7 @@
   width: 100%;
   gap: 5px;
   margin-top: 30px;
+  opacity: 0.9;
 }
 .amount-div h2,
 .amount-div input {
@@ -87,6 +88,7 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+  opacity: 0.8;
 }
 .mint-btn img {
   width: 200px;
@@ -95,12 +97,12 @@
 }
 .btn-text {
   left: 50%;
-  top: 60%;
+  top: 62%;
   max-width: min-content;
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 400;
   pointer-events: none;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -208,6 +210,11 @@
   }
   .gif-div {
     left: 15%;
+    right: initial;
+  }
+  .gif-div p {
+    left: 100%;
+    right: initial;
   }
 }
 @media screen and (max-width: 630px) {
