@@ -11,6 +11,7 @@ import connect1 from "../../Assets/connect1.svg";
 import connect2 from "../../Assets/connect2.svg";
 import connect3 from "../../Assets/connect3.svg";
 import connect4 from "../../Assets/connect4.gif";
+import { Link } from "react-router-dom";
 function Header({ func }) {
   const [modal, setModal] = useState(false);
   return (
@@ -61,7 +62,10 @@ function Header({ func }) {
           icon={faBars}
           className="mobile"
         />
-        <img src={logo} className={"logo"} alt="" />
+        <Link to="/dashboard">
+          {" "}
+          <img src={logo} className={"logo"} alt="" />
+        </Link>
       </div>
       <div className="right-header">
         {/* <div className="link drop">
