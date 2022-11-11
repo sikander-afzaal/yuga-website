@@ -285,6 +285,9 @@
   background-repeat: no-repeat;
   transform: translateY(15vh);
   position: relative;
+  border: 2px solid white;
+  background-position: center;
+  overflow: hidden;
 }
 .card2::before {
   position: absolute;
