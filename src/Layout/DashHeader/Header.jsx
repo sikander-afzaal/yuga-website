@@ -86,7 +86,7 @@ function Header({ func }) {
           </div>
         </div> */}
         <div onClick={() => setModal(true)} className="link2">
-          <p>Connect Wallet</p>
+          <p className="cp">Connect Wallet</p>
         </div>
       </div>
     </div>

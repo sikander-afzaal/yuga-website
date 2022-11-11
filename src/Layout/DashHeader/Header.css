@@ -242,6 +242,10 @@
   .modal-box p {
     font-size: 0.8rem;
   }
+  .link2 p {
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 466px) {
   .modal-connect {
@@ -272,9 +276,5 @@
   }
   .left-header {
     gap: 1rem;
-  }
-  .link2 p {
-    padding: 12px 15px;
-    font-size: 1rem;
   }
 }

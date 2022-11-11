@@ -48,6 +48,7 @@
 @media screen and (max-width: 750px) {
   .mint-page {
     background-size: cover;
+    background-position: 30%;
   }
   .mint-board {
     left: 5%;

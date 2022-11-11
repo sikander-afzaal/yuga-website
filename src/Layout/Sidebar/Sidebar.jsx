@@ -29,7 +29,7 @@ function Sidebar({ open, func }) {
               isActive ? "row-link active" : "row-link"
             }
           >
-            <p>Mint Professor</p>
+            <p className="cp">Mint Professor</p>
           </NavLink>
           <NavLink
             onClick={() => func(false)}
@@ -38,7 +38,7 @@ function Sidebar({ open, func }) {
               isActive ? "row-link active" : "row-link"
             }
           >
-            <p>The Traits</p>
+            <p className="cp">The Traits</p>
           </NavLink>
           <NavLink
             onClick={() => func(false)}
@@ -47,7 +47,7 @@ function Sidebar({ open, func }) {
               isActive ? "row-link active" : "row-link"
             }
           >
-            <p>My NFT'S</p>
+            <p className="cp">My NFT'S</p>
           </NavLink>
           <NavLink
             onClick={() => func(false)}
@@ -56,7 +56,7 @@ function Sidebar({ open, func }) {
               isActive ? "row-link active" : "row-link disabled-link"
             }
           >
-            <p>Labz Tech</p>
+            <p className="cp">Labz Tech</p>
             <img src={soon} alt="" />
           </NavLink>
           <NavLink
@@ -66,7 +66,7 @@ function Sidebar({ open, func }) {
               isActive ? "row-link active" : "row-link disabled-link"
             }
           >
-            <p>LABZ EVOLUTION</p>
+            <p className="cp">LABZ EVOLUTION</p>
             <img src={soon} alt="" />
           </NavLink>
         </div>

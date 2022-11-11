@@ -27,3 +27,10 @@ body {
   width: 100%;
   height: 100%;
 }
+@font-face {
+  font-family: CP;
+  src: url("./Assets/CP.ttf");
+}
+.cp {
+  font-family: "CP", sans-serif;
+}
