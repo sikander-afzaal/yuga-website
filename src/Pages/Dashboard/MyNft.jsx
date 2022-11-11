@@ -6,7 +6,7 @@ const MyNft = () => {
   return (
     <AnimatedPage>
       <div className="my-nft">
-        <h1>
+        <h1 className="cp">
           CONNECT WALLET <br /> To see your collection
         </h1>
       </div>
