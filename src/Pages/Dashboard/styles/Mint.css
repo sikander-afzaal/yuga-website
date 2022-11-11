@@ -227,7 +227,7 @@
   }
   .prof-text {
     width: 180px;
-    right: 0;
+    right: 10px;
     left: initial;
     transform: none;
   }
