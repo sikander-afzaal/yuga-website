@@ -188,10 +188,8 @@
   }
 
   .prof-text {
-    width: 180px;
-    right: 0;
-    left: initial;
-    transform: none;
+    width: 200px;
+    left: 60%;
   }
   .list-text {
     right: 0;
@@ -226,6 +224,12 @@
   }
   .gif-div {
     left: 0;
+  }
+  .prof-text {
+    width: 180px;
+    right: 0;
+    left: initial;
+    transform: none;
   }
 }
 @media screen and (max-width: 500px) {
