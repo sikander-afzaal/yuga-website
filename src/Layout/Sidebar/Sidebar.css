@@ -51,16 +51,17 @@
   text-transform: uppercase;
 }
 .row-link img {
-  width: 40%;
+  width: 100px;
   position: absolute;
-  top: -10px;
-  left: 20%;
+  top: 0px;
+  left: 50%;
   transform: translateX(-50%);
   z-index: -1;
 }
 .disabled-link {
   cursor: not-allowed !important;
   pointer-events: none !important;
+  width: max-content;
 }
 .active {
   border-color: #24dbaf10;
