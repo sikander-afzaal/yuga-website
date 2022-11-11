@@ -9,7 +9,7 @@ import {
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 import { NavLink } from "react-router-dom";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/professor-text.png";
 import soon from "../../Assets/soon.gif";
 function Sidebar({ open, func }) {
   return (

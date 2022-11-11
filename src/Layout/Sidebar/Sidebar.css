@@ -61,7 +61,7 @@
 .disabled-link {
   cursor: not-allowed !important;
   pointer-events: none !important;
-  width: max-content;
+  width: max-content !important;
 }
 .active {
   border-color: #24dbaf10;

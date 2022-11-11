@@ -5,15 +5,12 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import gsap from "gsap";
 import "./styles/Homepage.css";
-import img from "../Assets/img.png";
+import profText from "../Assets/prof-text-2.png";
+import free from "../Assets/free-text.png";
 import logo from "../Assets/logo.png";
 import brand1 from "../Assets/brands (1).png";
 import brand2 from "../Assets/brands (2).png";
 import brand3 from "../Assets/brands (3).png";
-import thread from "../Assets/thread.png";
-import pushGif from "../Assets/gif.gif";
-import labzGif from "../Assets/labz-gif.gif";
-import board from "../Assets/board.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDiscord,
@@ -788,30 +785,14 @@ function Homepage() {
         <div ref={cardSection} className="third-section">
           <div className="card-div">
             <div ref={card1} className="card card1">
-              {/* <img src={img} alt="" />
-              <h3>GENESIS EDITION WAGMI NFT</h3>
-              <h2>Coming Soon</h2> */}
               <button className="main-btn">Whitepaper</button>
             </div>
             <div ref={card2} className="card card2">
-              <div className="push-div">
-                <img src={thread} alt="" className="thread" />
-                <img src={pushGif} alt="" className="push-gif" />
-              </div>
-              <img src={labzGif} alt="" className="labz-gif" />
-              <div className="mint-div">
-                <Link to={"/dashboard"} className="mint-btn">
-                  <img src={board} alt="" />
-                  <p className="btn-text">Mint Professor</p>
+              <div className="inner-card">
+                <img src={profText} alt="" />
+                <Link to={"/dashboard"}>
+                  <img src={free} alt="" />
                 </Link>
-                <div className="amount-div">
-                  <h2>1/10,000</h2>
-                  <h2></h2>
-                </div>
-                <div className="mint-btn">
-                  <img src={board} alt="" />
-                  <p className="btn-text">Connect Wallet</p>
-                </div>
               </div>
             </div>
             <div ref={card3} className="card card3">
