@@ -850,7 +850,7 @@ const data = {
   ],
   moustache: [
     {
-      name: "black",
+      name: "grey",
       img: moustache1,
     },
     {
