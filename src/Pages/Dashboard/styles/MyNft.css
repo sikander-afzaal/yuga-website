@@ -1,9 +1,7 @@
 .my-nft {
   width: 100%;
   height: 100%;
-  background-image: url("../../../Assets/professor\ background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
