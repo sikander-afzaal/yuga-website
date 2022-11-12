@@ -620,7 +620,7 @@ const data = {
       img: head33,
     },
     {
-      name: "pribess laya",
+      name: "Princess  Leia",
       img: head34,
     },
     {

@@ -54,7 +54,7 @@ function Traits() {
         </div>
         {/* head box --------------------------- */}
         <div className="traits-box">
-          <h1>Head</h1>
+          <h1>Headwear</h1>
           <div className="traits-grid">
             {data.head.map((elem, index) => {
               return <SmallBox key={index} img={elem.img} name={elem.name} />;
