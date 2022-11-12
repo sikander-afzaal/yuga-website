@@ -5,6 +5,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
+  isolation: isolate;
 }
 
 .gif-div {
@@ -30,11 +31,12 @@
 .arrow-div {
   position: absolute;
   display: flex;
-  top: 3%;
+  top: 35%;
   left: 100%;
   transform: rotate(-25deg);
   justify-content: center;
   align-items: center;
+  opacity: 0.8;
 }
 .arrow-head {
   border: solid white;
@@ -47,19 +49,22 @@
 }
 .arrow-line {
   background-color: white;
-  width: 16vw;
+  width: 7vw;
   height: 5px;
   border-radius: 100vh;
   margin-right: -7px;
 }
 @media screen and (max-width: 1700px) and (max-height: 740px) {
   .arrow-line {
-    width: 12vw;
+    width: 7vw;
+  }
+  .arrow-div {
+    transform: rotate(-30deg);
   }
 }
 @media screen and (max-width: 1627px) and (max-height: 740px) {
   .arrow-line {
-    width: 10vw;
+    width: 6vw;
   }
 }
 @media screen and (max-width: 1280px) and (max-height: 740px) {
@@ -67,16 +72,7 @@
     width: 5vw;
   }
 }
-@media screen and (max-height: 700px) {
-  .arrow-div {
-    transform: rotate(-20deg);
-  }
-}
-@media screen and (max-height: 600px) {
-  .arrow-div {
-    transform: rotate(-15deg);
-  }
-}
+
 .prof {
   position: absolute;
   width: 17vh;
@@ -193,6 +189,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  z-index: -1;
 }
 .list-text h3 {
   color: white;
@@ -248,7 +245,7 @@
     transform: rotate(-32deg);
   }
   .arrow-line {
-    width: 13vw;
+    width: 6vw;
   }
 }
 @media screen and (max-width: 880px) {
@@ -294,11 +291,16 @@
     left: initial;
     right: 20%;
     top: initial;
-    bottom: 100%;
+    bottom: 73%;
     transform: rotate(-150deg);
   }
   .arrow-line {
-    width: 12vw;
+    width: 4vw;
+
+    height: 3px;
+  }
+  .arrow-head {
+    border-width: 0px 3px 3px 0px;
   }
 }
 @media screen and (max-width: 630px) {
@@ -326,7 +328,7 @@
     left: 15%;
   }
   .arrow-line {
-    width: 23vw;
+    width: 5vw;
   }
 }
 @media screen and (max-width: 500px) {
