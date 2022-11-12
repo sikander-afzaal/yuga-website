@@ -6,7 +6,7 @@ import thread from "../../Assets/thread.png";
 import text from "../../Assets/professor-text.png";
 import board from "../../Assets/board.png";
 import arrow from "../../Assets/arrow.png";
-import prof from "../../Assets/prof.png";
+import prof from "../../Assets/prof.gif";
 import gif from "../../Assets/gif.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
