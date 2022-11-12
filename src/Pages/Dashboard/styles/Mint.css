@@ -27,20 +27,54 @@
   bottom: 0;
   font-size: 14px;
 }
-.pointing {
+.arrow-div {
   position: absolute;
-  bottom: 115%;
-  left: 40%;
-  transform: translateX(-50%);
-  font-size: 25px;
-  animation: move 1s ease-in-out infinite alternate;
+  display: flex;
+  top: 3%;
+  left: 100%;
+  transform: rotate(-25deg);
+  justify-content: center;
+  align-items: center;
 }
-@keyframes move {
-  from {
-    transform: translateX(-50%) translateY(0);
+.arrow-head {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 6px;
+  margin-left: -7px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.arrow-line {
+  background-color: white;
+  width: 16vw;
+  height: 5px;
+  border-radius: 100vh;
+  margin-right: -7px;
+}
+@media screen and (max-width: 1700px) and (max-height: 740px) {
+  .arrow-line {
+    width: 12vw;
   }
-  to {
-    transform: translateX(-50%) translateY(8px);
+}
+@media screen and (max-width: 1627px) and (max-height: 740px) {
+  .arrow-line {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 1280px) and (max-height: 740px) {
+  .arrow-line {
+    width: 5vw;
+  }
+}
+@media screen and (max-height: 700px) {
+  .arrow-div {
+    transform: rotate(-20deg);
+  }
+}
+@media screen and (max-height: 600px) {
+  .arrow-div {
+    transform: rotate(-15deg);
   }
 }
 .prof {
@@ -210,6 +244,12 @@
   .mint-btn img {
     width: 150px;
   }
+  .arrow-div {
+    transform: rotate(-32deg);
+  }
+  .arrow-line {
+    width: 13vw;
+  }
 }
 @media screen and (max-width: 880px) {
   .mint-page {
@@ -250,6 +290,16 @@
     left: 100%;
     right: initial;
   }
+  .arrow-div {
+    left: initial;
+    right: 20%;
+    top: initial;
+    bottom: 100%;
+    transform: rotate(-150deg);
+  }
+  .arrow-line {
+    width: 12vw;
+  }
 }
 @media screen and (max-width: 630px) {
   .mint-div {
@@ -274,6 +324,9 @@
   }
   .prof {
     left: 15%;
+  }
+  .arrow-line {
+    width: 23vw;
   }
 }
 @media screen and (max-width: 500px) {

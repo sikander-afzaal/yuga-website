@@ -8,8 +8,6 @@ import board from "../../Assets/board.png";
 import arrow from "../../Assets/arrow.png";
 import prof from "../../Assets/prof.gif";
 import gif from "../../Assets/gif.gif";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Mint = () => {
   return (
@@ -20,11 +18,14 @@ const Mint = () => {
           <img src={thread} className="wire" alt="" />
           <img src={gif} className="gif" alt="" />
           <p className="cp">
-            <FontAwesomeIcon icon={faArrowDown} className="pointing" />
             !!! NO CODE !!! CLICK THE ALPHA BUTTON TO GET ONE FREE !!!!!
           </p>
         </div>
         <div className="mint-div">
+          <div className="arrow-div">
+            <div className="arrow-line"></div>
+            <div className="arrow-head"></div>
+          </div>
           <div to={"/dashboard"} className="mint-btn">
             <img src={board} alt="" />
             <p className="btn-text cp">Mint Professor</p>
