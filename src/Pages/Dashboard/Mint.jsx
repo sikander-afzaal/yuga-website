@@ -6,16 +6,21 @@ import thread from "../../Assets/thread.png";
 import text from "../../Assets/professor-text.png";
 import board from "../../Assets/board.png";
 import arrow from "../../Assets/arrow.png";
+import prof from "../../Assets/prof.png";
 import gif from "../../Assets/gif.gif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Mint = () => {
   return (
     <AnimatedPage>
       <div className="mint-page">
+        <img src={prof} className="prof" alt="" />
         <div className="gif-div">
           <img src={thread} className="wire" alt="" />
           <img src={gif} className="gif" alt="" />
           <p className="cp">
+            <FontAwesomeIcon icon={faArrowDown} className="pointing" />
             !!! NO CODE !!! CLICK THE ALPHA BUTTON TO GET ONE FREE !!!!!
           </p>
         </div>
