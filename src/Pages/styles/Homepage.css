@@ -235,7 +235,7 @@
   display: grid;
   place-items: center;
   border-radius: 100vh;
-  border: 2px solid transparent;
+  border: 2px solid white;
   transition: all 0.5s ease-in-out;
   text-decoration: none;
 }
@@ -257,7 +257,7 @@
   font-size: 40px;
   text-align: center;
 }
-.card1:hover {
+/* .card1:hover {
   animation: flicker 2s linear infinite;
 }
 @keyframes flicker {
@@ -279,7 +279,7 @@
   100% {
     background-color: var(--neon-green);
   }
-}
+} */
 .card2 {
   background-image: url("../../Assets/prof.png");
   background-size: contain;
@@ -346,8 +346,20 @@
 }
 
 .card3 {
-  background-color: var(--neon-pink);
+  overflow: hidden;
+  border: 2px solid white;
+  background-image: url("../../Assets/roadmap-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   transform: translateY(18vh);
+}
+.card1 {
+  overflow: hidden;
+  background-image: url("../../Assets/whitepaper-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .card4 {
   background-color: var(--neon-light-blue);
