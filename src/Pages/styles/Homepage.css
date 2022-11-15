@@ -302,7 +302,8 @@
 }
 .card2 .inner-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 100px;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -313,10 +314,15 @@
   top: 0;
 }
 .card2 .inner-card img {
-  width: 100%;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
   max-width: initial !important;
   object-fit: cover !important;
+  position: absolute;
+  top: 5%;
 }
+
 .push-div {
   position: absolute;
   top: 0;

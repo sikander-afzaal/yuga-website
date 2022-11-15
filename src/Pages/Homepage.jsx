@@ -794,9 +794,12 @@ function Homepage() {
             <div ref={card2} className="card card2">
               <div className="inner-card">
                 <img src={profText} alt="" />
-                <Link to={"/dashboard"}>
-                  <img src={free} alt="" />
+                <Link to={"/dashboard"} className="main-btn">
+                  Mint your professor free
                 </Link>
+                {/* <Link to={"/dashboard"}>
+                  <img src={free} alt="" />
+                </Link> */}
               </div>
             </div>
             <div ref={card3} className="card card3">
