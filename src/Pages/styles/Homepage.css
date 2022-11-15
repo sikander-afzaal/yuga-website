@@ -655,6 +655,9 @@ footer h2 {
   .push-gif {
     width: 100px;
   }
+  .card3 {
+    background-size: 95% 70%;
+  }
 }
 @media screen and (max-width: 715px) {
   .text-section h1 {
