@@ -353,6 +353,7 @@
 
 .card3 {
   overflow: hidden;
+  background-color: black;
   border: 2px solid white;
   background-image: url("../../Assets/roadmap-bg.png");
   background-size: 100% 100%;
