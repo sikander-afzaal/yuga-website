@@ -284,12 +284,15 @@
   background-image: url("../../Assets/prof.png");
   background-size: contain;
   background-color: black;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   transform: translateY(15vh);
   position: relative;
   border: 2px solid white;
   overflow: hidden;
+}
+.card1 {
+  border: 2px solid white;
 }
 .card2::before {
   position: absolute;
@@ -313,16 +316,24 @@
   left: 0;
   top: 0;
 }
-.card2 .inner-card img {
-  width: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: initial !important;
-  object-fit: cover !important;
+.img-wrap {
   position: absolute;
-  top: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
 }
-
+.img-wrap img {
+  width: 90%;
+  max-width: 300px !important;
+  object-fit: cover !important;
+}
+.img-wrap img:last-child {
+  max-width: 240px !important;
+}
 .push-div {
   position: absolute;
   top: 0;
