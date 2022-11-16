@@ -316,6 +316,9 @@
   left: 0;
   top: 0;
 }
+.card2 .main-btn {
+  z-index: 5;
+}
 .img-wrap {
   position: absolute;
   display: flex;
