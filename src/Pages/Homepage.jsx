@@ -13,6 +13,8 @@ import whitepaper from "../Assets/whitepaper.pdf";
 import brand1 from "../Assets/brands (1).png";
 import brand2 from "../Assets/brands (2).png";
 import brand3 from "../Assets/brands (3).png";
+import wagmiLogo from "../Assets/wagmi-logo.png";
+import wagmiLogoCut from "../Assets/wagmi-logo-cut.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDiscord,
@@ -787,6 +789,16 @@ function Homepage() {
         <div ref={cardSection} className="third-section">
           <div className="card-div">
             <div ref={card1} className="card card1">
+              <div className="bg-card-1">
+                <div>
+                  <h2>Wagmi paper</h2>
+                  <img src={wagmiLogo} alt="" />
+                  <h2>NFT Collection</h2>
+                </div>
+                <p>
+                  WAGMI LABZ <br /> www.wagmilabz.com
+                </p>
+              </div>
               <a href={whitepaper} target={"_blank"} className="main-btn">
                 Whitepaper
               </a>
@@ -803,6 +815,17 @@ function Homepage() {
               </div>
             </div>
             <div ref={card3} className="card card3">
+              <div className="bg-card-3">
+                <img src={wagmiLogoCut} alt="" />
+                <h2>
+                  Email-to-wallet onboard | passive income generator share
+                  exclusive content
+                </h2>
+                <p>
+                  Amalgamating Web2 social interaction and Web3 connectivity
+                  into a passive income generating ecosystem
+                </p>
+              </div>
               <a href={roadmap} target={"_blank"} className="main-btn">
                 Roadmap
               </a>

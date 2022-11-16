@@ -366,18 +366,92 @@
   overflow: hidden;
   background-color: black;
   border: 2px solid white;
-  background-image: url("../../Assets/roadmap-bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
   transform: translateY(18vh);
+  isolation: isolate;
+}
+.bg-card-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.bg-card-3 h2 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 3px;
+}
+.bg-card-3 p {
+  font-size: 20px;
+  margin-top: 30px;
+  letter-spacing: 3px;
 }
 .card1 {
   overflow: hidden;
-  background-image: url("../../Assets/whitepaper-bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  background-color: black;
+  color: white;
+  position: relative;
+  isolation: isolate;
+}
+.card1:before,
+.card3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000;
+  opacity: 0.2;
+}
+.bg-card-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 20px;
+}
+.bg-card-1 > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vh;
+}
+.bg-card-1 h2 {
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.bg-card-1 img,
+.bg-card-3 img {
+  max-width: 290px !important;
+  object-fit: contain !important;
+  width: 100%;
+}
+.bg-card-1 p {
+  text-align: center;
 }
 .card4 {
   background-color: var(--neon-light-blue);
@@ -631,7 +705,7 @@ footer h2 {
   .third-section {
     margin-top: 0px;
     grid-template-rows: 1fr auto;
-    height: 90%;
+    height: 100%;
     margin-bottom: 15px;
   }
   .third-section h1 {
@@ -657,6 +731,28 @@ footer h2 {
   }
   .card3 {
     background-size: 95% 70%;
+  }
+  .bg-card-1 h2 {
+    font-size: 30px;
+  }
+  .bg-card-1 img,
+  .bg-card-3 img {
+    max-width: 250px !important;
+  }
+  .bg-card-1 > div {
+    gap: 7vh;
+  }
+  .bg-card-3 {
+    justify-content: flex-start;
+    padding-top: 0px;
+  }
+  .bg-card-3 p {
+    margin-top: auto;
+    font-size: 15px;
+    margin-bottom: 60px;
+  }
+  .bg-card-3 h2 {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 715px) {
