@@ -332,7 +332,16 @@
   object-fit: cover !important;
 }
 .img-wrap img:last-child {
+  animation: bounce 0.8s ease-in-out infinite alternate;
   max-width: 240px !important;
+}
+@keyframes bounce {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
 .push-div {
   position: absolute;
