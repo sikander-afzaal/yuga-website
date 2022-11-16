@@ -744,15 +744,18 @@ footer h2 {
   }
   .bg-card-3 {
     justify-content: flex-start;
-    padding-top: 0px;
+    padding-top: 40px;
+    gap: 20px;
   }
   .bg-card-3 p {
     margin-top: auto;
     font-size: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
   .bg-card-3 h2 {
     font-size: 16px;
+    margin-top: auto;
+    margin-bottom: -50px;
   }
 }
 @media screen and (max-width: 715px) {
