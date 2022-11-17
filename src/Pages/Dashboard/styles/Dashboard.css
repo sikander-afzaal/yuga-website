@@ -45,10 +45,12 @@
 @media screen and (max-width: 1046px) {
   .bottom-App {
     height: auto;
+
     align-items: flex-start;
   }
   .right-div {
     background-color: #1d2d34;
+    min-height: calc(100vh - 100px);
   }
   .dashboard {
     max-height: 0px;
